@@ -1,0 +1,184 @@
+brain tumor dataset dang su dung
+False
+kwargs:  {'server_config': {'strategy': 'FedNH', 'num_rounds': 2, 'num_clients': 100, 'participate_ratio': 0.1, 'drop_ratio': 0.0, 'test_every': 1, 'split_testset': False, 'use_tqdm': False, 'dataset': 'braintumor', 'partition': 'noniid-label-distribution', 'beta': '0.3', 'num_classes_per_client': None, 'num_shards_per_client': None, 'num_classes': 4, 'learning_rate': 1.0, 'lr_decay_per_round': 1.0, 'exclude': (), 'FedNH_smoothing': 0.9, 'FedNH_server_adv_prototype_agg': False, 'CReFF_num_of_fl_feature': 100, 'CReFF_match_epoch': 100, 'CReFF_lr_net': 0.01, 'CReFF_lr_feature': 0.1, 'CReFF_crt_epoch': 300, 'CReFF_dis_metric': 'ours'}, 'beta': '0.3', 'num_classes_per_client': None, 'num_shards_per_client': None}
+noniid-label-distribution
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 13 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:braintumor | num_classes:4 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 2 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.187 MB | num params: 0.797 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ False
+ client side
+  FedNH_return_embedding _ False
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ False
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:6.648 seconds
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 286, in <module>
+    run(args)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 177, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\strategies\FedAvg.py", line 274, in run
+    self.testing(round=r, active_only=True)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\strategies\FedAvg.py", line 171, in testing
+    self.server_side_client.testing(round, testloader=None)  # use global testdataset
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\strategies\FedUH.py", line 146, in testing
+    for i, (x, y) in enumerate(testloader):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\folder.py", line 231, in __getitem__
+    sample = self.transform(sample)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 1276, in forward
+    img = F.adjust_contrast(img, contrast_factor)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\functional.py", line 892, in adjust_contrast
+    return F_pil.adjust_contrast(img, contrast_factor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\_functional_pil.py", line 82, in adjust_contrast
+    enhancer = ImageEnhance.Contrast(img)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ImageEnhance.py", line 68, in __init__
+    mean = int(ImageStat.Stat(image.convert("L")).mean[0] + 0.5)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ImageStat.py", line 47, in __getattr__
+    v = getattr(self, "_get" + id)()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ImageStat.py", line 96, in _getmean
+    return [self.sum[i] / self.count[i] for i in self.bands]
+                          ^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\ImageStat.py", line 47, in __getattr__
+    v = getattr(self, "_get" + id)()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

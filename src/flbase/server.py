@@ -5,7 +5,7 @@ import numpy as np
 from copy import deepcopy
 from torch.utils.data import DataLoader
 from collections import OrderedDict
-
+import logging
 
 class Server:
     def __init__(self, server_config, clients_dict, **kwargs):
@@ -93,8 +93,9 @@ class Server:
         info += f" model:{client_config['model']} | num_epochs:{client_config['num_epochs']} | batch_size:{client_config['batch_size']}"
         info += f" | optimizer:{client_config['optimizer']} | inint lr:{client_config['client_lr']} | lr scheduler:{client_config['client_lr_scheduler']} | momentum: {client_config['sgd_momentum']} | weight decay: {client_config['sgd_weight_decay']}"
         print(info)
+        logging.info(info)
         mdict = self.server_side_client.get_params()
         print(f" {client_config['model']}: size:{calculate_model_size(mdict):.3f} MB | num params:{sum(mdict[key].nelement() for key in mdict) / 1e6: .3f} M")
-
+        logging.info(f" {client_config['model']}: size:{calculate_model_size(mdict):.3f} MB | num params:{sum(mdict[key].nelement() for key in mdict) / 1e6: .3f} M")
     def summary_result(self):
         raise NotImplementedError

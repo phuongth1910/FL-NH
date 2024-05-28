@@ -1,0 +1,12 @@
+2024-05-07 15:49:02,639 | INFO | ########################### IN RA CAC ARG TRUYEN VAO ###############################
+2024-05-07 15:49:02,640 | INFO | ################ run function in main ####################
+2024-05-07 15:51:31,602 | INFO | ########################### IN RA CAC ARG TRUYEN VAO ###############################
+2024-05-07 15:51:31,607 | INFO | ################ run function in main ####################
+2024-05-07 15:51:54,012 | INFO | ============================================================Run Summary============================================================
+Dataset:
+ dataset:TinyImageNet | num_classes:200 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 10 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:ResNetMod | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+2024-05-07 15:51:54,012 | INFO |  ResNetMod: size:45.085 MB | num params: 11.271 M

@@ -1,0 +1,12 @@
+
+brain tumor dataset dang su dung
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 286, in <module>
+    run(args)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 141, in run
+    trainset, testset, _ = get_datasets(server_config['dataset'])
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\utils.py", line 1096, in get_datasets
+    train_paths = glob(f"{train_path}/*/*.jpg")
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable. Did you mean: 'glob.glob(...)'?

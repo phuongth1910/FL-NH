@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 285, in <module>
+    run(args)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 141, in run
+    trainset, testset, _ = get_datasets(server_config['dataset'])
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\utils.py", line 937, in get_datasets
+    trainset = TinyImageNet("~/data/tiny-imagenet-200", 'train', transform=transform_train, in_memory=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\utils.py", line 810, in __init__
+    with open(os.path.join(self.root, CLASS_LIST_FILE), 'r') as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\admin/data/tiny-imagenet-200\\wnids.txt'

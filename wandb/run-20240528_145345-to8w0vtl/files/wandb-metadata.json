@@ -1,0 +1,86 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-28T07:53:48.269359",
+    "startedAt": "2024-05-28T07:53:45.296291",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--purpose",
+        "tumorMRI",
+        "--device",
+        "cuda:2",
+        "--global_seed",
+        "0",
+        "--use_wandb",
+        "True",
+        "--yamlfile",
+        "./FedNH_braintumor_Conv2.yaml",
+        "--strategy",
+        "FedNH",
+        "--num_clients",
+        "40",
+        "--participate_ratio",
+        "0.1",
+        "--partition",
+        "noniid-label-distribution",
+        "--beta",
+        "0.3",
+        "--num_rounds",
+        "200",
+        "--client_lr",
+        "0.01",
+        "--client_lr_scheduler",
+        "diminishing",
+        "--sgd_momentum",
+        "0.9",
+        "--sgd_weight_decay",
+        "1e-05",
+        "--num_epochs",
+        "5"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/luannt0801/Fed_Ha_Phuong.git",
+        "commit": null
+    },
+    "email": "tranhaphuong191002@gmail.com",
+    "root": "C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH",
+    "host": "PHUONG-TH",
+    "username": "admin",
+    "executable": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3100.0,
+        "min": 0.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3100.0,
+            "min": 0.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 475.66796493530273,
+            "used": 260.48099517822266
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.710990905761719
+    }
+}

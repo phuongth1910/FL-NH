@@ -16,7 +16,7 @@ from torch.utils.data import Dataset
 from torch.distributions.multivariate_normal import MultivariateNormal
 from PIL import Image
 from pathlib import Path
-import glob
+from glob import glob 
 
 
 def setup_seed(seed):
@@ -762,9 +762,9 @@ TinyImageNet Dataset
 
 
 EXTENSION = 'JPEG'
-NUM_IMAGES_PER_CLASS = 500
-CLASS_LIST_FILE = 'wnids.txt'
-VAL_ANNOTATION_FILE = 'val_annotations.txt'
+NUM_IMAGES_PER_CLASS = 500 # mỗi class 500 ảnh
+CLASS_LIST_FILE = 'wnids.txt' # file này là tên các class
+VAL_ANNOTATION_FILE = 'val_annotations.txt' # file này là nó cấu hình tập valid
 
 
 # lines = []
@@ -795,7 +795,8 @@ class TinyImageNet(Dataset):
     in_memory: bool
         Set to True if there is enough memory (about 5G) and want to minimize disk IO overhead.
     """
-
+    # hàm init sẽ thường khai báo các biến thuộc class
+    # như này có nghĩa là class TinyImageNet có các biến này
     def __init__(self, root, split='train', transform=None, target_transform=None, in_memory=False):
         self.root = os.path.expanduser(root)
         self.split = split
@@ -867,6 +868,33 @@ class TinyImageNet(Dataset):
         img = img.convert('RGB')
         return self.transform(img) if self.transform else img
 
+class Braintumor(Dataset):
+    # def __init__(self, root, split='train', transform=None, target_transform=None, in_memory=False):
+    def __init__(self,paths,transform=None):
+        self.paths = paths
+        self.transform = transform
+        self.labels = [self.get_label(path) for path in self.paths]
+        self.labels_to_index = {label:index for index,label in enumerate(list(set(self.labels)))}
+    
+    def __getitem__(self,index):
+        img_path = self.paths[index]
+        img = Image.open(img_path).convert('RGB') 
+        label = self.labels[index]
+        label_index = self.labels_to_index[label]
+        
+        if self.transform:
+            img = self.transform(img)
+        
+        return img, label_index,label
+    
+    
+    def __len__(self):
+        return len(self.paths)
+    
+    
+    def get_label(self, path):
+        return os.path.basename(os.path.dirname(path))
+
 
 """
 get datasets
@@ -934,8 +962,8 @@ def get_datasets(datasetname, **kwargs):
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
-        trainset = TinyImageNet("~/data/tiny-imagenet-200", 'train', transform=transform_train, in_memory=False)
-        testset = TinyImageNet("~/data/tiny-imagenet-200", 'val', transform=transform_test, in_memory=False)
+        trainset = TinyImageNet("C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\data\\tiny-imagenet-200", 'train', transform=transform_train, in_memory=False)
+        testset = TinyImageNet("C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\data\\tiny-imagenet-200", 'val', transform=transform_test, in_memory=False)
         trainset.targets = torch.tensor(trainset.targets)
         testset.targets = torch.tensor(testset.targets)
 
@@ -972,6 +1000,68 @@ def get_datasets(datasetname, **kwargs):
         testset = torchvision.datasets.CIFAR10(root='~/data', train=False,
                                                download=True, transform=transform)
         testset.targets = torch.tensor(testset.targets)
+    elif datasetname == "braintumor":
+        print("brain tumor dataset dang su dung")
+        dataset_path = "C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor"
+        train_path = "C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Training"
+        test_path = "C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Testing" # nhìn sáng chưa
+        image_size = (224,224)
+        num_classes = 5
+        train_paths = glob(f"{train_path}/*/*.jpg") # sai đây nè import thư viện sai bà ạ
+        test_paths = glob(f"{test_path}/*/*.jpg")
+        # data augmentation
+        transform_train = transforms.Compose([
+            transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(),
+            transforms.RandomRotation(10),
+            transforms.Resize(image_size),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+        transform_test = transforms.Compose([
+            transforms.Resize(image_size),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+        trainset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Training", transform=
+                                                     transform_train)
+        testset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Testing", transform=
+                                                     transform_test)
+        print(trainset)
+        print(testset)
+            
+        # train_brain_trans = transforms.Compose([transforms.RandomCrop(128, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # test_brain_trans = transforms.Compose([transforms.RandomCrop(128, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # train_brain_trans = transforms.Compose([transforms.RandomCrop(32, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # test_brain_trans = transforms.Compose([transforms.RandomCrop(32, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # trainset = torchvision.datasets.ImageFolder(root='C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\data\\braintumor\\Training', transform= traint_brain_trans)
+        # testset = torchvision.datasets.ImageFolder(root='C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\data\\braintumor\\Testing', transform= test_brain_trans)
+        trainset.targets = torch.tensor(trainset.targets)
+        testset.targets = torch.tensor(testset.targets)
+        
+   
     else:
         raise ValueError(f"Unrecognized dataset:{datasetname}")
 

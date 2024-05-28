@@ -1,0 +1,44 @@
+brain tumor dataset dang su dung
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 3 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 285, in <module>
+    run(args)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 145, in run
+    clients_dict = setup_clients(ClientCstr, trainset, None, criterion,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\utils.py", line 89, in setup_clients
+    all_clients_dict[cid] = Client(
+                            ^^^^^^^
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\strategies\FedNH.py", line 27, in __init__
+    temp = [self.count_by_class[cls] if cls in self.count_by_class.keys() else 1e-12 for cls in range(client_config['num_classes'])]
+                                               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FedNHClient' object has no attribute 'count_by_class'

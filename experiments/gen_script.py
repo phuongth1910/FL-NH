@@ -33,7 +33,8 @@ def gen_command(
 
 if __name__ == "__main__":
     import os
-    os.system('rm *.sh')
+    # os.system('rm *.sh')
+    os.system('del *.sh')
     # purpose = 'TinyImageNet'
     purpose = 'Cifar'
     num_gpu = 4

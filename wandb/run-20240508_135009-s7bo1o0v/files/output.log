@@ -1,0 +1,1465 @@
+
+Round Progress:   0%|                                                                                                                                                                       | 0/200 [00:00<?, ?it/s]
+brain tumor dataset dang su dung
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 1 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:braintumor | num_classes:4 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:30 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.187 MB | num params: 0.797 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ False
+ client side
+  FedNH_return_embedding _ False
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ False
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[17 21 10]:
+ Training time:14.099 seconds
+
+Round Progress:   0%|▊                                                                                                                                                            | 1/200 [00:24<1:21:12, 24.48s/it]
+ Testing time:10.364 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.26293057203292847, 'labeldist': 0.744189997514089}
+Round:2 - Active clients:[ 1  0 14]:
+ Training time:11.808 seconds
+ server global model correct 405
+ Testing time:10.351 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3108368416627248, 'labeldist': 0.5530548493067423}
+ Best test accuracy:0.309. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:   1%|█▌                                                                                                                                                           | 2/200 [00:46<1:16:22, 23.14s/it]
+ Training time:6.915 seconds
+
+Round Progress:   2%|██▎                                                                                                                                                          | 3/200 [01:03<1:07:10, 20.46s/it]
+ Testing time:10.312 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.23035850127538046, 'validclass': 0.43224531412124634, 'labeldist': 0.7150953014691671}
+Round:4 - Active clients:[11 21 28]:
+ Training time:10.524 seconds
+
+Round Progress:   2%|███▏                                                                                                                                                         | 4/200 [01:24<1:07:31, 20.67s/it]
+ Testing time:10.455 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23035850127538046, 'validclass': 0.3549697647492091, 'labeldist': 0.8672053217887878}
+Round:5 - Active clients:[11 29 23]:
+ Training time:16.180 seconds
+ server global model correct 306
+ Testing time:10.493 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.23264683286348978, 'validclass': 0.3582810213168462, 'labeldist': 0.6085806787014008}
+Round:6 - Active clients:[ 0 28 27]:
+ Training time:11.573 seconds
+ server global model correct 407
+ Testing time:10.593 seconds
+ avg_test_acc: {'uniform': 0.3104500472545624, 'validclass': 0.3104500472545624, 'labeldist': 0.3432713449001312}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3223915845155716, 'labeldist': 0.6185053127507368}
+ Best test accuracy:0.310. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+Round:7 - Active clients:[ 2 17  1]:
+ Training time:5.276 seconds
+ server global model correct 310
+ Testing time:10.554 seconds
+ avg_test_acc: {'uniform': 0.23646071553230286, 'validclass': 0.23646071553230286, 'labeldist': 0.23790474236011505}
+ pfl_avg_test_acc: {'uniform': 0.2585812409718831, 'validclass': 0.28993476430575055, 'labeldist': 0.6010008454322815}
+
+Round Progress:   4%|█████▍                                                                                                                                                       | 7/200 [02:29<1:05:39, 20.41s/it]
+ Training time:19.338 seconds
+ server global model correct 405
+ Testing time:10.527 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.28832951684792835, 'validclass': 0.44674329956372577, 'labeldist': 0.7339116334915161}
+
+Round Progress:   4%|██████▎                                                                                                                                                      | 8/200 [02:59<1:14:58, 23.43s/it]
+ Training time:8.114 seconds
+ server global model correct 425
+ Testing time:10.572 seconds
+ avg_test_acc: {'uniform': 0.324180006980896, 'validclass': 0.324180006980896, 'labeldist': 0.3557873070240021}
+ pfl_avg_test_acc: {'uniform': 0.2822273125251134, 'validclass': 0.3468812604745229, 'labeldist': 0.24866013942907253}
+ Best test accuracy:0.324. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:   4%|███████                                                                                                                                                      | 9/200 [03:18<1:09:54, 21.96s/it]
+ Training time:19.943 seconds
+ server global model correct 328
+ Testing time:10.556 seconds
+ avg_test_acc: {'uniform': 0.25019070506095886, 'validclass': 0.25019070506095886, 'labeldist': 0.22964687645435333}
+ pfl_avg_test_acc: {'uniform': 0.2776506493488948, 'validclass': 0.4295894106229146, 'labeldist': 0.6224177877108256}
+
+Round Progress:   5%|███████▊                                                                                                                                                    | 10/200 [03:48<1:17:53, 24.60s/it]
+ Training time:11.063 seconds
+ server global model correct 405
+ Testing time:10.761 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3781256427367528, 'labeldist': 0.7893416285514832}
+
+Round Progress:   6%|████████▌                                                                                                                                                   | 11/200 [04:10<1:14:48, 23.75s/it]
+ Training time:10.085 seconds
+ server global model correct 408
+ Testing time:10.578 seconds
+ avg_test_acc: {'uniform': 0.31121280789375305, 'validclass': 0.31121280789375305, 'labeldist': 0.34360960125923157}
+ pfl_avg_test_acc: {'uniform': 0.329010933637619, 'validclass': 0.4712356279293696, 'labeldist': 0.5797814254959425}
+
+Round Progress:   6%|█████████▎                                                                                                                                                  | 12/200 [04:31<1:11:29, 22.82s/it]
+ Training time:4.048 seconds
+ server global model correct 306
+ Testing time:10.653 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.2880752583344777, 'validclass': 0.17567519284784794, 'labeldist': 0.32384368653098744}
+
+Round Progress:   6%|██████████▏                                                                                                                                                 | 13/200 [04:46<1:03:27, 20.36s/it]
+ Training time:4.899 seconds
+ server global model correct 390
+ Testing time:10.514 seconds
+ avg_test_acc: {'uniform': 0.29748284816741943, 'validclass': 0.29748284816741943, 'labeldist': 0.29431968927383423}
+ pfl_avg_test_acc: {'uniform': 0.2585812409718831, 'validclass': 0.43760940432548523, 'labeldist': 0.8313852945963541}
+
+Round Progress:   7%|███████████                                                                                                                                                   | 14/200 [05:01<58:29, 18.87s/it]
+ Training time:3.205 seconds
+ server global model correct 375
+ Testing time:10.593 seconds
+ avg_test_acc: {'uniform': 0.2860412001609802, 'validclass': 0.2860412001609802, 'labeldist': 0.2636083960533142}
+ pfl_avg_test_acc: {'uniform': 0.25578438738981885, 'validclass': 0.4773617039124171, 'labeldist': 0.49499790370464325}
+
+Round Progress:   8%|███████████▊                                                                                                                                                  | 15/200 [05:15<53:29, 17.35s/it]
+ Training time:11.048 seconds
+ server global model correct 432
+ Testing time:10.625 seconds
+ avg_test_acc: {'uniform': 0.32951945066452026, 'validclass': 0.32951945066452026, 'labeldist': 0.3595896363258362}
+ pfl_avg_test_acc: {'uniform': 0.2555301288763682, 'validclass': 0.30872077246507007, 'labeldist': 0.7816366155942281}
+ Best test accuracy:0.330. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:   8%|████████████▋                                                                                                                                                 | 16/200 [05:36<57:12, 18.65s/it]
+ Training time:11.541 seconds
+ server global model correct 423
+ Testing time:10.624 seconds
+ avg_test_acc: {'uniform': 0.32265445590019226, 'validclass': 0.32265445590019226, 'labeldist': 0.35395362973213196}
+ pfl_avg_test_acc: {'uniform': 0.28171879549821216, 'validclass': 0.4344501594702403, 'labeldist': 0.8660260240236918}
+
+Round Progress:   8%|█████████████▎                                                                                                                                              | 17/200 [05:59<1:00:08, 19.72s/it]
+ Training time:20.658 seconds
+ server global model correct 306
+ Testing time:10.540 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3333333333333333, 'labeldist': 0.833462635676066}
+
+Round Progress:   9%|██████████████                                                                                                                                              | 18/200 [06:30<1:10:17, 23.17s/it]
+ Training time:10.563 seconds
+ server global model correct 300
+ Testing time:10.725 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.2329010864098867, 'validclass': 0.3570179045200348, 'labeldist': 0.5387546320756277}
+
+Round Progress:  10%|██████████████▊                                                                                                                                             | 19/200 [06:51<1:08:13, 22.61s/it]
+ Training time:10.212 seconds
+ server global model correct 375
+ Testing time:10.702 seconds
+ avg_test_acc: {'uniform': 0.2860412001609802, 'validclass': 0.2860412001609802, 'labeldist': 0.29086464643478394}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3539755344390869, 'labeldist': 0.7293596069018046}
+
+Round Progress:  10%|███████████████▌                                                                                                                                            | 20/200 [07:12<1:06:18, 22.10s/it]
+ Training time:6.618 seconds
+ server global model correct 300
+ Testing time:10.738 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2379862666130066, 'validclass': 0.3875487844149272, 'labeldist': 0.5674670537312826}
+
+Round Progress:  10%|████████████████▍                                                                                                                                           | 21/200 [07:29<1:01:42, 20.68s/it]
+ Training time:1.676 seconds
+
+Round Progress:  11%|█████████████████▍                                                                                                                                            | 22/200 [07:42<53:54, 18.17s/it]
+ Testing time:10.637 seconds
+ avg_test_acc: {'uniform': 0.25095346570014954, 'validclass': 0.25095346570014954, 'labeldist': 0.25129783153533936}
+ pfl_avg_test_acc: {'uniform': 0.24383422235647836, 'validclass': 0.35283296306927997, 'labeldist': 0.5471903085708618}
+Round:23 - Active clients:[16 20 10]:
+ Training time:17.634 seconds
+ server global model correct 300
+ Testing time:10.769 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23162979384263357, 'validclass': 0.5121497263511022, 'labeldist': 0.8709741830825806}
+
+Round Progress:  12%|█████████████████▉                                                                                                                                          | 23/200 [08:10<1:02:41, 21.25s/it]
+ Training time:13.808 seconds
+ server global model correct 300
+ Testing time:10.536 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.23442664245764414, 'validclass': 0.29365908602873486, 'labeldist': 0.8439078529675802}
+
+Round Progress:  12%|██████████████████▋                                                                                                                                         | 24/200 [08:35<1:05:03, 22.18s/it]
+ Training time:6.510 seconds
+ server global model correct 296
+ Testing time:10.584 seconds
+ avg_test_acc: {'uniform': 0.22578184306621552, 'validclass': 0.22578184306621552, 'labeldist': 0.21186600625514984}
+ pfl_avg_test_acc: {'uniform': 0.23035850127538046, 'validclass': 0.3208721379439036, 'labeldist': 0.4006529760857423}
+Round:26 - Active clients:[26  3 27]:
+
+Round Progress:  12%|███████████████████▌                                                                                                                                        | 25/200 [08:52<1:00:16, 20.66s/it]
+ server global model correct 286
+ Testing time:10.724 seconds
+ avg_test_acc: {'uniform': 0.21815408766269684, 'validclass': 0.21815408766269684, 'labeldist': 0.20371612906455994}
+ pfl_avg_test_acc: {'uniform': 0.2285786916812261, 'validclass': 0.31929460167884827, 'labeldist': 0.31028589357932407}
+
+Round Progress:  13%|████████████████████▌                                                                                                                                         | 26/200 [09:04<52:20, 18.05s/it]
+ Training time:14.756 seconds
+ server global model correct 306
+ Testing time:10.657 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.2318840573231379, 'validclass': 0.4129113306601842, 'labeldist': 0.8192387819290161}
+
+Round Progress:  14%|█████████████████████▎                                                                                                                                        | 27/200 [09:29<58:24, 20.26s/it]
+ Training time:11.479 seconds
+ server global model correct 300
+ Testing time:10.651 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2318840573231379, 'validclass': 0.2897506405909856, 'labeldist': 0.5632382978995641}
+
+Round Progress:  14%|██████████████████████                                                                                                                                        | 28/200 [09:51<59:41, 20.83s/it]
+ Training time:10.005 seconds
+ server global model correct 306
+ Testing time:10.748 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.2654462258021037, 'validclass': 0.3051455318927765, 'labeldist': 0.48287707567214966}
+
+Round Progress:  14%|██████████████████████▉                                                                                                                                       | 29/200 [10:12<59:17, 20.80s/it]
+ Training time:6.862 seconds
+ server global model correct 306
+ Testing time:10.659 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.2318840573231379, 'validclass': 0.357177272439003, 'labeldist': 0.8186794320742289}
+
+Round Progress:  15%|███████████████████████▋                                                                                                                                      | 30/200 [10:29<56:10, 19.83s/it]
+ Training time:3.248 seconds
+ server global model correct 306
+ Testing time:10.550 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.23620645701885223, 'validclass': 0.3462525010108948, 'labeldist': 0.34738609194755554}
+
+Round Progress:  16%|████████████████████████▍                                                                                                                                     | 31/200 [10:43<50:46, 18.03s/it]
+ Training time:20.376 seconds
+ server global model correct 405
+ Testing time:10.683 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.2822273125251134, 'validclass': 0.4089062809944153, 'labeldist': 0.919519046942393}
+
+Round Progress:  16%|████████████████████████▉                                                                                                                                   | 32/200 [11:14<1:01:25, 21.94s/it]
+ Training time:11.865 seconds
+ server global model correct 405
+ Testing time:10.629 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.31706077853838605, 'validclass': 0.2503941108783086, 'labeldist': 0.1422762150565783}
+
+Round Progress:  16%|█████████████████████████▋                                                                                                                                  | 33/200 [11:37<1:01:33, 22.11s/it]
+ Training time:5.928 seconds
+ server global model correct 405
+ Testing time:10.805 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.2822273125251134, 'validclass': 0.3048616349697113, 'labeldist': 0.5872584879398346}
+
+Round Progress:  17%|██████████████████████████▊                                                                                                                                   | 34/200 [11:54<56:44, 20.51s/it]
+ Training time:5.896 seconds
+ server global model correct 353
+ Testing time:10.840 seconds
+ avg_test_acc: {'uniform': 0.26926010847091675, 'validclass': 0.26926010847091675, 'labeldist': 0.25453004240989685}
+ pfl_avg_test_acc: {'uniform': 0.2555301288763682, 'validclass': 0.5125858138004938, 'labeldist': 0.5292898664871851}
+
+Round Progress:  18%|███████████████████████████▋                                                                                                                                  | 35/200 [12:10<53:16, 19.38s/it]
+ Training time:15.269 seconds
+ server global model correct 300
+ Testing time:10.712 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2555301288763682, 'validclass': 0.15255529681841531, 'labeldist': 0.6172161102294922}
+
+Round Progress:  18%|████████████████████████████▍                                                                                                                                 | 36/200 [12:36<58:24, 21.37s/it]
+ Training time:17.818 seconds
+ server global model correct 405
+ Testing time:10.702 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.34194692969322205}
+ pfl_avg_test_acc: {'uniform': 0.29290618002414703, 'validclass': 0.44379064440727234, 'labeldist': 0.5570835371812185}
+
+Round Progress:  18%|████████████████████████████▊                                                                                                                               | 37/200 [13:05<1:03:53, 23.52s/it]
+ Training time:7.720 seconds
+ server global model correct 425
+ Testing time:10.775 seconds
+ avg_test_acc: {'uniform': 0.324180006980896, 'validclass': 0.324180006980896, 'labeldist': 0.354157954454422}
+ pfl_avg_test_acc: {'uniform': 0.2845156341791153, 'validclass': 0.23693456407636404, 'labeldist': 0.32153132433692616}
+
+Round Progress:  19%|██████████████████████████████                                                                                                                                | 38/200 [13:23<59:26, 22.02s/it]
+ Training time:18.291 seconds
+ server global model correct 300
+ Testing time:10.819 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2723112106323242, 'validclass': 0.40934795637925464, 'labeldist': 0.7501898010571798}
+
+Round Progress:  20%|██████████████████████████████▍                                                                                                                             | 39/200 [13:53<1:04:48, 24.15s/it]
+ Training time:3.013 seconds
+ server global model correct 465
+ Testing time:10.922 seconds
+ avg_test_acc: {'uniform': 0.3546910881996155, 'validclass': 0.3546910881996155, 'labeldist': 0.35387951135635376}
+ pfl_avg_test_acc: {'uniform': 0.255021611849467, 'validclass': 0.5120772967735926, 'labeldist': 0.5825922600924969}
+ Best test accuracy:0.355. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  20%|███████████████████████████████▌                                                                                                                              | 40/200 [14:07<56:15, 21.09s/it]
+ Training time:20.614 seconds
+ server global model correct 300
+ Testing time:10.652 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.15255529681841531, 'labeldist': 0.5005300045013428}
+
+Round Progress:  20%|███████████████████████████████▉                                                                                                                            | 41/200 [14:38<1:04:00, 24.15s/it]
+ Training time:7.407 seconds
+
+Round Progress:  21%|█████████████████████████████████▏                                                                                                                            | 42/200 [14:56<58:48, 22.33s/it]
+ Testing time:10.642 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22075055042902628, 'labeldist': 0.26108590761820477}
+Round:43 - Active clients:[25 12 13]:
+ Training time:10.459 seconds
+ server global model correct 349
+ Testing time:10.724 seconds
+ avg_test_acc: {'uniform': 0.2662090063095093, 'validclass': 0.2662090063095093, 'labeldist': 0.2643473744392395}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.3511312206586202, 'labeldist': 0.8092232743899027}
+
+Round Progress:  22%|█████████████████████████████████▉                                                                                                                            | 43/200 [15:17<57:31, 21.99s/it]
+ Training time:6.094 seconds
+
+Round Progress:  22%|██████████████████████████████████▊                                                                                                                           | 44/200 [15:34<53:09, 20.44s/it]
+ Testing time:10.751 seconds
+ avg_test_acc: {'uniform': 0.25781846046447754, 'validclass': 0.25781846046447754, 'labeldist': 0.2454966902732849}
+ pfl_avg_test_acc: {'uniform': 0.25095347066720325, 'validclass': 0.32562726736068726, 'labeldist': 0.45595695575078327}
+Round:45 - Active clients:[16 27 25]:
+ Training time:2.041 seconds
+ server global model correct 300
+ Testing time:10.685 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23824052015940347, 'validclass': 0.5676968395709991, 'labeldist': 0.7341635624567667}
+
+Round Progress:  22%|███████████████████████████████████▌                                                                                                                          | 45/200 [15:47<46:49, 18.13s/it]
+ Training time:13.313 seconds
+ server global model correct 308
+ Testing time:10.678 seconds
+ avg_test_acc: {'uniform': 0.23493516445159912, 'validclass': 0.23493516445159912, 'labeldist': 0.23690108954906464}
+ pfl_avg_test_acc: {'uniform': 0.235189417997996, 'validclass': 0.26034966111183167, 'labeldist': 0.6978354156017303}
+
+Round Progress:  23%|████████████████████████████████████▎                                                                                                                         | 46/200 [16:11<51:03, 19.89s/it]
+ Training time:6.710 seconds
+ server global model correct 336
+ Testing time:10.793 seconds
+ avg_test_acc: {'uniform': 0.2562929093837738, 'validclass': 0.2562929093837738, 'labeldist': 0.2484896332025528}
+ pfl_avg_test_acc: {'uniform': 0.23646071553230286, 'validclass': 0.1883909391860167, 'labeldist': 0.36409771752854186}
+
+Round Progress:  24%|█████████████████████████████████████▏                                                                                                                        | 47/200 [16:28<48:54, 19.18s/it]
+ Training time:1.865 seconds
+ server global model correct 328
+ Testing time:10.603 seconds
+ avg_test_acc: {'uniform': 0.25019070506095886, 'validclass': 0.25019070506095886, 'labeldist': 0.248078852891922}
+ pfl_avg_test_acc: {'uniform': 0.25756420691808063, 'validclass': 0.35488227009773254, 'labeldist': 0.15522253016630808}
+
+Round Progress:  24%|█████████████████████████████████████▉                                                                                                                        | 48/200 [16:41<43:30, 17.17s/it]
+ Training time:3.087 seconds
+ server global model correct 304
+ Testing time:10.729 seconds
+ avg_test_acc: {'uniform': 0.23188406229019165, 'validclass': 0.23188406229019165, 'labeldist': 0.21293847262859344}
+ pfl_avg_test_acc: {'uniform': 0.24408848583698273, 'validclass': 0.511205126841863, 'labeldist': 0.4103894184033076}
+
+Round Progress:  24%|██████████████████████████████████████▋                                                                                                                       | 49/200 [16:55<40:40, 16.17s/it]
+ Training time:6.805 seconds
+ server global model correct 338
+ Testing time:10.637 seconds
+ avg_test_acc: {'uniform': 0.25781846046447754, 'validclass': 0.25781846046447754, 'labeldist': 0.24693651497364044}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.6316953698794047}
+Round:51 - Active clients:[24  8  2]:
+
+Round Progress:  25%|███████████████████████████████████████▌                                                                                                                      | 50/200 [17:12<41:22, 16.55s/it]
+ server global model correct 339
+ Testing time:10.623 seconds
+ avg_test_acc: {'uniform': 0.2585812211036682, 'validclass': 0.2585812211036682, 'labeldist': 0.24597997963428497}
+ pfl_avg_test_acc: {'uniform': 0.2550216168165207, 'validclass': 0.29468851784865063, 'labeldist': 0.41372792422771454}
+
+Round Progress:  26%|████████████████████████████████████████▎                                                                                                                     | 51/200 [17:24<37:43, 15.19s/it]
+ Training time:11.101 seconds
+ server global model correct 354
+ Testing time:10.726 seconds
+ avg_test_acc: {'uniform': 0.2700228691101074, 'validclass': 0.2700228691101074, 'labeldist': 0.24987651407718658}
+ pfl_avg_test_acc: {'uniform': 0.2387490520874659, 'validclass': 0.354009543855985, 'labeldist': 0.632176011800766}
+
+Round Progress:  26%|█████████████████████████████████████████                                                                                                                     | 52/200 [17:46<42:24, 17.19s/it]
+ Training time:4.374 seconds
+ server global model correct 336
+ Testing time:10.814 seconds
+ avg_test_acc: {'uniform': 0.2562929093837738, 'validclass': 0.2562929093837738, 'labeldist': 0.2353268265724182}
+ pfl_avg_test_acc: {'uniform': 0.24790236353874207, 'validclass': 0.17501887617011866, 'labeldist': 0.4609317205516466}
+
+Round Progress:  26%|█████████████████████████████████████████▊                                                                                                                    | 53/200 [18:01<40:39, 16.60s/it]
+ Training time:16.377 seconds
+ server global model correct 308
+ Testing time:10.719 seconds
+ avg_test_acc: {'uniform': 0.23493516445159912, 'validclass': 0.23493516445159912, 'labeldist': 0.2369730919599533}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.2514672676722209, 'labeldist': 0.9258947173754374}
+
+Round Progress:  27%|██████████████████████████████████████████▋                                                                                                                   | 54/200 [18:28<48:02, 19.75s/it]
+ Training time:9.047 seconds
+ server global model correct 306
+ Testing time:10.676 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.23537762463092804}
+ pfl_avg_test_acc: {'uniform': 0.23671497404575348, 'validclass': 0.3272286107142766, 'labeldist': 0.5062528351942698}
+
+Round Progress:  28%|███████████████████████████████████████████▍                                                                                                                  | 55/200 [18:48<47:42, 19.74s/it]
+ Training time:22.028 seconds
+ server global model correct 300
+ Testing time:10.846 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.25120772918065387, 'validclass': 0.3854985237121582, 'labeldist': 0.555822491645813}
+
+Round Progress:  28%|████████████████████████████████████████████▏                                                                                                                 | 56/200 [19:21<56:50, 23.69s/it]
+ Training time:6.892 seconds
+ server global model correct 301
+ Testing time:10.844 seconds
+ avg_test_acc: {'uniform': 0.22959573566913605, 'validclass': 0.22959573566913605, 'labeldist': 0.21049024164676666}
+ pfl_avg_test_acc: {'uniform': 0.23213831086953482, 'validclass': 0.1418439745903015, 'labeldist': 0.3077651460965474}
+
+Round Progress:  28%|█████████████████████████████████████████████                                                                                                                 | 57/200 [19:39<52:12, 21.90s/it]
+ Training time:9.182 seconds
+ server global model correct 325
+ Testing time:10.677 seconds
+ avg_test_acc: {'uniform': 0.24790236353874207, 'validclass': 0.24790236353874207, 'labeldist': 0.22995971143245697}
+ pfl_avg_test_acc: {'uniform': 0.23569793502489725, 'validclass': 0.5850420345862707, 'labeldist': 0.7990629474322001}
+
+Round Progress:  29%|█████████████████████████████████████████████▊                                                                                                                | 58/200 [19:58<50:23, 21.29s/it]
+ Training time:2.027 seconds
+ server global model correct 330
+ Testing time:10.763 seconds
+ avg_test_acc: {'uniform': 0.2517162561416626, 'validclass': 0.2517162561416626, 'labeldist': 0.23338936269283295}
+ pfl_avg_test_acc: {'uniform': 0.25451309482256573, 'validclass': 0.2921341458956401, 'labeldist': 0.46799470980962116}
+
+Round Progress:  30%|██████████████████████████████████████████████▌                                                                                                               | 59/200 [20:11<44:03, 18.75s/it]
+ Training time:10.241 seconds
+ server global model correct 357
+ Testing time:10.715 seconds
+ avg_test_acc: {'uniform': 0.2723112106323242, 'validclass': 0.2723112106323242, 'labeldist': 0.25219351053237915}
+ pfl_avg_test_acc: {'uniform': 0.251970499753952, 'validclass': 0.2766419053077698, 'labeldist': 0.339642733335495}
+
+Round Progress:  30%|███████████████████████████████████████████████▍                                                                                                              | 60/200 [20:32<45:17, 19.41s/it]
+ Training time:10.085 seconds
+ server global model correct 426
+ Testing time:10.750 seconds
+ avg_test_acc: {'uniform': 0.32494279742240906, 'validclass': 0.32494279742240906, 'labeldist': 0.33240750432014465}
+ pfl_avg_test_acc: {'uniform': 0.2812102735042572, 'validclass': 0.3838192820549011, 'labeldist': 0.5726325611273447}
+
+Round Progress:  30%|████████████████████████████████████████████████▏                                                                                                             | 61/200 [20:53<45:58, 19.85s/it]
+ Training time:7.621 seconds
+ server global model correct 367
+ Testing time:10.732 seconds
+ avg_test_acc: {'uniform': 0.2799389660358429, 'validclass': 0.2799389660358429, 'labeldist': 0.25803327560424805}
+ pfl_avg_test_acc: {'uniform': 0.2598525236050288, 'validclass': 0.2998604128758113, 'labeldist': 0.572782427072525}
+
+Round Progress:  31%|████████████████████████████████████████████████▉                                                                                                             | 62/200 [21:11<44:38, 19.41s/it]
+ Training time:7.205 seconds
+ server global model correct 336
+ Testing time:10.697 seconds
+ avg_test_acc: {'uniform': 0.2562929093837738, 'validclass': 0.2562929093837738, 'labeldist': 0.23750878870487213}
+ pfl_avg_test_acc: {'uniform': 0.26239511867364246, 'validclass': 0.3295665482680003, 'labeldist': 0.5834951102733612}
+
+Round Progress:  32%|█████████████████████████████████████████████████▊                                                                                                            | 63/200 [21:29<43:18, 18.96s/it]
+ Training time:1.873 seconds
+ server global model correct 349
+ Testing time:10.850 seconds
+ avg_test_acc: {'uniform': 0.2662090063095093, 'validclass': 0.2662090063095093, 'labeldist': 0.24669459462165833}
+ pfl_avg_test_acc: {'uniform': 0.25476735830307007, 'validclass': 0.21719473600387573, 'labeldist': 0.06701826180020969}
+
+Round Progress:  32%|██████████████████████████████████████████████████▌                                                                                                           | 64/200 [21:42<38:45, 17.10s/it]
+ Training time:10.215 seconds
+ server global model correct 394
+ Testing time:10.889 seconds
+ avg_test_acc: {'uniform': 0.3005339503288269, 'validclass': 0.3005339503288269, 'labeldist': 0.2772184908390045}
+ pfl_avg_test_acc: {'uniform': 0.25934400657812756, 'validclass': 0.3249103327592214, 'labeldist': 0.593696137269338}
+
+Round Progress:  32%|███████████████████████████████████████████████████▎                                                                                                          | 65/200 [22:03<41:10, 18.30s/it]
+ Training time:1.944 seconds
+ server global model correct 363
+ Testing time:10.847 seconds
+ avg_test_acc: {'uniform': 0.2768878638744354, 'validclass': 0.2768878638744354, 'labeldist': 0.2560460865497589}
+ pfl_avg_test_acc: {'uniform': 0.2710399130980174, 'validclass': 0.18939538300037384, 'labeldist': 0.29945490625686944}
+
+Round Progress:  33%|████████████████████████████████████████████████████▏                                                                                                         | 66/200 [22:16<37:11, 16.65s/it]
+ Training time:12.706 seconds
+ server global model correct 442
+ Testing time:10.711 seconds
+ avg_test_acc: {'uniform': 0.33714720606803894, 'validclass': 0.33714720606803894, 'labeldist': 0.36623191833496094}
+ pfl_avg_test_acc: {'uniform': 0.2812102784713109, 'validclass': 0.35506571829319, 'labeldist': 0.6825876335302988}
+
+Round Progress:  34%|████████████████████████████████████████████████████▉                                                                                                         | 67/200 [22:39<41:24, 18.68s/it]
+ Training time:11.579 seconds
+ server global model correct 456
+ Testing time:10.723 seconds
+ avg_test_acc: {'uniform': 0.3478260934352875, 'validclass': 0.3478260934352875, 'labeldist': 0.3682614266872406}
+ pfl_avg_test_acc: {'uniform': 0.2649377038081487, 'validclass': 0.2649377038081487, 'labeldist': 0.6850565274556478}
+
+Round Progress:  34%|█████████████████████████████████████████████████████▋                                                                                                        | 68/200 [23:02<43:30, 19.78s/it]
+ Training time:3.968 seconds
+
+Round Progress:  34%|██████████████████████████████████████████████████████▌                                                                                                       | 69/200 [23:16<39:52, 18.26s/it]
+ Testing time:10.733 seconds
+ avg_test_acc: {'uniform': 0.3562166392803192, 'validclass': 0.3562166392803192, 'labeldist': 0.35211995244026184}
+ pfl_avg_test_acc: {'uniform': 0.30816170076529187, 'validclass': 0.2746281623840332, 'labeldist': 0.41721419990062714}
+ Best test accuracy:0.356. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+Round:70 - Active clients:[11 12 13]:
+ Training time:14.657 seconds
+ server global model correct 328
+ Testing time:10.778 seconds
+ avg_test_acc: {'uniform': 0.25019070506095886, 'validclass': 0.25019070506095886, 'labeldist': 0.23190295696258545}
+ pfl_avg_test_acc: {'uniform': 0.2318840573231379, 'validclass': 0.40819300214449566, 'labeldist': 0.9255637327829996}
+
+Round Progress:  35%|███████████████████████████████████████████████████████▎                                                                                                      | 70/200 [23:42<44:14, 20.42s/it]
+ Training time:15.503 seconds
+
+Round Progress:  36%|████████████████████████████████████████████████████████                                                                                                      | 71/200 [24:08<47:45, 22.21s/it]
+ Testing time:10.871 seconds
+ avg_test_acc: {'uniform': 0.22578184306621552, 'validclass': 0.22578184306621552, 'labeldist': 0.2243163138628006}
+ pfl_avg_test_acc: {'uniform': 0.24078311522801718, 'validclass': 0.2893714557091395, 'labeldist': 0.5831387042999268}
+Round:72 - Active clients:[22 20  6]:
+ Training time:14.069 seconds
+ server global model correct 365
+ Testing time:11.181 seconds
+ avg_test_acc: {'uniform': 0.27841341495513916, 'validclass': 0.27841341495513916, 'labeldist': 0.25770190358161926}
+ pfl_avg_test_acc: {'uniform': 0.28299007813135785, 'validclass': 0.43032092849413556, 'labeldist': 0.6381867925326029}
+
+Round Progress:  36%|████████████████████████████████████████████████████████▉                                                                                                     | 72/200 [24:34<49:20, 23.13s/it]
+ Training time:16.996 seconds
+ server global model correct 464
+ Testing time:10.724 seconds
+ avg_test_acc: {'uniform': 0.3539282977581024, 'validclass': 0.3539282977581024, 'labeldist': 0.36922380328178406}
+ pfl_avg_test_acc: {'uniform': 0.2776506543159485, 'validclass': 0.3721524675687154, 'labeldist': 0.577196329832077}
+
+Round Progress:  36%|█████████████████████████████████████████████████████████▋                                                                                                    | 73/200 [25:01<51:53, 24.51s/it]
+ Training time:3.647 seconds
+ server global model correct 466
+ Testing time:10.732 seconds
+ avg_test_acc: {'uniform': 0.35545384883880615, 'validclass': 0.35545384883880615, 'labeldist': 0.36315110325813293}
+ pfl_avg_test_acc: {'uniform': 0.3063818961381912, 'validclass': 0.4132919907569885, 'labeldist': 0.6938401957352957}
+
+Round Progress:  37%|██████████████████████████████████████████████████████████▍                                                                                                   | 74/200 [25:16<45:06, 21.48s/it]
+ Training time:4.769 seconds
+ server global model correct 433
+ Testing time:10.691 seconds
+ avg_test_acc: {'uniform': 0.3302822411060333, 'validclass': 0.3302822411060333, 'labeldist': 0.35610172152519226}
+ pfl_avg_test_acc: {'uniform': 0.29417747259140015, 'validclass': 0.433880219856898, 'labeldist': 0.793066680431366}
+
+Round Progress:  38%|███████████████████████████████████████████████████████████▎                                                                                                  | 75/200 [25:31<40:59, 19.68s/it]
+ Training time:6.608 seconds
+ server global model correct 306
+ Testing time:10.785 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21416975557804108}
+ pfl_avg_test_acc: {'uniform': 0.29672005275885266, 'validclass': 0.31250641991694766, 'labeldist': 0.4980047115435203}
+Round:77 - Active clients:[ 2 26  8]:
+
+Round Progress:  38%|████████████████████████████████████████████████████████████                                                                                                  | 76/200 [25:49<39:15, 19.00s/it]
+ server global model correct 337
+ Testing time:10.843 seconds
+ avg_test_acc: {'uniform': 0.2570556700229645, 'validclass': 0.2570556700229645, 'labeldist': 0.23614256083965302}
+ pfl_avg_test_acc: {'uniform': 0.2595982700586319, 'validclass': 0.2985141823689143, 'labeldist': 0.42567067344983417}
+
+Round Progress:  38%|████████████████████████████████████████████████████████████▊                                                                                                 | 77/200 [26:01<34:44, 16.95s/it]
+ Training time:17.384 seconds
+ server global model correct 304
+ Testing time:10.637 seconds
+ avg_test_acc: {'uniform': 0.23188406229019165, 'validclass': 0.23188406229019165, 'labeldist': 0.2341516613960266}
+ pfl_avg_test_acc: {'uniform': 0.2631578892469406, 'validclass': 0.3461858481168747, 'labeldist': 0.805277685324351}
+
+Round Progress:  39%|█████████████████████████████████████████████████████████████▌                                                                                                | 78/200 [26:29<41:14, 20.28s/it]
+ Training time:11.863 seconds
+ server global model correct 424
+ Testing time:10.785 seconds
+ avg_test_acc: {'uniform': 0.3234172463417053, 'validclass': 0.3234172463417053, 'labeldist': 0.35417860746383667}
+ pfl_avg_test_acc: {'uniform': 0.27739639083544415, 'validclass': 0.49511216084162396, 'labeldist': 0.6434650222460429}
+
+Round Progress:  40%|██████████████████████████████████████████████████████████████▍                                                                                               | 79/200 [26:51<42:21, 21.00s/it]
+ Training time:8.084 seconds
+ server global model correct 300
+ Testing time:10.698 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.26366641620794934, 'validclass': 0.36126100023587543, 'labeldist': 0.7062654991944631}
+
+Round Progress:  40%|███████████████████████████████████████████████████████████████▏                                                                                              | 80/200 [27:10<40:40, 20.34s/it]
+ Training time:8.630 seconds
+ server global model correct 482
+ Testing time:10.704 seconds
+ avg_test_acc: {'uniform': 0.3676582872867584, 'validclass': 0.3676582872867584, 'labeldist': 0.39013418555259705}
+ pfl_avg_test_acc: {'uniform': 0.2595982650915782, 'validclass': 0.32545938591162366, 'labeldist': 0.6327414015928904}
+ Best test accuracy:0.368. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  40%|███████████████████████████████████████████████████████████████▉                                                                                              | 81/200 [27:30<39:46, 20.05s/it]
+ Training time:1.409 seconds
+ server global model correct 489
+ Testing time:10.814 seconds
+ avg_test_acc: {'uniform': 0.3729977011680603, 'validclass': 0.3729977011680603, 'labeldist': 0.38386085629463196}
+ pfl_avg_test_acc: {'uniform': 0.3470633129278819, 'validclass': 0.2792704949776332, 'labeldist': 0.3010960916678111}
+ Best test accuracy:0.373. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  41%|████████████████████████████████████████████████████████████████▊                                                                                             | 82/200 [27:42<34:50, 17.71s/it]
+ Training time:8.046 seconds
+ server global model correct 312
+ Testing time:10.714 seconds
+ avg_test_acc: {'uniform': 0.2379862666130066, 'validclass': 0.2379862666130066, 'labeldist': 0.22104071080684662}
+ pfl_avg_test_acc: {'uniform': 0.29087211191654205, 'validclass': 0.2731635272502899, 'labeldist': 0.6225910782814026}
+
+Round Progress:  42%|█████████████████████████████████████████████████████████████████▌                                                                                            | 83/200 [28:01<35:09, 18.03s/it]
+ Training time:7.119 seconds
+ server global model correct 378
+ Testing time:10.707 seconds
+ avg_test_acc: {'uniform': 0.28832951188087463, 'validclass': 0.28832951188087463, 'labeldist': 0.26633507013320923}
+ pfl_avg_test_acc: {'uniform': 0.23061275978883108, 'validclass': 0.510830894112587, 'labeldist': 0.796003500620524}
+
+Round Progress:  42%|██████████████████████████████████████████████████████████████████▎                                                                                           | 84/200 [28:19<34:45, 17.98s/it]
+ Training time:10.539 seconds
+ server global model correct 342
+ Testing time:10.638 seconds
+ avg_test_acc: {'uniform': 0.260869562625885, 'validclass': 0.260869562625885, 'labeldist': 0.2587103247642517}
+ pfl_avg_test_acc: {'uniform': 0.2682430644830068, 'validclass': 0.3753010779619217, 'labeldist': 0.7157125870386759}
+
+Round Progress:  42%|███████████████████████████████████████████████████████████████████▏                                                                                          | 85/200 [28:40<36:18, 18.94s/it]
+ Training time:12.267 seconds
+ server global model correct 310
+ Testing time:10.762 seconds
+ avg_test_acc: {'uniform': 0.23646071553230286, 'validclass': 0.23646071553230286, 'labeldist': 0.21961355209350586}
+ pfl_avg_test_acc: {'uniform': 0.22298499941825867, 'validclass': 0.3134986360867818, 'labeldist': 0.6388336718082428}
+
+Round Progress:  43%|███████████████████████████████████████████████████████████████████▉                                                                                          | 86/200 [29:03<38:19, 20.17s/it]
+ Training time:10.093 seconds
+ server global model correct 324
+ Testing time:10.735 seconds
+ avg_test_acc: {'uniform': 0.2471395879983902, 'validclass': 0.2471395879983902, 'labeldist': 0.2478279322385788}
+ pfl_avg_test_acc: {'uniform': 0.23620645701885223, 'validclass': 0.37068580587704975, 'labeldist': 0.722965270280838}
+
+Round Progress:  44%|████████████████████████████████████████████████████████████████████▋                                                                                         | 87/200 [29:24<38:21, 20.37s/it]
+ Training time:4.945 seconds
+ server global model correct 309
+ Testing time:10.851 seconds
+ avg_test_acc: {'uniform': 0.235697939991951, 'validclass': 0.235697939991951, 'labeldist': 0.21889524161815643}
+ pfl_avg_test_acc: {'uniform': 0.2443427393833796, 'validclass': 0.276053527990977, 'labeldist': 0.37215838332970935}
+
+Round Progress:  44%|█████████████████████████████████████████████████████████████████████▌                                                                                        | 88/200 [29:39<35:28, 19.00s/it]
+ Training time:4.238 seconds
+
+Round Progress:  44%|██████████████████████████████████████████████████████████████████████▎                                                                                       | 89/200 [29:55<32:58, 17.82s/it]
+ Testing time:10.792 seconds
+ avg_test_acc: {'uniform': 0.27383676171302795, 'validclass': 0.27383676171302795, 'labeldist': 0.25362062454223633}
+ pfl_avg_test_acc: {'uniform': 0.2341723839441935, 'validclass': 0.28620027999083203, 'labeldist': 0.47687796006600064}
+Round:90 - Active clients:[17 24 26]:
+ Training time:4.725 seconds
+ server global model correct 320
+ Testing time:10.739 seconds
+ avg_test_acc: {'uniform': 0.24408848583698273, 'validclass': 0.24408848583698273, 'labeldist': 0.22652055323123932}
+ pfl_avg_test_acc: {'uniform': 0.2506992121537526, 'validclass': 0.32605497042338055, 'labeldist': 0.4628496567408244}
+
+Round Progress:  45%|███████████████████████████████████████████████████████████████████████                                                                                       | 90/200 [30:10<31:22, 17.11s/it]
+ Training time:20.493 seconds
+ server global model correct 459
+ Testing time:10.785 seconds
+ avg_test_acc: {'uniform': 0.3501144051551819, 'validclass': 0.3501144051551819, 'labeldist': 0.3784022033214569}
+ pfl_avg_test_acc: {'uniform': 0.3140096614758174, 'validclass': 0.549384186665217, 'labeldist': 0.8642507195472717}
+
+Round Progress:  46%|███████████████████████████████████████████████████████████████████████▉                                                                                      | 91/200 [30:41<38:48, 21.36s/it]
+ Training time:12.158 seconds
+ server global model correct 491
+ Testing time:10.629 seconds
+ avg_test_acc: {'uniform': 0.37452325224876404, 'validclass': 0.37452325224876404, 'labeldist': 0.3968627452850342}
+ pfl_avg_test_acc: {'uniform': 0.3267226020495097, 'validclass': 0.3682619780302048, 'labeldist': 0.47250984112421673}
+ Best test accuracy:0.375. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  46%|████████████████████████████████████████████████████████████████████████▋                                                                                     | 92/200 [31:04<39:13, 21.80s/it]
+ Training time:8.741 seconds
+ server global model correct 367
+ Testing time:10.728 seconds
+ avg_test_acc: {'uniform': 0.2799389660358429, 'validclass': 0.2799389660358429, 'labeldist': 0.2585477828979492}
+ pfl_avg_test_acc: {'uniform': 0.26341215272744495, 'validclass': 0.4337197889884313, 'labeldist': 0.9193648894627889}
+
+Round Progress:  46%|█████████████████████████████████████████████████████████████████████████▍                                                                                    | 93/200 [31:24<37:38, 21.10s/it]
+ Training time:11.131 seconds
+ server global model correct 300
+ Testing time:10.780 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23035850127538046, 'validclass': 0.3300224542617798, 'labeldist': 0.7311219970385233}
+
+Round Progress:  47%|██████████████████████████████████████████████████████████████████████████▎                                                                                   | 94/200 [31:45<37:43, 21.35s/it]
+ Training time:9.344 seconds
+ server global model correct 315
+ Testing time:10.806 seconds
+ avg_test_acc: {'uniform': 0.2402745932340622, 'validclass': 0.2402745932340622, 'labeldist': 0.2204134315252304}
+ pfl_avg_test_acc: {'uniform': 0.23366386691729227, 'validclass': 0.5488849977652231, 'labeldist': 0.7606903711954752}
+
+Round Progress:  48%|███████████████████████████████████████████████████████████████████████████                                                                                   | 95/200 [32:06<36:44, 21.00s/it]
+ Training time:6.832 seconds
+ server global model correct 367
+ Testing time:10.757 seconds
+ avg_test_acc: {'uniform': 0.2799389660358429, 'validclass': 0.2799389660358429, 'labeldist': 0.25903376936912537}
+ pfl_avg_test_acc: {'uniform': 0.27053140103816986, 'validclass': 0.6817920207977295, 'labeldist': 0.9510107040405273}
+
+Round Progress:  48%|███████████████████████████████████████████████████████████████████████████▊                                                                                  | 96/200 [32:23<34:37, 19.98s/it]
+ Training time:5.417 seconds
+ server global model correct 306
+ Testing time:10.822 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.24891939759254456, 'validclass': 0.40801746646563214, 'labeldist': 0.6458516220251719}
+
+Round Progress:  48%|████████████████████████████████████████████████████████████████████████████▋                                                                                 | 97/200 [32:39<32:22, 18.86s/it]
+ Training time:16.729 seconds
+ server global model correct 477
+ Testing time:10.671 seconds
+ avg_test_acc: {'uniform': 0.3638443946838379, 'validclass': 0.3638443946838379, 'labeldist': 0.38721799850463867}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.3762653370698293, 'labeldist': 0.7766969203948975}
+
+Round Progress:  49%|█████████████████████████████████████████████████████████████████████████████▍                                                                                | 98/200 [33:07<36:25, 21.43s/it]
+ Training time:5.571 seconds
+ server global model correct 302
+ Testing time:10.720 seconds
+ avg_test_acc: {'uniform': 0.23035851120948792, 'validclass': 0.23035851120948792, 'labeldist': 0.21119903028011322}
+ pfl_avg_test_acc: {'uniform': 0.2934146970510483, 'validclass': 0.5231788059075674, 'labeldist': 0.4683591028054555}
+
+Round Progress:  50%|██████████████████████████████████████████████████████████████████████████████▏                                                                               | 99/200 [33:23<33:29, 19.89s/it]
+ Training time:4.200 seconds
+ server global model correct 311
+ Testing time:10.686 seconds
+ avg_test_acc: {'uniform': 0.23722349107265472, 'validclass': 0.23722349107265472, 'labeldist': 0.21758776903152466}
+ pfl_avg_test_acc: {'uniform': 0.2629036257664363, 'validclass': 0.2632343719402949, 'labeldist': 0.5153536746899287}
+
+Round Progress:  50%|██████████████████████████████████████████████████████████████████████████████▌                                                                              | 100/200 [33:38<30:39, 18.40s/it]
+ Training time:17.169 seconds
+ server global model correct 440
+ Testing time:10.805 seconds
+ avg_test_acc: {'uniform': 0.3356216549873352, 'validclass': 0.3356216549873352, 'labeldist': 0.3294357359409332}
+ pfl_avg_test_acc: {'uniform': 0.31350113948186237, 'validclass': 0.4949588477611542, 'labeldist': 0.5550117890040079}
+
+Round Progress:  50%|███████████████████████████████████████████████████████████████████████████████▎                                                                             | 101/200 [34:06<35:06, 21.28s/it]
+ Training time:9.843 seconds
+ server global model correct 469
+ Testing time:10.886 seconds
+ avg_test_acc: {'uniform': 0.35774219036102295, 'validclass': 0.35774219036102295, 'labeldist': 0.36087116599082947}
+ pfl_avg_test_acc: {'uniform': 0.28832951188087463, 'validclass': 0.29815299312273663, 'labeldist': 0.6485470732053121}
+
+Round Progress:  51%|████████████████████████████████████████████████████████████████████████████████                                                                             | 102/200 [34:27<34:29, 21.12s/it]
+ Training time:6.753 seconds
+
+Round Progress:  52%|████████████████████████████████████████████████████████████████████████████████▊                                                                            | 103/200 [34:44<32:25, 20.06s/it]
+ Testing time:10.801 seconds
+ avg_test_acc: {'uniform': 0.274599552154541, 'validclass': 0.274599552154541, 'labeldist': 0.25352904200553894}
+ pfl_avg_test_acc: {'uniform': 0.2684973329305649, 'validclass': 0.37647711733977, 'labeldist': 0.8375976880391439}
+Round:104 - Active clients:[27 18 22]:
+ Training time:1.765 seconds
+ server global model correct 496
+ Testing time:10.740 seconds
+ avg_test_acc: {'uniform': 0.37833714485168457, 'validclass': 0.37833714485168457, 'labeldist': 0.3948062062263489}
+ pfl_avg_test_acc: {'uniform': 0.2868039707342784, 'validclass': 0.46252961953481037, 'labeldist': 0.6136826376120249}
+ Best test accuracy:0.378. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  52%|█████████████████████████████████████████████████████████████████████████████████▋                                                                           | 104/200 [34:57<28:28, 17.80s/it]
+ Training time:16.999 seconds
+ server global model correct 473
+ Testing time:10.813 seconds
+ avg_test_acc: {'uniform': 0.3607932925224304, 'validclass': 0.3607932925224304, 'labeldist': 0.36699047684669495}
+ pfl_avg_test_acc: {'uniform': 0.3015509843826294, 'validclass': 0.4672715961933136, 'labeldist': 0.6311466693878174}
+
+Round Progress:  52%|██████████████████████████████████████████████████████████████████████████████████▍                                                                          | 105/200 [35:25<32:57, 20.81s/it]
+ Training time:14.122 seconds
+ server global model correct 306
+ Testing time:10.759 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.24612254897753397, 'validclass': 0.37596211830774945, 'labeldist': 0.5838903387387594}
+
+Round Progress:  53%|███████████████████████████████████████████████████████████████████████████████████▏                                                                         | 106/200 [35:50<34:31, 22.04s/it]
+ Training time:10.088 seconds
+
+Round Progress:  54%|███████████████████████████████████████████████████████████████████████████████████▉                                                                         | 107/200 [36:11<33:41, 21.73s/it]
+ Testing time:10.916 seconds
+ avg_test_acc: {'uniform': 0.37147215008735657, 'validclass': 0.37147215008735657, 'labeldist': 0.3982316255569458}
+ pfl_avg_test_acc: {'uniform': 0.31477243701616925, 'validclass': 0.5379791756470998, 'labeldist': 0.5689910650253296}
+Round:108 - Active clients:[26  5 16]:
+ Training time:4.549 seconds
+ server global model correct 323
+ Testing time:10.907 seconds
+ avg_test_acc: {'uniform': 0.24637681245803833, 'validclass': 0.24637681245803833, 'labeldist': 0.2295055389404297}
+ pfl_avg_test_acc: {'uniform': 0.2593440115451813, 'validclass': 0.5670799911022186, 'labeldist': 0.557444304227829}
+
+Round Progress:  54%|████████████████████████████████████████████████████████████████████████████████████▊                                                                        | 108/200 [36:26<30:26, 19.86s/it]
+ Training time:8.008 seconds
+ server global model correct 356
+ Testing time:10.798 seconds
+ avg_test_acc: {'uniform': 0.27154844999313354, 'validclass': 0.27154844999313354, 'labeldist': 0.250703364610672}
+ pfl_avg_test_acc: {'uniform': 0.2359521985054016, 'validclass': 0.31123311320940655, 'labeldist': 0.5266293386618296}
+
+Round Progress:  55%|█████████████████████████████████████████████████████████████████████████████████████▌                                                                       | 109/200 [36:45<29:38, 19.54s/it]
+ Training time:10.723 seconds
+ server global model correct 312
+ Testing time:10.633 seconds
+ avg_test_acc: {'uniform': 0.2379862666130066, 'validclass': 0.2379862666130066, 'labeldist': 0.22624105215072632}
+ pfl_avg_test_acc: {'uniform': 0.23213831583658853, 'validclass': 0.25530076523621875, 'labeldist': 0.770432194073995}
+
+Round Progress:  55%|██████████████████████████████████████████████████████████████████████████████████████▎                                                                      | 110/200 [37:06<30:08, 20.10s/it]
+ Training time:3.565 seconds
+
+Round Progress:  56%|███████████████████████████████████████████████████████████████████████████████████████▏                                                                     | 111/200 [37:21<27:16, 18.39s/it]
+ Testing time:10.804 seconds
+ avg_test_acc: {'uniform': 0.27154844999313354, 'validclass': 0.27154844999313354, 'labeldist': 0.24982251226902008}
+ pfl_avg_test_acc: {'uniform': 0.25298753877480823, 'validclass': 0.3028627932071686, 'labeldist': 0.4578888813654582}
+Round:112 - Active clients:[ 2 21 13]:
+ Training time:8.081 seconds
+ server global model correct 300
+ Testing time:10.848 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.24383421738942465, 'validclass': 0.343498170375824, 'labeldist': 0.7229348619778951}
+
+Round Progress:  56%|███████████████████████████████████████████████████████████████████████████████████████▉                                                                     | 112/200 [37:40<27:12, 18.55s/it]
+ Training time:3.301 seconds
+ server global model correct 300
+ Testing time:10.651 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.26293057203292847, 'labeldist': 0.4292258421579997}
+
+Round Progress:  56%|████████████████████████████████████████████████████████████████████████████████████████▋                                                                    | 113/200 [37:54<24:53, 17.17s/it]
+ Training time:7.690 seconds
+ server global model correct 300
+ Testing time:10.868 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23035850127538046, 'validclass': 0.31076796849568683, 'labeldist': 0.2741809229676922}
+
+Round Progress:  57%|█████████████████████████████████████████████████████████████████████████████████████████▍                                                                   | 114/200 [38:12<25:12, 17.59s/it]
+ Training time:14.193 seconds
+ server global model correct 275
+ Testing time:10.796 seconds
+ avg_test_acc: {'uniform': 0.2097635418176651, 'validclass': 0.2097635418176651, 'labeldist': 0.20366477966308594}
+ pfl_avg_test_acc: {'uniform': 0.23544368147850037, 'validclass': 0.36232811709245044, 'labeldist': 0.7353758861621221}
+
+Round Progress:  57%|██████████████████████████████████████████████████████████████████████████████████████████▎                                                                  | 115/200 [38:37<28:03, 19.81s/it]
+ Training time:17.760 seconds
+ server global model correct 405
+ Testing time:10.738 seconds
+ avg_test_acc: {'uniform': 0.30892449617385864, 'validclass': 0.30892449617385864, 'labeldist': 0.3415403664112091}
+ pfl_avg_test_acc: {'uniform': 0.2837528685728709, 'validclass': 0.43537914752960205, 'labeldist': 0.9281375209490458}
+
+Round Progress:  58%|███████████████████████████████████████████████████████████████████████████████████████████                                                                  | 116/200 [39:06<31:23, 22.43s/it]
+ Training time:11.984 seconds
+ server global model correct 414
+ Testing time:10.706 seconds
+ avg_test_acc: {'uniform': 0.31578946113586426, 'validclass': 0.31578946113586426, 'labeldist': 0.3465644121170044}
+ pfl_avg_test_acc: {'uniform': 0.28604119022687274, 'validclass': 0.3478328784306844, 'labeldist': 0.7345225811004639}
+
+Round Progress:  58%|███████████████████████████████████████████████████████████████████████████████████████████▊                                                                 | 117/200 [39:29<31:08, 22.51s/it]
+ Training time:15.195 seconds
+ server global model correct 427
+ Testing time:10.808 seconds
+ avg_test_acc: {'uniform': 0.32570555806159973, 'validclass': 0.32570555806159973, 'labeldist': 0.3564606308937073}
+ pfl_avg_test_acc: {'uniform': 0.3315535287062327, 'validclass': 0.37010059629877406, 'labeldist': 0.5394784666908284}
+
+Round Progress:  59%|████████████████████████████████████████████████████████████████████████████████████████████▋                                                                | 118/200 [39:55<32:12, 23.57s/it]
+ Training time:7.850 seconds
+ server global model correct 306
+ Testing time:10.788 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.30002543330192566, 'validclass': 0.3269624685247739, 'labeldist': 0.40884023035566014}
+
+Round Progress:  60%|█████████████████████████████████████████████████████████████████████████████████████████████▍                                                               | 119/200 [40:13<29:49, 22.09s/it]
+ Training time:7.961 seconds
+ server global model correct 306
+ Testing time:10.941 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.2598525236050288, 'validclass': 0.3817524164915085, 'labeldist': 0.8139482339223226}
+
+Round Progress:  60%|██████████████████████████████████████████████████████████████████████████████████████████████▏                                                              | 120/200 [40:32<28:10, 21.14s/it]
+ Training time:9.968 seconds
+ server global model correct 319
+ Testing time:10.776 seconds
+ avg_test_acc: {'uniform': 0.24332571029663086, 'validclass': 0.24332571029663086, 'labeldist': 0.24191351234912872}
+ pfl_avg_test_acc: {'uniform': 0.24180015424887338, 'validclass': 0.29445278147856396, 'labeldist': 0.4261614941060543}
+
+Round Progress:  60%|██████████████████████████████████████████████████████████████████████████████████████████████▉                                                              | 121/200 [40:53<27:40, 21.02s/it]
+ Training time:2.485 seconds
+ server global model correct 454
+ Testing time:10.780 seconds
+ avg_test_acc: {'uniform': 0.34630054235458374, 'validclass': 0.34630054235458374, 'labeldist': 0.3763710856437683}
+ pfl_avg_test_acc: {'uniform': 0.3005339503288269, 'validclass': 0.3890484770139058, 'labeldist': 0.5765698800484339}
+
+Round Progress:  61%|███████████████████████████████████████████████████████████████████████████████████████████████▊                                                             | 122/200 [41:06<24:18, 18.70s/it]
+ Training time:19.085 seconds
+ server global model correct 452
+ Testing time:10.794 seconds
+ avg_test_acc: {'uniform': 0.34477499127388, 'validclass': 0.34477499127388, 'labeldist': 0.3561858832836151}
+ pfl_avg_test_acc: {'uniform': 0.28400712211926776, 'validclass': 0.4120002289613088, 'labeldist': 0.5640818277994791}
+
+Round Progress:  62%|████████████████████████████████████████████████████████████████████████████████████████████████▌                                                            | 123/200 [41:36<28:18, 22.06s/it]
+ Training time:8.730 seconds
+ server global model correct 386
+ Testing time:10.763 seconds
+ avg_test_acc: {'uniform': 0.29443174600601196, 'validclass': 0.29443174600601196, 'labeldist': 0.28253743052482605}
+ pfl_avg_test_acc: {'uniform': 0.2733282496531804, 'validclass': 0.39736656347910565, 'labeldist': 0.694700280825297}
+
+Round Progress:  62%|█████████████████████████████████████████████████████████████████████████████████████████████████▎                                                           | 124/200 [41:56<26:58, 21.29s/it]
+ Training time:1.785 seconds
+ server global model correct 307
+ Testing time:10.804 seconds
+ avg_test_acc: {'uniform': 0.23417238891124725, 'validclass': 0.23417238891124725, 'labeldist': 0.21569164097309113}
+ pfl_avg_test_acc: {'uniform': 0.252479021747907, 'validclass': 0.5224421322345734, 'labeldist': 0.6339348157246908}
+
+Round Progress:  62%|██████████████████████████████████████████████████████████████████████████████████████████████████▏                                                          | 125/200 [42:08<23:21, 18.69s/it]
+ Training time:13.590 seconds
+ server global model correct 475
+ Testing time:10.745 seconds
+ avg_test_acc: {'uniform': 0.36231884360313416, 'validclass': 0.36231884360313416, 'labeldist': 0.37518057227134705}
+ pfl_avg_test_acc: {'uniform': 0.29443173110485077, 'validclass': 0.4306325912475586, 'labeldist': 0.6793102324008942}
+
+Round Progress:  63%|██████████████████████████████████████████████████████████████████████████████████████████████████▉                                                          | 126/200 [42:33<25:08, 20.38s/it]
+ Training time:9.426 seconds
+
+Round Progress:  64%|███████████████████████████████████████████████████████████████████████████████████████████████████▋                                                         | 127/200 [42:53<24:42, 20.31s/it]
+ Testing time:10.699 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2934146871169408, 'validclass': 0.37498771647612256, 'labeldist': 0.6727309425671896}
+Round:128 - Active clients:[ 7  4 14]:
+ Training time:13.429 seconds
+
+Round Progress:  64%|████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                        | 128/200 [43:17<25:48, 21.51s/it]
+ Testing time:10.834 seconds
+ avg_test_acc: {'uniform': 0.3821510374546051, 'validclass': 0.3821510374546051, 'labeldist': 0.3826783001422882}
+ pfl_avg_test_acc: {'uniform': 0.2880752583344777, 'validclass': 0.3916700581709544, 'labeldist': 0.4581478188435237}
+ Best test accuracy:0.382. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+Round:129 - Active clients:[15  3 29]:
+ Training time:10.653 seconds
+ server global model correct 266
+ Testing time:10.788 seconds
+ avg_test_acc: {'uniform': 0.2028985470533371, 'validclass': 0.2028985470533371, 'labeldist': 0.19540216028690338}
+ pfl_avg_test_acc: {'uniform': 0.2903635899225871, 'validclass': 0.3784802456696828, 'labeldist': 0.714246908823649}
+
+Round Progress:  64%|█████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                       | 129/200 [43:38<25:25, 21.49s/it]
+ Training time:1.207 seconds
+ server global model correct 372
+ Testing time:10.825 seconds
+ avg_test_acc: {'uniform': 0.2837528586387634, 'validclass': 0.2837528586387634, 'labeldist': 0.2865922451019287}
+ pfl_avg_test_acc: {'uniform': 0.2557843824227651, 'validclass': 0.35066039363543194, 'labeldist': 0.44954729080200195}
+
+Round Progress:  65%|██████████████████████████████████████████████████████████████████████████████████████████████████████                                                       | 130/200 [43:50<21:45, 18.65s/it]
+ Training time:4.080 seconds
+ server global model correct 306
+ Testing time:10.847 seconds
+ avg_test_acc: {'uniform': 0.23340961337089539, 'validclass': 0.23340961337089539, 'labeldist': 0.21689270436763763}
+ pfl_avg_test_acc: {'uniform': 0.24841088553269705, 'validclass': 0.3687090078989665, 'labeldist': 0.5673496027787527}
+
+Round Progress:  66%|██████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                      | 131/200 [44:05<20:10, 17.54s/it]
+ Training time:10.495 seconds
+ server global model correct 470
+ Testing time:10.778 seconds
+ avg_test_acc: {'uniform': 0.3585049510002136, 'validclass': 0.3585049510002136, 'labeldist': 0.3633226156234741}
+ pfl_avg_test_acc: {'uniform': 0.27968472242355347, 'validclass': 0.4211188455422719, 'labeldist': 0.40968139345447224}
+
+Round Progress:  66%|███████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                     | 132/200 [44:27<21:09, 18.67s/it]
+ Training time:20.521 seconds
+ server global model correct 488
+ Testing time:10.731 seconds
+ avg_test_acc: {'uniform': 0.37223494052886963, 'validclass': 0.37223494052886963, 'labeldist': 0.3953514099121094}
+ pfl_avg_test_acc: {'uniform': 0.25705568492412567, 'validclass': 0.31069901088873547, 'labeldist': 0.7987020015716553}
+
+Round Progress:  66%|████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                    | 133/200 [44:58<25:04, 22.45s/it]
+ Training time:13.516 seconds
+ server global model correct 310
+ Testing time:10.853 seconds
+ avg_test_acc: {'uniform': 0.23646071553230286, 'validclass': 0.23646071553230286, 'labeldist': 0.23834198713302612}
+ pfl_avg_test_acc: {'uniform': 0.2649377038081487, 'validclass': 0.2649377038081487, 'labeldist': 0.7128254075845083}
+
+Round Progress:  67%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                   | 134/200 [45:22<25:20, 23.03s/it]
+ Training time:4.251 seconds
+ server global model correct 324
+ Testing time:10.655 seconds
+ avg_test_acc: {'uniform': 0.2471395879983902, 'validclass': 0.2471395879983902, 'labeldist': 0.2473483383655548}
+ pfl_avg_test_acc: {'uniform': 0.23900330563386282, 'validclass': 0.26307112475236255, 'labeldist': 0.34811268871029216}
+
+Round Progress:  68%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                   | 135/200 [45:37<22:19, 20.60s/it]
+ Training time:4.628 seconds
+ server global model correct 356
+ Testing time:10.746 seconds
+ avg_test_acc: {'uniform': 0.27154844999313354, 'validclass': 0.27154844999313354, 'labeldist': 0.26305097341537476}
+ pfl_avg_test_acc: {'uniform': 0.2471395879983902, 'validclass': 0.2678545167048772, 'labeldist': 0.40732075770696}
+
+Round Progress:  68%|██████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                  | 136/200 [45:53<20:18, 19.04s/it]
+ Training time:1.903 seconds
+ server global model correct 462
+ Testing time:10.854 seconds
+ avg_test_acc: {'uniform': 0.3524027466773987, 'validclass': 0.3524027466773987, 'labeldist': 0.3583223521709442}
+ pfl_avg_test_acc: {'uniform': 0.29417747259140015, 'validclass': 0.4178559184074402, 'labeldist': 0.5286433696746826}
+
+Round Progress:  68%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                 | 137/200 [46:05<18:01, 17.16s/it]
+ Training time:6.031 seconds
+ server global model correct 477
+ Testing time:10.835 seconds
+ avg_test_acc: {'uniform': 0.3638443946838379, 'validclass': 0.3638443946838379, 'labeldist': 0.37532666325569153}
+ pfl_avg_test_acc: {'uniform': 0.29417746762434643, 'validclass': 0.34654497106870014, 'labeldist': 0.7032502690951029}
+
+Round Progress:  69%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                | 138/200 [46:22<17:38, 17.08s/it]
+ Training time:9.410 seconds
+ server global model correct 300
+ Testing time:10.835 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.27053139607111615, 'validclass': 0.35725778837998706, 'labeldist': 0.6743626892566681}
+
+Round Progress:  70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                | 139/200 [46:43<18:20, 18.03s/it]
+ Training time:18.516 seconds
+ server global model correct 320
+ Testing time:10.881 seconds
+ avg_test_acc: {'uniform': 0.24408848583698273, 'validclass': 0.24408848583698273, 'labeldist': 0.24826517701148987}
+ pfl_avg_test_acc: {'uniform': 0.23925756414731345, 'validclass': 0.2733551909526189, 'labeldist': 0.7561066548029581}
+
+Round Progress:  70%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                               | 140/200 [47:12<21:26, 21.45s/it]
+ Training time:12.716 seconds
+ server global model correct 308
+ Testing time:10.851 seconds
+ avg_test_acc: {'uniform': 0.23493516445159912, 'validclass': 0.23493516445159912, 'labeldist': 0.2369730919599533}
+ pfl_avg_test_acc: {'uniform': 0.25654715796311695, 'validclass': 0.29678235948085785, 'labeldist': 0.5641614695390066}
+
+Round Progress:  70%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                              | 141/200 [47:36<21:43, 22.09s/it]
+ Training time:17.444 seconds
+ server global model correct 333
+ Testing time:10.641 seconds
+ avg_test_acc: {'uniform': 0.254004567861557, 'validclass': 0.254004567861557, 'labeldist': 0.2526910901069641}
+ pfl_avg_test_acc: {'uniform': 0.25197050472100574, 'validclass': 0.30410487949848175, 'labeldist': 0.5568357991675535}
+
+Round Progress:  71%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                             | 142/200 [48:04<23:05, 23.89s/it]
+ Training time:14.050 seconds
+ server global model correct 289
+ Testing time:10.902 seconds
+ avg_test_acc: {'uniform': 0.22044241428375244, 'validclass': 0.22044241428375244, 'labeldist': 0.20576736330986023}
+ pfl_avg_test_acc: {'uniform': 0.2430714468161265, 'validclass': 0.3277708987394969, 'labeldist': 0.72772349913915}
+
+Round Progress:  72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                            | 143/200 [48:29<23:00, 24.22s/it]
+ Training time:18.594 seconds
+ server global model correct 300
+ Testing time:10.722 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2224477231502533}
+ pfl_avg_test_acc: {'uniform': 0.24637681245803833, 'validclass': 0.30708486835161847, 'labeldist': 0.539359470208486}
+
+Round Progress:  72%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                            | 144/200 [48:58<24:02, 25.76s/it]
+ Training time:4.991 seconds
+ server global model correct 310
+ Testing time:10.756 seconds
+ avg_test_acc: {'uniform': 0.23646071553230286, 'validclass': 0.23646071553230286, 'labeldist': 0.23173888027668}
+ pfl_avg_test_acc: {'uniform': 0.27129417657852173, 'validclass': 0.2996625204881032, 'labeldist': 0.42696817715962726}
+
+Round Progress:  72%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                           | 145/200 [49:14<20:51, 22.76s/it]
+ Training time:8.614 seconds
+ server global model correct 455
+ Testing time:10.855 seconds
+ avg_test_acc: {'uniform': 0.3470633029937744, 'validclass': 0.3470633029937744, 'labeldist': 0.3719981014728546}
+ pfl_avg_test_acc: {'uniform': 0.3061276475588481, 'validclass': 0.5942119558652242, 'labeldist': 0.8424114187558492}
+
+Round Progress:  73%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                          | 146/200 [49:33<19:36, 21.78s/it]
+ Training time:5.336 seconds
+ server global model correct 485
+ Testing time:10.855 seconds
+ avg_test_acc: {'uniform': 0.36994659900665283, 'validclass': 0.36994659900665283, 'labeldist': 0.388412207365036}
+ pfl_avg_test_acc: {'uniform': 0.3071446667114894, 'validclass': 0.3481588065624237, 'labeldist': 0.6217289914687475}
+
+Round Progress:  74%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                         | 147/200 [49:49<17:45, 20.10s/it]
+ Training time:5.347 seconds
+ server global model correct 326
+ Testing time:10.894 seconds
+ avg_test_acc: {'uniform': 0.24866513907909393, 'validclass': 0.24866513907909393, 'labeldist': 0.2348630726337433}
+ pfl_avg_test_acc: {'uniform': 0.3117213348547618, 'validclass': 0.4043288230895996, 'labeldist': 0.5876760482788086}
+
+Round Progress:  74%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                        | 148/200 [50:06<16:25, 18.95s/it]
+ Training time:6.067 seconds
+ server global model correct 285
+ Testing time:10.841 seconds
+ avg_test_acc: {'uniform': 0.21739129722118378, 'validclass': 0.21739129722118378, 'labeldist': 0.20981477200984955}
+ pfl_avg_test_acc: {'uniform': 0.23874903718630472, 'validclass': 0.5496110121409098, 'labeldist': 0.6790328919887543}
+
+Round Progress:  74%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                        | 149/200 [50:23<15:35, 18.35s/it]
+ Training time:23.649 seconds
+
+Round Progress:  75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                       | 150/200 [50:57<19:18, 23.17s/it]
+ Testing time:10.748 seconds
+ avg_test_acc: {'uniform': 0.3073989450931549, 'validclass': 0.3073989450931549, 'labeldist': 0.34003913402557373}
+ pfl_avg_test_acc: {'uniform': 0.28502415120601654, 'validclass': 0.3469667285680771, 'labeldist': 0.941074550151825}
+Round:151 - Active clients:[ 1  3 13]:
+ Training time:6.945 seconds
+ server global model correct 443
+ Testing time:10.764 seconds
+ avg_test_acc: {'uniform': 0.337909996509552, 'validclass': 0.337909996509552, 'labeldist': 0.36663368344306946}
+ pfl_avg_test_acc: {'uniform': 0.2827358196179072, 'validclass': 0.4103609323501587, 'labeldist': 0.7956657807032267}
+
+Round Progress:  76%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                      | 151/200 [51:15<17:35, 21.54s/it]
+ Training time:3.657 seconds
+ server global model correct 456
+ Testing time:10.831 seconds
+ avg_test_acc: {'uniform': 0.3478260934352875, 'validclass': 0.3478260934352875, 'labeldist': 0.37549129128456116}
+ pfl_avg_test_acc: {'uniform': 0.3417238692442576, 'validclass': 0.38563897212346393, 'labeldist': 0.43164368470509845}
+
+Round Progress:  76%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                     | 152/200 [51:29<15:32, 19.43s/it]
+ Training time:8.438 seconds
+ server global model correct 388
+ Testing time:10.724 seconds
+ avg_test_acc: {'uniform': 0.2959572970867157, 'validclass': 0.2959572970867157, 'labeldist': 0.2915818989276886}
+ pfl_avg_test_acc: {'uniform': 0.2903635899225871, 'validclass': 0.33059879144032794, 'labeldist': 0.42084001501401264}
+
+Round Progress:  76%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                     | 153/200 [51:48<15:09, 19.35s/it]
+ Training time:2.371 seconds
+ server global model correct 406
+ Testing time:10.823 seconds
+ avg_test_acc: {'uniform': 0.3096872568130493, 'validclass': 0.3096872568130493, 'labeldist': 0.2966054379940033}
+ pfl_avg_test_acc: {'uniform': 0.2880752583344777, 'validclass': 0.38036617636680603, 'labeldist': 0.4090450207392375}
+
+Round Progress:  77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                    | 154/200 [52:02<13:25, 17.50s/it]
+ Training time:14.854 seconds
+
+Round Progress:  78%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                   | 155/200 [52:27<14:57, 19.95s/it]
+ Testing time:10.787 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.2827358196179072, 'validclass': 0.490313599507014, 'labeldist': 0.6737369696299235}
+Round:156 - Active clients:[ 8  7 24]:
+ Training time:9.687 seconds
+ server global model correct 398
+ Testing time:10.835 seconds
+ avg_test_acc: {'uniform': 0.3035850524902344, 'validclass': 0.3035850524902344, 'labeldist': 0.2931043207645416}
+ pfl_avg_test_acc: {'uniform': 0.2743452787399292, 'validclass': 0.41313046713670093, 'labeldist': 0.4826386372248332}
+
+Round Progress:  78%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                  | 156/200 [52:48<14:45, 20.13s/it]
+ Training time:9.524 seconds
+ server global model correct 500
+ Testing time:10.797 seconds
+ avg_test_acc: {'uniform': 0.38138824701309204, 'validclass': 0.38138824701309204, 'labeldist': 0.3827052712440491}
+ pfl_avg_test_acc: {'uniform': 0.29417746762434643, 'validclass': 0.3505644102891286, 'labeldist': 0.327136293053627}
+
+Round Progress:  78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                 | 157/200 [53:08<14:28, 20.19s/it]
+ Training time:8.951 seconds
+ server global model correct 381
+ Testing time:10.732 seconds
+ avg_test_acc: {'uniform': 0.29061785340309143, 'validclass': 0.29061785340309143, 'labeldist': 0.28476861119270325}
+ pfl_avg_test_acc: {'uniform': 0.2812102735042572, 'validclass': 0.33507439494132996, 'labeldist': 0.542066365480423}
+
+Round Progress:  79%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                 | 158/200 [53:28<14:01, 20.04s/it]
+ Training time:12.988 seconds
+ server global model correct 455
+ Testing time:10.793 seconds
+ avg_test_acc: {'uniform': 0.3470633029937744, 'validclass': 0.3470633029937744, 'labeldist': 0.3746660649776459}
+ pfl_avg_test_acc: {'uniform': 0.30765318870544434, 'validclass': 0.40632665157318115, 'labeldist': 0.7241458594799042}
+
+Round Progress:  80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                | 159/200 [53:52<14:28, 21.17s/it]
+ Training time:15.014 seconds
+ server global model correct 443
+ Testing time:10.714 seconds
+ avg_test_acc: {'uniform': 0.337909996509552, 'validclass': 0.337909996509552, 'labeldist': 0.3679390549659729}
+ pfl_avg_test_acc: {'uniform': 0.33282481630643207, 'validclass': 0.31399856011072796, 'labeldist': 0.6578525801499685}
+
+Round Progress:  80%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                               | 160/200 [54:18<15:01, 22.55s/it]
+ Training time:12.922 seconds
+ server global model correct 463
+ Testing time:10.832 seconds
+ avg_test_acc: {'uniform': 0.35316553711891174, 'validclass': 0.35316553711891174, 'labeldist': 0.35930219292640686}
+ pfl_avg_test_acc: {'uniform': 0.27027714252471924, 'validclass': 0.3845080037911733, 'labeldist': 0.7425399919350942}
+
+Round Progress:  80%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                              | 161/200 [54:41<14:53, 22.91s/it]
+ Training time:4.900 seconds
+ server global model correct 382
+ Testing time:10.830 seconds
+ avg_test_acc: {'uniform': 0.2913806140422821, 'validclass': 0.2913806140422821, 'labeldist': 0.29185083508491516}
+ pfl_avg_test_acc: {'uniform': 0.3068904181321462, 'validclass': 0.3894107441107432, 'labeldist': 0.4277137517929077}
+
+Round Progress:  81%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 162/200 [54:57<13:08, 20.76s/it]
+ Training time:16.430 seconds
+ server global model correct 300
+ Testing time:10.872 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.3170335938533147, 'labeldist': 0.7132484416166941}
+
+Round Progress:  82%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                             | 163/200 [55:24<14:00, 22.73s/it]
+ Training time:4.874 seconds
+ server global model correct 300
+ Testing time:10.758 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.26671750843524933, 'validclass': 0.43195714553197223, 'labeldist': 0.436481053630511}
+
+Round Progress:  82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                            | 164/200 [55:40<12:21, 20.61s/it]
+ Training time:1.588 seconds
+ server global model correct 300
+ Testing time:10.858 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22075055042902628, 'labeldist': 0.2855084538459778}
+
+Round Progress:  82%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                           | 165/200 [55:52<10:35, 18.17s/it]
+ Training time:9.479 seconds
+ server global model correct 304
+ Testing time:10.896 seconds
+ avg_test_acc: {'uniform': 0.23188406229019165, 'validclass': 0.23188406229019165, 'labeldist': 0.21315868198871613}
+
+Round Progress:  83%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                          | 166/200 [56:13<10:40, 18.84s/it]
+Round:167 - Active clients:[ 2 24 20]:
+ Training time:8.920 seconds
+ server global model correct 300
+ Testing time:10.933 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.23290109634399414, 'validclass': 0.28779739638169605, 'labeldist': 0.35991162061691284}
+
+Round Progress:  84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                          | 167/200 [56:33<10:31, 19.15s/it]
+ Training time:8.023 seconds
+ server global model correct 356
+ Testing time:10.843 seconds
+ avg_test_acc: {'uniform': 0.27154844999313354, 'validclass': 0.27154844999313354, 'labeldist': 0.26527318358421326}
+ pfl_avg_test_acc: {'uniform': 0.24434274435043335, 'validclass': 0.17170275561511517, 'labeldist': 0.26832415039340657}
+
+Round Progress:  84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                         | 168/200 [56:52<10:10, 19.07s/it]
+ Training time:12.356 seconds
+ server global model correct 523
+ Testing time:10.777 seconds
+ avg_test_acc: {'uniform': 0.3989320993423462, 'validclass': 0.3989320993423462, 'labeldist': 0.41155222058296204}
+ pfl_avg_test_acc: {'uniform': 0.2730739861726761, 'validclass': 0.37047924598058063, 'labeldist': 0.7092271943887075}
+ Best test accuracy:0.399. Best server model is updatded and saved at ./Braintumor_FedNH/FedNH_braintumor_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_30_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_False_no_norm_False_best_global_model.pkl!
+
+Round Progress:  84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                        | 169/200 [57:15<10:29, 20.30s/it]
+ Training time:6.728 seconds
+ server global model correct 378
+ Testing time:10.794 seconds
+ avg_test_acc: {'uniform': 0.28832951188087463, 'validclass': 0.28832951188087463, 'labeldist': 0.27707454562187195}
+ pfl_avg_test_acc: {'uniform': 0.30460208654403687, 'validclass': 0.2775883674621582, 'labeldist': 0.5772828062375387}
+
+Round Progress:  85%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                       | 170/200 [57:32<09:44, 19.48s/it]
+ Training time:13.224 seconds
+ server global model correct 462
+ Testing time:10.697 seconds
+ avg_test_acc: {'uniform': 0.3524027466773987, 'validclass': 0.3524027466773987, 'labeldist': 0.37118130922317505}
+ pfl_avg_test_acc: {'uniform': 0.2697686304648717, 'validclass': 0.33453286190827686, 'labeldist': 0.5815865298112234}
+
+Round Progress:  86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                      | 171/200 [57:56<10:03, 20.81s/it]
+ Training time:15.273 seconds
+ server global model correct 419
+ Testing time:10.851 seconds
+ avg_test_acc: {'uniform': 0.3196033537387848, 'validclass': 0.3196033537387848, 'labeldist': 0.32243189215660095}
+ pfl_avg_test_acc: {'uniform': 0.27383677164713544, 'validclass': 0.403276522954305, 'labeldist': 0.5565178592999777}
+
+Round Progress:  86%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                      | 172/200 [58:22<10:27, 22.41s/it]
+ Training time:7.491 seconds
+ server global model correct 499
+ Testing time:10.889 seconds
+ avg_test_acc: {'uniform': 0.38062548637390137, 'validclass': 0.38062548637390137, 'labeldist': 0.40042632818222046}
+ pfl_avg_test_acc: {'uniform': 0.28985507289568585, 'validclass': 0.6148292819658915, 'labeldist': 0.786634216705958}
+
+Round Progress:  86%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                     | 173/200 [58:41<09:32, 21.21s/it]
+ Training time:3.126 seconds
+ server global model correct 466
+ Testing time:10.752 seconds
+ avg_test_acc: {'uniform': 0.35545384883880615, 'validclass': 0.35545384883880615, 'labeldist': 0.3637450337409973}
+ pfl_avg_test_acc: {'uniform': 0.3638443946838379, 'validclass': 0.29493267834186554, 'labeldist': 0.42752983669439953}
+
+Round Progress:  87%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                    | 174/200 [58:55<08:14, 19.01s/it]
+ Training time:3.976 seconds
+ server global model correct 435
+ Testing time:10.867 seconds
+ avg_test_acc: {'uniform': 0.33180779218673706, 'validclass': 0.33180779218673706, 'labeldist': 0.32637450098991394}
+ pfl_avg_test_acc: {'uniform': 0.30689041316509247, 'validclass': 0.25511254370212555, 'labeldist': 0.45782865087191266}
+
+Round Progress:  88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                   | 175/200 [59:10<07:24, 17.77s/it]
+ Training time:2.343 seconds
+ server global model correct 493
+ Testing time:10.818 seconds
+ avg_test_acc: {'uniform': 0.3760488033294678, 'validclass': 0.3760488033294678, 'labeldist': 0.3828868567943573}
+ pfl_avg_test_acc: {'uniform': 0.34274091323216754, 'validclass': 0.2925530821084976, 'labeldist': 0.37997303406397503}
+
+Round Progress:  88%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                  | 176/200 [59:23<06:33, 16.40s/it]
+ Training time:5.380 seconds
+ server global model correct 377
+ Testing time:10.831 seconds
+ avg_test_acc: {'uniform': 0.28756675124168396, 'validclass': 0.28756675124168396, 'labeldist': 0.28249457478523254}
+ pfl_avg_test_acc: {'uniform': 0.32036613424619037, 'validclass': 0.39572760462760925, 'labeldist': 0.6171832581361135}
+
+Round Progress:  88%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                  | 177/200 [59:39<06:16, 16.35s/it]
+ Training time:8.167 seconds
+ server global model correct 318
+ Testing time:10.863 seconds
+ avg_test_acc: {'uniform': 0.242562934756279, 'validclass': 0.242562934756279, 'labeldist': 0.2271599918603897}
+ pfl_avg_test_acc: {'uniform': 0.23086702326933542, 'validclass': 0.28036749362945557, 'labeldist': 0.5267921388149261}
+
+Round Progress:  89%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 178/200 [59:58<06:17, 17.16s/it]
+ Training time:19.927 seconds
+ server global model correct 413
+ Testing time:10.885 seconds
+ avg_test_acc: {'uniform': 0.3150267004966736, 'validclass': 0.3150267004966736, 'labeldist': 0.3178286850452423}
+ pfl_avg_test_acc: {'uniform': 0.2644291917483012, 'validclass': 0.38805122176806134, 'labeldist': 0.5702920258045197}
+
+Round Progress:  90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                | 179/200 [1:00:29<07:26, 21.26s/it]
+ Training time:19.848 seconds
+
+Round Progress:  90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌               | 180/200 [1:01:00<08:01, 24.07s/it]
+ Testing time:10.742 seconds
+ avg_test_acc: {'uniform': 0.2234935164451599, 'validclass': 0.2234935164451599, 'labeldist': 0.21302156150341034}
+ pfl_avg_test_acc: {'uniform': 0.24180015424887338, 'validclass': 0.26488715906937915, 'labeldist': 0.8267494440078735}
+Round:181 - Active clients:[ 5 12 10]:
+ Training time:16.298 seconds
+ server global model correct 300
+ Testing time:10.863 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2329010864098867, 'validclass': 0.27937688926855725, 'labeldist': 0.818540096282959}
+
+Round Progress:  90%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎              | 181/200 [1:01:27<07:55, 25.00s/it]
+ Training time:20.078 seconds
+
+Round Progress:  91%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████              | 182/200 [1:01:58<08:02, 26.79s/it]
+ Testing time:10.885 seconds
+ avg_test_acc: {'uniform': 0.24790236353874207, 'validclass': 0.24790236353874207, 'labeldist': 0.2434772104024887}
+ pfl_avg_test_acc: {'uniform': 0.23010424276192984, 'validclass': 0.24372451504071554, 'labeldist': 0.6633705298105875}
+Round:183 - Active clients:[ 4 10 26]:
+ Training time:12.906 seconds
+
+Round Progress:  92%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊             | 183/200 [1:02:22<07:20, 25.91s/it]
+ Testing time:10.924 seconds
+ avg_test_acc: {'uniform': 0.24561403691768646, 'validclass': 0.24561403691768646, 'labeldist': 0.2459106296300888}
+ pfl_avg_test_acc: {'uniform': 0.22781591614087424, 'validclass': 0.2610042740901311, 'labeldist': 0.5725335478782654}
+Round:184 - Active clients:[29 12  7]:
+ Training time:20.583 seconds
+ server global model correct 489
+ Testing time:10.826 seconds
+ avg_test_acc: {'uniform': 0.3729977011680603, 'validclass': 0.3729977011680603, 'labeldist': 0.3948215842247009}
+ pfl_avg_test_acc: {'uniform': 0.29290618002414703, 'validclass': 0.4176054000854492, 'labeldist': 0.7331638336181641}
+
+Round Progress:  92%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌            | 184/200 [1:02:53<07:21, 27.57s/it]
+ Training time:7.935 seconds
+
+Round Progress:  92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍           | 185/200 [1:03:12<06:13, 24.93s/it]
+ Testing time:10.807 seconds
+ avg_test_acc: {'uniform': 0.25324180722236633, 'validclass': 0.25324180722236633, 'labeldist': 0.2539271116256714}
+ pfl_avg_test_acc: {'uniform': 0.27968471745649975, 'validclass': 0.3047426889340083, 'labeldist': 0.4873584409554799}
+Round:186 - Active clients:[15 10  6]:
+ Training time:18.635 seconds
+ server global model correct 467
+ Testing time:10.920 seconds
+ avg_test_acc: {'uniform': 0.3562166392803192, 'validclass': 0.3562166392803192, 'labeldist': 0.37854722142219543}
+ pfl_avg_test_acc: {'uniform': 0.26264937222003937, 'validclass': 0.38537919024626416, 'labeldist': 0.9413242936134338}
+
+Round Progress:  93%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏          | 186/200 [1:03:41<06:08, 26.32s/it]
+ Training time:14.633 seconds
+ server global model correct 270
+ Testing time:10.747 seconds
+ avg_test_acc: {'uniform': 0.20594966411590576, 'validclass': 0.20594966411590576, 'labeldist': 0.1891653686761856}
+ pfl_avg_test_acc: {'uniform': 0.26722603539625805, 'validclass': 0.3853544195493062, 'labeldist': 0.7410075465838114}
+
+Round Progress:  94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉          | 187/200 [1:04:07<05:38, 26.04s/it]
+ Training time:3.988 seconds
+ server global model correct 279
+ Testing time:10.883 seconds
+ avg_test_acc: {'uniform': 0.21281464397907257, 'validclass': 0.21281464397907257, 'labeldist': 0.1977551132440567}
+ pfl_avg_test_acc: {'uniform': 0.22145944833755493, 'validclass': 0.34482045968373615, 'labeldist': 0.6692639489968618}
+
+Round Progress:  94%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋         | 188/200 [1:04:22<04:32, 22.69s/it]
+ Training time:7.898 seconds
+ server global model correct 398
+ Testing time:10.732 seconds
+ avg_test_acc: {'uniform': 0.3035850524902344, 'validclass': 0.3035850524902344, 'labeldist': 0.30091115832328796}
+ pfl_avg_test_acc: {'uniform': 0.22807017962137857, 'validclass': 0.3466546932856242, 'labeldist': 0.3013657331466675}
+
+Round Progress:  94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍        | 189/200 [1:04:40<03:56, 21.47s/it]
+ Training time:2.057 seconds
+ server global model correct 454
+ Testing time:10.905 seconds
+ avg_test_acc: {'uniform': 0.34630054235458374, 'validclass': 0.34630054235458374, 'labeldist': 0.3569735586643219}
+ pfl_avg_test_acc: {'uniform': 0.31451818346977234, 'validclass': 0.345489760239919, 'labeldist': 0.5248098572095236}
+
+Round Progress:  95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎       | 190/200 [1:04:53<03:09, 18.93s/it]
+ Training time:6.395 seconds
+ server global model correct 401
+ Testing time:10.797 seconds
+ avg_test_acc: {'uniform': 0.3058733642101288, 'validclass': 0.3058733642101288, 'labeldist': 0.29664087295532227}
+ pfl_avg_test_acc: {'uniform': 0.3015509694814682, 'validclass': 0.36149077614148456, 'labeldist': 0.5392257769902548}
+
+Round Progress:  96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████       | 191/200 [1:05:10<02:45, 18.42s/it]
+ Training time:10.512 seconds
+ server global model correct 301
+ Testing time:10.899 seconds
+ avg_test_acc: {'uniform': 0.22959573566913605, 'validclass': 0.22959573566913605, 'labeldist': 0.21094970405101776}
+ pfl_avg_test_acc: {'uniform': 0.2573099384705226, 'validclass': 0.3228762646516164, 'labeldist': 0.5942706366380056}
+
+Round Progress:  96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊      | 192/200 [1:05:32<02:34, 19.32s/it]
+ Training time:15.847 seconds
+ server global model correct 442
+ Testing time:10.836 seconds
+ avg_test_acc: {'uniform': 0.33714720606803894, 'validclass': 0.33714720606803894, 'labeldist': 0.3324297070503235}
+ pfl_avg_test_acc: {'uniform': 0.28324433664480847, 'validclass': 0.4266369591156642, 'labeldist': 0.6823744078477224}
+
+Round Progress:  96%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌     | 193/200 [1:05:59<02:30, 21.53s/it]
+ Training time:3.236 seconds
+ server global model correct 472
+ Testing time:10.992 seconds
+ avg_test_acc: {'uniform': 0.36003050208091736, 'validclass': 0.36003050208091736, 'labeldist': 0.36620330810546875}
+ pfl_avg_test_acc: {'uniform': 0.3404525816440582, 'validclass': 0.28745658695697784, 'labeldist': 0.39076178272565204}
+
+Round Progress:  97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎    | 194/200 [1:06:13<01:56, 19.34s/it]
+ Training time:12.267 seconds
+ server global model correct 354
+ Testing time:10.888 seconds
+ avg_test_acc: {'uniform': 0.2700228691101074, 'validclass': 0.2700228691101074, 'labeldist': 0.25028517842292786}
+ pfl_avg_test_acc: {'uniform': 0.27714212735493976, 'validclass': 0.3391004304091136, 'labeldist': 0.48092012604077655}
+
+Round Progress:  98%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏   | 195/200 [1:06:36<01:42, 20.49s/it]
+ Training time:1.598 seconds
+ server global model correct 339
+ Testing time:10.837 seconds
+ avg_test_acc: {'uniform': 0.2585812211036682, 'validclass': 0.2585812211036682, 'labeldist': 0.23985327780246735}
+ pfl_avg_test_acc: {'uniform': 0.26112382610638935, 'validclass': 0.37417219082514447, 'labeldist': 0.4169563551743825}
+
+Round Progress:  98%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉   | 196/200 [1:06:48<01:12, 18.08s/it]
+ Training time:16.315 seconds
+
+Round Progress:  98%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋  | 197/200 [1:07:16<01:02, 20.81s/it]
+ Testing time:10.847 seconds
+ avg_test_acc: {'uniform': 0.2730740010738373, 'validclass': 0.2730740010738373, 'labeldist': 0.25152069330215454}
+ pfl_avg_test_acc: {'uniform': 0.2359521985054016, 'validclass': 0.3488996922969818, 'labeldist': 0.7034018039703369}
+Round:198 - Active clients:[22  3 28]:
+ Training time:3.569 seconds
+ server global model correct 368
+ Testing time:10.831 seconds
+ avg_test_acc: {'uniform': 0.28070175647735596, 'validclass': 0.28070175647735596, 'labeldist': 0.25946199893951416}
+ pfl_avg_test_acc: {'uniform': 0.2585812360048294, 'validclass': 0.2780890812476476, 'labeldist': 0.4041040663917859}
+
+Round Progress:  99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍ | 198/200 [1:07:30<00:37, 18.90s/it]
+ Training time:8.546 seconds
+ server global model correct 300
+ Testing time:10.761 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.24561403195063272, 'validclass': 0.30432869493961334, 'labeldist': 0.6633385618527731}
+
+Round Progress: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏| 199/200 [1:07:49<00:19, 19.02s/it]
+ Training time:8.613 seconds
+ server global model correct 340
+ Testing time:10.850 seconds
+ avg_test_acc: {'uniform': 0.2593440115451813, 'validclass': 0.2593440115451813, 'labeldist': 0.2633484899997711}
+
+Round Progress: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 200/200 [1:08:09<00:00, 20.45s/it]

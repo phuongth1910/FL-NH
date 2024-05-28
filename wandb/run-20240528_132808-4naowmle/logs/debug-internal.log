@@ -1,0 +1,182 @@
+2024-05-28 13:28:08,146 INFO    StreamThr :12196 [internal.py:wandb_internal():86] W&B internal server running at pid: 12196, started at: 2024-05-28 13:28:08.146543
+2024-05-28 13:28:08,148 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status
+2024-05-28 13:28:08,150 INFO    WriterThread:12196 [datastore.py:open_for_write():87] open: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\run-4naowmle.wandb
+2024-05-28 13:28:08,150 DEBUG   SenderThread:12196 [sender.py:send():379] send: header
+2024-05-28 13:28:08,163 DEBUG   SenderThread:12196 [sender.py:send():379] send: run
+2024-05-28 13:28:09,206 INFO    SenderThread:12196 [dir_watcher.py:__init__():211] watching files in: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files
+2024-05-28 13:28:09,206 INFO    SenderThread:12196 [sender.py:_start_run_threads():1124] run started: 4naowmle with start time 1716877688.148813
+2024-05-28 13:28:09,211 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: check_version
+2024-05-28 13:28:09,211 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: check_version
+2024-05-28 13:28:10,221 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: run_start
+2024-05-28 13:28:11,449 DEBUG   HandlerThread:12196 [system_info.py:__init__():26] System info init
+2024-05-28 13:28:11,449 DEBUG   HandlerThread:12196 [system_info.py:__init__():41] System info init done
+2024-05-28 13:28:11,449 INFO    HandlerThread:12196 [system_monitor.py:start():194] Starting system monitor
+2024-05-28 13:28:11,450 INFO    SystemMonitor:12196 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-28 13:28:11,450 INFO    HandlerThread:12196 [system_monitor.py:probe():214] Collecting system info
+2024-05-28 13:28:11,454 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started cpu monitoring
+2024-05-28 13:28:11,455 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started disk monitoring
+2024-05-28 13:28:11,455 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started gpu monitoring
+2024-05-28 13:28:11,463 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started memory monitoring
+2024-05-28 13:28:11,471 INFO    SystemMonitor:12196 [interfaces.py:start():190] Started network monitoring
+2024-05-28 13:28:11,479 DEBUG   HandlerThread:12196 [system_info.py:probe():150] Probing system
+2024-05-28 13:28:11,480 DEBUG   HandlerThread:12196 [system_info.py:_probe_git():135] Probing git
+2024-05-28 13:28:11,486 ERROR   gpu       :12196 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-28 13:28:11,525 DEBUG   HandlerThread:12196 [system_info.py:_probe_git():143] Probing git done
+2024-05-28 13:28:11,525 DEBUG   HandlerThread:12196 [system_info.py:probe():198] Probing system done
+2024-05-28 13:28:11,525 DEBUG   HandlerThread:12196 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.2', 'heartbeatAt': '2024-05-28T06:28:11.479391', 'startedAt': '2024-05-28T06:28:08.140917', 'docker': None, 'cuda': None, 'args': ('--purpose', 'tumorMRI', '--device', 'cuda:2', '--global_seed', '0', '--use_wandb', 'True', '--yamlfile', './FedNH_braintumor_Conv2.yaml', '--strategy', 'FedNH', '--num_clients', '40', '--participate_ratio', '0.1', '--partition', 'noniid-label-distribution', '--beta', '0.3', '--num_rounds', '200', '--client_lr', '0.01', '--client_lr_scheduler', 'diminishing', '--sgd_momentum', '0.9', '--sgd_weight_decay', '1e-05', '--num_epochs', '5'), 'state': 'running', 'program': 'C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/luannt0801/Fed_Ha_Phuong.git', 'commit': None}, 'email': 'tranhaphuong191002@gmail.com', 'root': 'C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH', 'host': 'PHUONG-TH', 'username': 'admin', 'executable': 'C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3100.0, 'min': 0.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 3100.0, 'min': 0.0, 'max': 3100.0}], 'disk': {'/': {'total': 475.66796493530273, 'used': 255.17162704467773}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.710990905761719}}
+2024-05-28 13:28:11,525 INFO    HandlerThread:12196 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-28 13:28:11,525 INFO    HandlerThread:12196 [system_monitor.py:probe():227] Publishing system info
+2024-05-28 13:28:11,526 INFO    HandlerThread:12196 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-28 13:28:11,530 DEBUG   SenderThread:12196 [sender.py:send():379] send: files
+2024-05-28 13:28:11,530 INFO    SenderThread:12196 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-28 13:28:12,237 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\wandb-metadata.json
+2024-05-28 13:28:12,744 INFO    wandb-upload_0:12196 [upload_job.py:push():131] Uploaded file C:\Users\admin\AppData\Local\Temp\tmpnthnwk0ywandb\3rf3b8hz-wandb-metadata.json
+2024-05-28 13:28:13,204 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-28 13:28:13,204 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: python_packages
+2024-05-28 13:28:13,205 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-28 13:28:13,205 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: stop_status
+2024-05-28 13:28:13,205 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2024-05-28 13:28:13,206 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-28 13:28:13,238 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\requirements.txt
+2024-05-28 13:28:13,478 DEBUG   SenderThread:12196 [sender.py:send():379] send: telemetry
+2024-05-28 13:28:13,481 DEBUG   SenderThread:12196 [sender.py:send():379] send: exit
+2024-05-28 13:28:13,481 INFO    SenderThread:12196 [sender.py:send_exit():586] handling exit code: 1
+2024-05-28 13:28:13,481 INFO    SenderThread:12196 [sender.py:send_exit():588] handling runtime: 2
+2024-05-28 13:28:13,482 INFO    SenderThread:12196 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-28 13:28:13,482 INFO    SenderThread:12196 [sender.py:send_exit():594] send defer
+2024-05-28 13:28:13,483 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:13,483 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-28 13:28:13,483 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:13,483 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-28 13:28:13,483 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 1
+2024-05-28 13:28:13,483 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:13,483 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-28 13:28:13,483 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:13,483 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-28 13:28:13,483 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 2
+2024-05-28 13:28:13,483 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:13,483 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-28 13:28:13,483 INFO    HandlerThread:12196 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-28 13:28:13,483 DEBUG   SystemMonitor:12196 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-28 13:28:13,484 DEBUG   SystemMonitor:12196 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-28 13:28:13,484 INFO    HandlerThread:12196 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-28 13:28:13,484 DEBUG   SystemMonitor:12196 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-28 13:28:13,484 INFO    HandlerThread:12196 [interfaces.py:finish():202] Joined disk monitor
+2024-05-28 13:28:13,998 INFO    HandlerThread:12196 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-28 13:28:13,998 INFO    HandlerThread:12196 [interfaces.py:finish():202] Joined memory monitor
+2024-05-28 13:28:13,999 INFO    HandlerThread:12196 [interfaces.py:finish():202] Joined network monitor
+2024-05-28 13:28:13,999 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:13,999 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-28 13:28:13,999 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 3
+2024-05-28 13:28:13,999 DEBUG   SenderThread:12196 [sender.py:send():379] send: stats
+2024-05-28 13:28:13,999 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:13,999 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-28 13:28:13,999 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:13,999 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-28 13:28:13,999 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 4
+2024-05-28 13:28:13,999 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:13,999 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-28 13:28:14,000 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:14,000 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-28 13:28:14,000 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 5
+2024-05-28 13:28:14,000 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:14,000 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-28 13:28:14,000 DEBUG   SenderThread:12196 [sender.py:send():379] send: summary
+2024-05-28 13:28:14,000 INFO    SenderThread:12196 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-28 13:28:14,001 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:14,001 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-28 13:28:14,001 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 6
+2024-05-28 13:28:14,001 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:14,001 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-28 13:28:14,001 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:14,001 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-28 13:28:14,003 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: status_report
+2024-05-28 13:28:14,215 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:14,246 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\wandb-summary.json
+2024-05-28 13:28:14,246 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\output.log
+2024-05-28 13:28:14,278 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 7
+2024-05-28 13:28:14,279 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:14,279 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:14,279 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-28 13:28:14,279 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:14,280 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-28 13:28:15,229 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:15,261 INFO    Thread-16 :12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\config.yaml
+2024-05-28 13:28:15,491 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 8
+2024-05-28 13:28:15,491 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:15,491 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:15,492 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-28 13:28:15,492 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:15,492 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-28 13:28:15,492 INFO    SenderThread:12196 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-28 13:28:15,493 INFO    SenderThread:12196 [job_builder.py:_get_source_type():466] no source found
+2024-05-28 13:28:15,493 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 9
+2024-05-28 13:28:15,493 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:15,493 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-28 13:28:15,493 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:15,493 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-28 13:28:15,493 INFO    SenderThread:12196 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-28 13:28:16,242 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:16,274 INFO    SenderThread:12196 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\output.log
+2024-05-28 13:28:16,275 INFO    SenderThread:12196 [dir_watcher.py:finish():388] scan: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files
+2024-05-28 13:28:16,276 INFO    SenderThread:12196 [dir_watcher.py:finish():402] scan save: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\config.yaml config.yaml
+2024-05-28 13:28:16,276 INFO    SenderThread:12196 [dir_watcher.py:finish():402] scan save: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\output.log output.log
+2024-05-28 13:28:16,280 INFO    SenderThread:12196 [dir_watcher.py:finish():402] scan save: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\requirements.txt requirements.txt
+2024-05-28 13:28:16,281 INFO    SenderThread:12196 [dir_watcher.py:finish():402] scan save: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\wandb-metadata.json wandb-metadata.json
+2024-05-28 13:28:16,281 INFO    SenderThread:12196 [dir_watcher.py:finish():402] scan save: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\wandb-summary.json wandb-summary.json
+2024-05-28 13:28:16,283 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 10
+2024-05-28 13:28:16,283 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:16,283 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:16,283 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-28 13:28:16,286 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:16,286 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-28 13:28:16,286 INFO    SenderThread:12196 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-28 13:28:16,842 INFO    wandb-upload_0:12196 [upload_job.py:push():131] Uploaded file C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\config.yaml
+2024-05-28 13:28:17,255 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:17,255 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:17,563 INFO    wandb-upload_2:12196 [upload_job.py:push():131] Uploaded file C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\requirements.txt
+2024-05-28 13:28:17,762 INFO    wandb-upload_3:12196 [upload_job.py:push():131] Uploaded file C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\wandb-summary.json
+2024-05-28 13:28:17,799 INFO    wandb-upload_1:12196 [upload_job.py:push():131] Uploaded file C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\files\output.log
+2024-05-28 13:28:18,001 INFO    Thread-15 (_thread_body):12196 [sender.py:transition_state():614] send defer: 11
+2024-05-28 13:28:18,002 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:18,002 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-28 13:28:18,002 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:18,002 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-28 13:28:18,002 INFO    SenderThread:12196 [file_pusher.py:join():178] waiting for file pusher
+2024-05-28 13:28:18,002 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 12
+2024-05-28 13:28:18,003 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:18,003 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-28 13:28:18,003 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:18,003 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-28 13:28:18,003 INFO    SenderThread:12196 [file_stream.py:finish():614] file stream finish called
+2024-05-28 13:28:18,255 INFO    SenderThread:12196 [file_stream.py:finish():618] file stream finish is done
+2024-05-28 13:28:18,255 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 13
+2024-05-28 13:28:18,255 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:18,255 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-28 13:28:18,256 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:18,256 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-28 13:28:18,256 INFO    SenderThread:12196 [sender.py:transition_state():614] send defer: 14
+2024-05-28 13:28:18,256 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: defer
+2024-05-28 13:28:18,256 DEBUG   SenderThread:12196 [sender.py:send():379] send: final
+2024-05-28 13:28:18,256 INFO    HandlerThread:12196 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-28 13:28:18,257 DEBUG   SenderThread:12196 [sender.py:send():379] send: footer
+2024-05-28 13:28:18,257 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: defer
+2024-05-28 13:28:18,257 INFO    SenderThread:12196 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-28 13:28:18,258 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:18,259 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:18,259 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-28 13:28:18,259 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: server_info
+2024-05-28 13:28:18,259 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-28 13:28:18,260 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-28 13:28:18,259 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: poll_exit
+2024-05-28 13:28:18,260 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-28 13:28:18,260 DEBUG   SenderThread:12196 [sender.py:send_request():406] send_request: server_info
+2024-05-28 13:28:18,501 INFO    MainThread:12196 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-05-28 13:28:18,501 INFO    MainThread:12196 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-05-28 13:28:18,501 INFO    MainThread:12196 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-05-28 13:28:18,501 DEBUG   HandlerThread:12196 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-28 13:28:18,501 INFO    HandlerThread:12196 [handler.py:finish():866] shutting down handler
+2024-05-28 13:28:19,270 INFO    WriterThread:12196 [datastore.py:close():296] close: C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240528_132808-4naowmle\run-4naowmle.wandb
+2024-05-28 13:28:19,504 INFO    SenderThread:12196 [sender.py:finish():1546] shutting down sender
+2024-05-28 13:28:19,504 INFO    SenderThread:12196 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-28 13:28:19,505 INFO    SenderThread:12196 [file_pusher.py:join():178] waiting for file pusher

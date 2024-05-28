@@ -5,12 +5,14 @@ sys.path.append("../../")
 from copy import deepcopy
 from src.utils import sampler, sampler_reuse, DatasetSplit, setup_seed
 import numpy as np
+import logging
 """
 Configure Optimizer
 """
 
 
 def setup_optimizer(model, config, round):
+    # print("Day la config: ", config)
     if config['client_lr_scheduler'] == 'stepwise':
         if round < config['num_rounds'] // 2:
             lr = config['client_lr']
@@ -58,6 +60,7 @@ def setup_clients(Client, trainset, testset, criterion, client_config_lst, devic
     """
     num_clients = kwargs['server_config']['num_clients']
     partition = kwargs['server_config']['partition']
+    print(partition)
     num_classes = kwargs['server_config']['num_classes']
     assert len(client_config_lst) == num_clients, "Inconsistent num_clients and len(client_config_lst)."
     if 'noniid' == partition[:6]:

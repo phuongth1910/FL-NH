@@ -17,6 +17,7 @@ from .FedUH import FedUHClient, FedUHServer
 import math
 import time
 import torch.nn.functional as F
+# import logging
 
 
 class FedNHClient(FedUHClient):
@@ -26,7 +27,7 @@ class FedNHClient(FedUHClient):
         temp = [self.count_by_class[cls] if cls in self.count_by_class.keys() else 1e-12 for cls in range(client_config['num_classes'])]
         self.count_by_class_full = torch.tensor(temp).to(self.device)
 
-    def _estimate_prototype(self):
+    def _estimate_prototype(self): 
         self.model.eval()
         self.model.return_embedding = True
         embedding_dim = self.model.prototype.shape[1]
@@ -42,6 +43,7 @@ class FedNHClient(FedUHClient):
                     mask = (y == cls)
                     feature_embedding_in_cls = torch.sum(feature_embedding[mask, :], dim=0)
                     prototype[cls] += feature_embedding_in_cls
+         #prototype = tong gia tri feature_embedding / so samples của 1 class         
         for cls in self.count_by_class.keys():
             # sample mean
             prototype[cls] /= self.count_by_class[cls]
@@ -50,11 +52,14 @@ class FedNHClient(FedUHClient):
             prototype[cls] = torch.div(prototype[cls], prototype_cls_norm)
 
             # reweight it for aggregartion
+            #print(f' IN RA CAC SELF COUNT BY CLASS: !!!!! {self.count_by_class}')
             prototype[cls] *= self.count_by_class[cls]
-
+            #print(f'in ra prototype[cls]: {prototype}')
         self.model.return_embedding = False
 
         to_share = {'scaled_prototype': prototype, 'count_by_class_full': self.count_by_class_full}
+        #print(f' PHUONG IN RA TO SHARE {to_share}')
+        #logging.info("estimate prototype khong dung adv: ", to_share)
         return to_share
 
     def _estimate_prototype_adv(self):
@@ -64,32 +69,49 @@ class FedNHClient(FedUHClient):
         labels = []
         weights = []
         prototype = torch.zeros_like(self.model.prototype)
+        #print(f"KHAI BAO PROTOTYPE = ZERO = 0 {prototype}")
         with torch.no_grad():
             for i, (x, y) in enumerate(self.trainloader):
+                j = i
                 # forward pass
                 x, y = x.to(self.device), y.to(self.device)
                 # feature_embedding is normalized
                 # use the latest prototype
+                # print(f"So lan lap lai {j} : \n")
+                # print(f'IN RA MODEL.WARD {self.model.forward(x)}')
                 feature_embedding, logits = self.model.forward(x)
+                #feature_embedding là vecto đặc trưng dữ liệu đầu vào chính là body
+                #logits là lớp cuối cùng đưa vào hàm softmax để dự đoán kqua đầu ra
+                # print(f'feature_embedding {feature_embedding}')
+                # print(f'logits {logits}')
                 prob_ = F.softmax(logits, dim=1)
+                # print(f'prob_{prob_}')
                 prob = torch.gather(prob_, dim=1, index=y.view(-1, 1))
+                # print(f'prob {prob}')
                 labels.append(y)
                 weights.append(prob)
                 embeddings.append(feature_embedding)
         self.model.return_embedding = False
         embeddings = torch.cat(embeddings, dim=0)
+        # print(f'embedding:{embeddings}')
         labels = torch.cat(labels, dim=0)
+        # print(f'labels:{labels}')
         weights = torch.cat(weights, dim=0).view(-1, 1)
+        # print(f'weights:{weights}')
         for cls in self.count_by_class.keys():
             mask = (labels == cls)
-            weights_in_cls = weights[mask, :]
+            #weight_in_cls là hệ số của mỗi samples trong class
+            weights_in_cls = weights[mask, :] 
+            # print(f'weights in cls:{weights_in_cls}')
             feature_embedding_in_cls = embeddings[mask, :]
+            # print(f'feature_embedding in cls:{feature_embedding_in_cls}')
             prototype[cls] = torch.sum(feature_embedding_in_cls * weights_in_cls, dim=0) / torch.sum(weights_in_cls)
             prototype_cls_norm = torch.norm(prototype[cls]).clamp(min=1e-12)
             prototype[cls] = torch.div(prototype[cls], prototype_cls_norm)
 
         # calculate predictive power
         to_share = {'adv_agg_prototype': prototype, 'count_by_class_full': self.count_by_class_full}
+        #logging.info("estimate prototype co ADV adv: ", to_share)
         return to_share
 
     def upload(self):
@@ -106,6 +128,7 @@ class FedNHServer(FedUHServer):
             print(f"FedNHServer: the following keys will not be aggregated:\n ", self.exclude_layer_keys)
 
     def aggregate(self, client_uploads, round):
+        #logging.info("############# server tinh agregate cac gia tri prototyp/parmeter ######## ")
         server_lr = self.server_config['learning_rate'] * (self.server_config['lr_decay_per_round'] ** (round - 1))
         num_participants = len(client_uploads)
         update_direction_state_dict = None

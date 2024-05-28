@@ -31,7 +31,7 @@ class Client:
         # self.test_pfl_loss_dict = OrderedDict()
         # self.test_pfl_acc_dict = OrderedDict()
         self.new_state_dict = None
-
+ 
     def _prepare_data(self):
         self.label_dist = None
         train_batchsize = min(self.client_config['batch_size'], self.num_train_samples)

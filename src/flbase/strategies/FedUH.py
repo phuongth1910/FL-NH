@@ -16,6 +16,7 @@ from ..strategies.FedAvg import FedAvgServer
 from ...utils import autoassign, save_to_pkl, access_last_added_element
 import math
 import time
+# import logging
 
 
 class FedUHClient(Client):
@@ -40,7 +41,7 @@ class FedUHClient(Client):
             q = q / torch.sqrt(torch.dot(q, q))
             W[i, :] = q
         return W
-
+ 
     def _initialize_model(self):
         # parse the model from config file
         self.model = eval(f"{self.client_config['model']}NH")(self.client_config).to(self.device)
@@ -75,11 +76,12 @@ class FedUHClient(Client):
             self.model.scaling.requires_grad_(False)
             self.model.scaling.data = torch.tensor(30.0).to(self.device)
             print('self.model.scaling.data:', self.model.scaling.data)
+            # logging.info('self.model.scaling.data:', self.model.scaling.data())
 
     def training(self, round, num_epochs):
         """
             Note that in order to use the latest server side model the `set_params` method should be called before `training` method.
-        """
+        """ 
         setup_seed(round + self.client_config['global_seed'])
         # train mode
         self.model.train()
@@ -133,7 +135,6 @@ class FedUHClient(Client):
         num_classes = self.client_config['num_classes']
         test_count_per_class = torch.tensor([test_count_per_class[cls] * 1.0 for cls in range(num_classes)])
         test_correct_per_class = torch.tensor([0] * num_classes)
-
         weight_per_class_dict = {'uniform': torch.tensor([1.0] * num_classes),
                                  'validclass': torch.tensor([0.0] * num_classes),
                                  'labeldist': torch.tensor([0.0] * num_classes)}
@@ -166,9 +167,11 @@ class FedUHServer(FedAvgServer):
         super().__init__(server_config, clients_dict, exclude, **kwargs)
         if len(self.exclude_layer_keys) > 0:
             print(f"FedUHServer: the following keys will not be aggregate:\n ", self.exclude_layer_keys)
+            # logging.info(f"FedUHServer: the following keys will not be aggregate:\n ", self.exclude_layer_keys)
         freeze_layers = []
         for param in self.server_side_client.model.named_parameters():
             if param[1].requires_grad == False:
                 freeze_layers.append(param[0])
         if len(freeze_layers) > 0:
             print("FedUHServer: the following layers will not be updated:", freeze_layers)
+            # logging.info("FedUHServer: the following layers will not be updated:", freeze_layers)

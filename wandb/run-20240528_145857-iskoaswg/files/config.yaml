@@ -1,0 +1,88 @@
+wandb_version: 1
+
+server_config:
+  desc: null
+  value:
+    strategy: FedNH
+    num_rounds: 200
+    num_clients: 30
+    participate_ratio: 0.1
+    drop_ratio: 0.0
+    test_every: 1
+    split_testset: false
+    use_tqdm: true
+    dataset: braintumor
+    partition: noniid-label-distribution
+    beta: '0.3'
+    num_classes_per_client: null
+    num_shards_per_client: null
+    num_classes: 4
+    learning_rate: 1.0
+    lr_decay_per_round: 1.0
+    FedNH_smoothing: 0.9
+    FedNH_server_adv_prototype_agg: false
+    CReFF_num_of_fl_feature: 100
+    CReFF_match_epoch: 100
+    CReFF_lr_net: 0.01
+    CReFF_lr_feature: 0.1
+    CReFF_crt_epoch: 300
+    CReFF_dis_metric: ours
+client_config:
+  desc: null
+  value:
+    model: PhuongModel
+    num_classes: 4
+    num_epochs: 5
+    batch_size: 32
+    optimizer: SGD
+    learning_rate: 0.1
+    lr_scheduler: stepwise
+    lr_decay_per_round: 0.99
+    num_rounds: 200
+    use_tqdm: false
+    FedROD_hyper_clf: true
+    FedROD_phead_separate: false
+    FedNH_return_embedding: false
+    FedNH_head_init: orthogonal
+    FedNH_client_adv_prototype_agg: false
+    FedNH_fix_scaling: false
+    FedProto_lambda: 0.1
+    FedRep_head_epochs: 10
+    FedBABU_finetune_epoch: 5
+    Ditto_lambda: 0.75
+    CReFF_batch_real: 64
+    global_seed: 0
+    client_lr: 0.01
+    client_lr_scheduler: diminishing
+    sgd_momentum: 0.9
+    sgd_weight_decay: 1.0e-05
+    use_sam: false
+    no_norm: false
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.2
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1716883137.0
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.12.2
+      5: 0.16.6
+      8:
+      - 3
+      - 5
+      13: windows-amd64

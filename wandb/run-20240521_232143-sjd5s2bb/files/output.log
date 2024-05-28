@@ -1,0 +1,158 @@
+brain tumor dataset dang su dung
+False
+noniid-label-distribution
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 13 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+Progress:0/100
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 1/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 2/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 3/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 4/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 5/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 6/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Round: 7/20 {'uniform': 0.23340961337089539, 'validclass': 0.5049505233764648, 'labeldist': 0.9861878752708435}
+Day la config:  {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': True, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 286, in <module>
+    run(args)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\main.py", line 190, in run
+    client.testing(r, global_testloader)
+  File "C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\src\flbase\strategies\FedAvg.py", line 92, in testing
+    for i, (x, y) in enumerate(testloader):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\folder.py", line 231, in __getitem__
+    sample = self.transform(sample)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 1268, in forward
+    fn_idx, brightness_factor, contrast_factor, saturation_factor, hue_factor = self.get_params(
+                                                                                ^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 1253, in get_params
+    b = None if brightness is None else float(torch.empty(1).uniform_(brightness[0], brightness[1]))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

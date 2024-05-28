@@ -1,0 +1,29 @@
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Configure stats pid to 15396
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Loading settings from C:\Users\admin\.config\wandb\settings
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Loading settings from C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\settings
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': 'C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\main.py', 'program': 'C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\main.py'}
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:_log_setup():521] Logging user logs to C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240522_114851-dxmedt39\logs\debug.log
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:_log_setup():522] Logging internal logs to C:\Users\admin\Documents\Comvis2023\Fed_Ha_Phuong\New folder\FedNH\wandb\run-20240522_114851-dxmedt39\logs\debug-internal.log
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:init():561] calling init triggers
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'server_config': {'strategy': 'Local', 'num_rounds': 200, 'num_clients': 100, 'participate_ratio': 0.1, 'drop_ratio': 0.0, 'test_every': 1, 'split_testset': False, 'use_tqdm': False, 'dataset': 'braintumor', 'partition': 'noniid-label-distribution', 'beta': '0.3', 'num_classes_per_client': None, 'num_shards_per_client': None, 'num_classes': 4, 'learning_rate': 1.0, 'lr_decay_per_round': 1.0, 'exclude': (), 'FedNH_smoothing': 0.9, 'FedNH_server_adv_prototype_agg': False, 'CReFF_num_of_fl_feature': 100, 'CReFF_match_epoch': 100, 'CReFF_lr_net': 0.01, 'CReFF_lr_feature': 0.1, 'CReFF_crt_epoch': 300, 'CReFF_dis_metric': 'ours'}, 'client_config': {'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 4, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': False, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}}
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:init():611] starting backend
+2024-05-22 11:48:51,169 INFO    MainThread:15396 [wandb_init.py:init():615] setting up manager
+2024-05-22 11:48:51,184 INFO    MainThread:15396 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-05-22 11:48:51,184 INFO    MainThread:15396 [wandb_init.py:init():623] backend started and connected
+2024-05-22 11:48:51,184 INFO    MainThread:15396 [wandb_init.py:init():715] updated telemetry
+2024-05-22 11:48:51,184 INFO    MainThread:15396 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-05-22 11:48:52,197 INFO    MainThread:15396 [wandb_run.py:_on_init():2357] communicating current version
+2024-05-22 11:48:52,852 INFO    MainThread:15396 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-22 11:48:52,852 INFO    MainThread:15396 [wandb_init.py:init():799] starting run threads in backend
+2024-05-22 11:48:54,207 INFO    MainThread:15396 [wandb_run.py:_console_start():2335] atexit reg
+2024-05-22 11:48:54,207 INFO    MainThread:15396 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-05-22 11:48:54,207 INFO    MainThread:15396 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-05-22 11:48:54,207 INFO    MainThread:15396 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-05-22 11:48:54,207 INFO    MainThread:15396 [wandb_init.py:init():842] run started, returning control to user process
+2024-05-22 13:41:45,141 WARNING MsgRouterThr:15396 [router.py:message_loop():77] message_loop has been closed

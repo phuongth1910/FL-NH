@@ -15,6 +15,7 @@ from ..utils import setup_optimizer, linear_combination_state_dict, setup_seed
 from ...utils import autoassign, save_to_pkl, access_last_added_element
 import time
 import torch
+# import logging
 
 
 class FedAvgClient(Client):
@@ -121,6 +122,7 @@ class FedAvgServer(Server):
                     self.exclude_layer_keys.add(key)
         if len(self.exclude_layer_keys) > 0:
             print(f"{self.server_config['strategy']}Server: the following keys will not be aggregated:\n ", self.exclude_layer_keys)
+            # logging.info(f"{self.server_config['strategy']}Server: the following keys will not be aggregated:\n ", self.exclude_layer_keys)
         # freeze_layers = []
         # for param in self.server_side_client.model.named_parameters():
         #     if param[1].requires_grad == False:
@@ -168,6 +170,7 @@ class FedAvgServer(Server):
         # test the performance for global models
         self.server_side_client.testing(round, testloader=None)  # use global testdataset
         print(' server global model correct', torch.sum(self.server_side_client.test_acc_dict[round]['correct_per_class']).item())
+        # logging.info(' server global model correct', torch.sum(self.server_side_client.test_acc_dict[round]['correct_per_class']).item())
         # test the performance for local models (potentiallt only for active local clients)
         client_indices = self.clients_dict.keys()
         if active_only:
@@ -255,6 +258,7 @@ class FedAvgServer(Server):
                 client_uploads.append(client.upload())
             train_time = time.time() - train_start
             print(f" Training time:{train_time:.3f} seconds")
+            # logging.info(f" Training time:{train_time:.3f} seconds")
             # collect training stats
             # average train loss and acc over active clients, where each client uses the latest local models
             self.collect_stats(stage="train", round=r, active_only=True)
@@ -270,9 +274,12 @@ class FedAvgServer(Server):
                 self.testing(round=r, active_only=True)
                 test_time = time.time() - test_start
                 print(f" Testing time:{test_time:.3f} seconds")
+                # logging.info(f" Testing time:{test_time:.3f} seconds")
                 self.collect_stats(stage="test", round=r, active_only=True)
                 print(" avg_test_acc:", self.gfl_test_acc_dict[r]['acc_by_criteria'])
+                # logging.info(" avg_test_acc:", self.gfl_test_acc_dict[r]['acc_by_criteria'])
                 print(" pfl_avg_test_acc:", self.average_pfl_test_acc_dict[r])
+                # logging.info(" pfl_avg_test_acc:", self.average_pfl_test_acc_dict[r])
                 if len(self.gfl_test_acc_dict) >= 2:
                     current_key = r
                     if self.gfl_test_acc_dict[current_key]['acc_by_criteria']['uniform'] > best_test_acc:

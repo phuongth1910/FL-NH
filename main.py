@@ -3,12 +3,17 @@ import torch
 import torch.nn as nn
 import yaml
 import sys
+# import logging
+import datetime
+from datetime import datetime
+import psutil
 import argparse
 from torch.utils.data import DataLoader
 sys.path.append("../")
 from src.flbase.utils import setup_clients, resume_training
 from src.utils import setup_seed, mkdirs, get_datasets, load_from_pkl, save_to_pkl
 from src.flbase.strategies.FedAvg import FedAvgClient, FedAvgServer
+from src.flbase.strategies.FedROD import FedRODClient, FedRODServer
 from src.flbase.strategies.FedROD import FedRODClient, FedRODServer
 from src.flbase.strategies.FedNH import FedNHClient, FedNHServer
 from src.flbase.strategies.FedProto import FedProtoClient, FedProtoServer
@@ -29,6 +34,8 @@ except ModuleNotFoundError:
 def run(args):
 
     use_wandb = wandb_installed and args.use_wandb
+    # logging.info("################ run function in main ####################")
+    # logging.info("In ra use_wanb",use_wandb)
     setup_seed(args.global_seed)
 
     with open(args.yamlfile, "r") as stream:
@@ -58,11 +65,11 @@ def run(args):
     client_config['no_norm'] = args.no_norm
 
     if server_config['partition'] == 'noniid-label-distribution':
-        partition_arg = f'beta:{args.beta}'
+        partition_arg = f'beta_{args.beta}'
     elif server_config['partition'] == 'noniid-label-quantity':
-        partition_arg = f'num_classes_per_client:{args.num_classes_per_client}'
+        partition_arg = f'num_classes_per_client_{args.num_classes_per_client}'
     elif server_config['partition'] == 'shards':
-        partition_arg = f'num_shards_per_client:{args.num_shards_per_client}'
+        partition_arg = f'num_shards_per_client_{args.num_shards_per_client}'
     else:
         raise ValueError('not implemented partition')
 
@@ -73,29 +80,29 @@ def run(args):
         ClientCstr, ServerCstr = FedRODClient, FedRODServer
         client_config['FedROD_hyper_clf'] = args.FedROD_hyper_clf
         client_config['FedROD_phead_separate'] = args.FedROD_phead_separate
-        hyper_params = f"FedROD_hyper_clf:{args.FedROD_hyper_clf}_FedROD_phead_separate:{args.FedROD_phead_separate}"
+        hyper_params = f"FedROD_hyper_clf_{args.FedROD_hyper_clf}_FedROD_phead_separate_{args.FedROD_phead_separate}"
     elif args.strategy == 'FedNH':
         ClientCstr, ServerCstr = FedNHClient, FedNHServer
         server_config['FedNH_smoothing'] = args.FedNH_smoothing
         server_config['FedNH_server_adv_prototype_agg'] = args.FedNH_server_adv_prototype_agg
         client_config['FedNH_client_adv_prototype_agg'] = args.FedNH_client_adv_prototype_agg
-        hyper_params = f"FedNH_smoothing:{args.FedNH_smoothing}_FedNH_client_adv_prototype_agg:{args.FedNH_client_adv_prototype_agg}"
+        hyper_params = f"FedNH_smoothing_{args.FedNH_smoothing}_FedNH_client_adv_prototype_agg_{args.FedNH_client_adv_prototype_agg}"
     elif args.strategy == 'FedProto':
         ClientCstr, ServerCstr = FedProtoClient, FedProtoServer
         client_config['FedProto_lambda'] = args.FedProto_lambda
-        hyper_params = f"FedProto_lambda:{args.FedProto_lambda}"
+        hyper_params = f"FedProto_lambda_{args.FedProto_lambda}"
     elif args.strategy == 'FedRep':
         ClientCstr, ServerCstr = FedRepClient, FedRepServer
         client_config['FedRep_head_epochs'] = args.FedRep_head_epochs
-        hyper_params = f"FedRep_head_epochs:{args.FedRep_head_epochs}"
+        hyper_params = f"FedRep_head_epochs_{args.FedRep_head_epochs}"
     elif args.strategy == 'FedBABU':
         ClientCstr, ServerCstr = FedBABUClient, FedBABUServer
         client_config['FedBABU_finetune_epoch'] = args.FedBABU_finetune_epoch
-        hyper_params = f"FedBABU_finetune_epoch:{args.FedBABU_finetune_epoch}"
+        hyper_params = f"FedBABU_finetune_epoch_{args.FedBABU_finetune_epoch}"
     elif args.strategy == 'Ditto':
         ClientCstr, ServerCstr = DittoClient, DittoServer
         client_config['Ditto_lambda'] = args.Ditto_lambda
-        hyper_params = f"Ditto_lambda:{args.Ditto_lambda}"
+        hyper_params = f"Ditto_lambda_{args.Ditto_lambda}"
     elif args.strategy == 'FedPer':
         ClientCstr, ServerCstr = FedPerClient, FedPerServer
         hyper_params = None
@@ -108,19 +115,19 @@ def run(args):
         server_config['CReFF_crt_epoch'] = args.CReFF_crt_epoch
         server_config['CReFF_lr_net'] = args.CReFF_lr_net
         server_config['CReFF_lr_feature'] = args.CReFF_lr_feature
-        hyper_params = f"CReFF_lr_net:{args.CReFF_lr_net}_CReFF_lr_feature:{args.CReFF_lr_feature}_CReFF_match_epoch:{args.CReFF_match_epoch}_CReFF_crt_epoch:{args.CReFF_crt_epoch}"
+        hyper_params = f"CReFF_lr_net_{args.CReFF_lr_net}_CReFF_lr_feature_{args.CReFF_lr_feature}_CReFF_match_epoch_{args.CReFF_match_epoch}_CReFF_crt_epoch_{args.CReFF_crt_epoch}"
     else:
         raise ValueError("Invalid strategy!")
 
-    run_tag = f"{server_config['strategy']}_{server_config['dataset']}_{client_config['model']}_{server_config['partition']}_{partition_arg}_num_clients:{server_config['num_clients']}_participate_ratio:{server_config['participate_ratio']}_global_seed:{args.global_seed}"
+    run_tag = f"{server_config['strategy']}_{server_config['dataset']}_{client_config['model']}_{server_config['partition']}_{partition_arg}_num_clients_{server_config['num_clients']}_participate_ratio_{server_config['participate_ratio']}_global_seed_{args.global_seed}"
     if hyper_params is not None:
         run_tag += "_" + hyper_params
 
-    run_tag += f"_no_norm:{args.no_norm}"
+    run_tag += f"_no_norm_{args.no_norm}"
     directory = f"./{args.purpose}_{server_config['strategy']}/"
     mkdirs(directory)
     path = directory + run_tag
-    if os.path.exists(path + '_final_server_obj.pkl'):
+    if os.path.exists(path + '_final_server_obj_luandeptrai_qua.pkl'):
         print(f"Task:{run_tag} is finished. Exiting...")
         exit()
     print('results are saved in: ', path)
@@ -134,6 +141,7 @@ def run(args):
     trainset, testset, _ = get_datasets(server_config['dataset'])
 
     # setup clients
+    print (server_config['split_testset'])
     if server_config['split_testset'] == False:
         clients_dict = setup_clients(ClientCstr, trainset, None, criterion,
                                      client_config_lst, args.device,
@@ -161,11 +169,11 @@ def run(args):
         print(' server side')
         for k in server_config.keys():
             if args.strategy in k:
-                print(' ', k, ":", server_config[k])
+                print(' ', k, "_", server_config[k])
         print(' client side')
         for k in client_config.keys():
             if args.strategy in k:
-                print(' ', k, ":", client_config[k])
+                print(' ', k, "_", client_config[k])
         server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
         server.save(filename=path + '_final_server_obj.pkl', keep_clients_model=args.keep_clients_model)
     else:
@@ -189,6 +197,43 @@ def run(args):
 
 
 if __name__ == "__main__":
+    # Khởi tạo logger và thiết lập cấp độ logging
+    # logger = logging.getLogger()
+    # logger.setLevel(logging.INFO)
+
+    # Định dạng cho log
+    # formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
+
+    # Xử lý cho việc hiển thị log ra stdout
+    # stdout_handler = logging.StreamHandler(sys.stdout)
+    # stdout_handler.setLevel(logging.DEBUG)
+    # stdout_handler.setFormatter(formatter)
+
+    # Xử lý cho việc ghi log vào file
+    # LOGGING_DIR = 'logs'
+    # os.makedirs(LOGGING_DIR, exist_ok=True)
+    # LOGGING_FILE = os.path.join(LOGGING_DIR, f"app-{datetime.today().strftime('%Y-%m-%d')}.log")
+    # file_handler = logging.FileHandler(LOGGING_FILE)
+    # file_handler.setLevel(logging.DEBUG)
+    # file_handler.setFormatter(formatter)
+
+    # Thêm xử lý vào logger
+    # logger.addHandler(file_handler)
+    # logger.addHandler(stdout_handler)
+
+    # Cấu hình logging cho root logger (không cần thiết nếu đã cấu hình handler cho logger)
+    # logging.basicConfig(
+    #     filename=LOGGING_FILE,
+    #     filemode='a',
+    #     format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+    #     datefmt='%H:%M:%S',
+    #     level=logging.DEBUG
+    # )
+
+    # Ví dụ về logging
+    # logger.info("Đây là một thông báo INFO")
+    # logger.debug("Đây là một thông báo DEBUG")
+    
     parser = argparse.ArgumentParser(description='Test Algorithms.')
     # general settings
     parser.add_argument('--purpose', default='experiments', type=str, help='purpose of this run')
@@ -236,4 +281,6 @@ if __name__ == "__main__":
     parser.add_argument('--CReFF_lr_feature', default=0.1, type=float, help='lr for feature')
 
     args = parser.parse_args()
+    # logging.info(f"########################### IN RA CAC ARG TRUYEN VAO ###############################")
+    # logging.info(args)
     run(args)
