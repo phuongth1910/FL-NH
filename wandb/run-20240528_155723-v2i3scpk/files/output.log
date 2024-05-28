@@ -1,0 +1,163 @@
+Files already downloaded and verified
+Files already downloaded and verified
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing : 0.9
+  FedNH_server_adv_prototype_agg : False
+ client side
+  FedNH_return_embedding : False
+  FedNH_head_init : orthogonal
+  FedNH_client_adv_prototype_agg : False
+  FedNH_fix_scaling : False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:22.740 seconds
+ server global model correct 1031
+ Testing time:58.085 seconds
+ avg_test_acc: {'uniform': 0.1031000018119812, 'validclass': 0.1031000018119812, 'labeldist': 0.1031000092625618}
+ pfl_avg_test_acc: {'uniform': 0.11852000057697296, 'validclass': 0.19766587466001512, 'labeldist': 0.5550476282835006}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+ Training time:50.470 seconds
+ server global model correct 1202
+Traceback (most recent call last):
+  File "D:\Luan\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Luan\FedNH\main.py", line 169, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Luan\FedNH\src\flbase\strategies\FedAvg.py", line 270, in run
+    self.testing(round=r, active_only=True)
+  File "D:\Luan\FedNH\src\flbase\strategies\FedAvg.py", line 182, in testing
+    client.testing(round, self.server_side_client.testloader)
+  File "D:\Luan\FedNH\src\flbase\strategies\FedUH.py", line 145, in testing
+    for i, (x, y) in enumerate(testloader):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\cifar.py", line 118, in __getitem__
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\transforms.py", line 137, in __call__
+    return F.to_tensor(pic)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\transforms\functional.py", line 175, in to_tensor
+    return img.to(dtype=default_float_dtype).div(255)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

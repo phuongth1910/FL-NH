@@ -972,6 +972,62 @@ def get_datasets(datasetname, **kwargs):
         testset = torchvision.datasets.CIFAR10(root='~/data', train=False,
                                                download=True, transform=transform)
         testset.targets = torch.tensor(testset.targets)
+    
+    elif datasetname == "braintumor":
+        print("brain tumor dataset dang su dung")
+        image_size = (224,224)
+        # data augmentation
+        transform_train = transforms.Compose([
+            transforms.RandomHorizontalFlip(),
+            transforms.RandomVerticalFlip(),
+            transforms.RandomRotation(10),
+            transforms.Resize(image_size),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+        transform_test = transforms.Compose([
+            transforms.Resize(image_size),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+        ])
+
+        trainset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Training", transform=
+                                                     transform_train)
+        testset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Testing", transform=
+                                                     transform_test)
+        print(trainset)
+        print(testset)
+            
+        # train_brain_trans = transforms.Compose([transforms.RandomCrop(128, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # test_brain_trans = transforms.Compose([transforms.RandomCrop(128, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # train_brain_trans = transforms.Compose([transforms.RandomCrop(32, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # test_brain_trans = transforms.Compose([transforms.RandomCrop(32, padding=4),
+        #                                   transforms.RandomHorizontalFlip(),
+        #                                   transforms.ColorJitter(brightness = 0.5, contrast = 0.5, saturation = 1, hue = 0.5),
+        #                                   transforms.Resize((32,32)),
+        #                                   transforms.ToTensor(),
+        #                                 ])
+        # trainset = torchvision.datasets.ImageFolder(root='C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\\data\\braintumor\\Training', transform= traint_brain_trans)
+        # testset = torchvision.datasets.ImageFolder(root='C:\\Users\\admin\\Documents\\Comvis2023\\Fed_Ha_Phuong\\New folder\\FedNH\data\\braintumor\\Testing', transform= test_brain_trans)
+        trainset.targets = torch.tensor(trainset.targets)
+        testset.targets = torch.tensor(testset.targets)
+    
     else:
         raise ValueError(f"Unrecognized dataset:{datasetname}")
 
