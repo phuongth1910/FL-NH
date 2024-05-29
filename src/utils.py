@@ -884,6 +884,15 @@ def get_datasets(datasetname, **kwargs):
                                                      download=True, transform=transform)
         testset = torchvision.datasets.FashionMNIST(root='~/data', train=False,
                                                     download=True, transform=transform)
+    elif datasetname == "Mnist":
+        transform = torchvision.transforms.Compose([
+            torchvision.transforms.ToTensor(),
+            torchvision.transforms.Normalize((0.1307,), (0.3081,))
+        ])
+        trainset = torchvision.datasets.MNIST(root='~/data', train=True,
+                                                     download=True, transform=transform)
+        testset = torchvision.datasets.MNIST(root='~/data', train=False,
+                                                    download=True, transform=transform)
     elif datasetname == "Cifar10":
         transform_train = transforms.Compose([
             transforms.RandomCrop(32, padding=4),
@@ -992,9 +1001,14 @@ def get_datasets(datasetname, **kwargs):
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
         ])
 
-        trainset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Training", transform=
+        # trainset = torchvision.datasets.ImageFolder(root="D:/Comvis 2024/FedNH/data/tumorMRI/Training", transform=
+        #                                              transform_train)
+        # testset = torchvision.datasets.ImageFolder(root="D:/Comvis 2024/FedNH/data/tumorMRI/Testing", transform=
+        #                                              transform_test)
+        
+        trainset = torchvision.datasets.ImageFolder(root="D:/Comvis 2024/FedNH/data/braintumor/Training", transform=
                                                      transform_train)
-        testset = torchvision.datasets.ImageFolder(root="C:/Users/admin/Documents/Comvis2023/Fed_Ha_Phuong/New folder/FedNH/data/braintumor/Testing", transform=
+        testset = torchvision.datasets.ImageFolder(root="D:/Comvis 2024/FedNH/data/braintumor/Testing", transform=
                                                      transform_test)
         print(trainset)
         print(testset)

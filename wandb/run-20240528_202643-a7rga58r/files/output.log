@@ -1,0 +1,181 @@
+brain tumor dataset dang su dung
+Dataset ImageFolder
+    Number of datapoints: 5712
+    Root location: D:/Comvis 2024/FedNH/data/braintumor/Training
+    StandardTransform
+Transform: Compose(
+               RandomHorizontalFlip(p=0.5)
+               RandomVerticalFlip(p=0.5)
+               RandomRotation(degrees=[-10.0, 10.0], interpolation=nearest, expand=False, fill=0)
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+Dataset ImageFolder
+    Number of datapoints: 1311
+    Root location: D:/Comvis 2024/FedNH/data/braintumor/Testing
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 13 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:braintumor | num_classes:4 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:ResNetMod | num_epochs:5 | batch_size:32 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ ResNetMod: size:44.684 MB | num params: 11.171 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing : 0.9
+  FedNH_server_adv_prototype_agg : False
+ client side
+  FedNH_return_embedding : False
+  FedNH_head_init : orthogonal
+  FedNH_client_adv_prototype_agg : False
+  FedNH_fix_scaling : False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:1543.992 seconds
+ server global model correct 300
+ Testing time:3298.640 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.24622425585985183, 'validclass': 0.49215624034404754, 'labeldist': 0.637066227197647}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+ Training time:1597.021 seconds
+ server global model correct 300
+ Testing time:3259.152 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.23137891292572021}
+ pfl_avg_test_acc: {'uniform': 0.2448512554168701, 'validclass': 0.43769704848527907, 'labeldist': 0.7135810405015945}
+Round:3 - Active clients:[93 67  6 64 96 83 98 42 25 15]:
+ Training time:2666.820 seconds
+ server global model correct 414
+ Testing time:3254.232 seconds
+ avg_test_acc: {'uniform': 0.31578946113586426, 'validclass': 0.31578946113586426, 'labeldist': 0.34824034571647644}
+ pfl_avg_test_acc: {'uniform': 0.24530892223119735, 'validclass': 0.4281399637460709, 'labeldist': 0.7083331182599067}
+ Best test accuracy:0.316. Best server model is updatded and saved at ./tumorMRI_FedNH/FedNH_braintumor_ResNetMod_noniid-label-distribution_beta:0.3_num_clients:100_participate_ratio:0.1_global_seed:0_FedNH_smoothing:0.9_FedNH_client_adv_prototype_agg:False_no_norm:False_best_global_model.pkl!
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 169, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 283, in run
+    torch.save(self.server_model_state_dict_best_so_far, kwargs['filename'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: File ./tumorMRI_FedNH/FedNH_braintumor_ResNetMod_noniid-label-distribution_beta:0.3_num_clients:100_participate_ratio:0.1_global_seed:0_FedNH_smoothing:0.9_FedNH_client_adv_prototype_agg:False_no_norm:False_best_global_model.pkl cannot be opened.

@@ -1,0 +1,231 @@
+2024-05-29 14:17:16,605 INFO    StreamThr :12772 [internal.py:wandb_internal():86] W&B internal server running at pid: 12772, started at: 2024-05-29 14:17:16.605281
+2024-05-29 14:17:16,605 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status
+2024-05-29 14:17:16,605 INFO    WriterThread:12772 [datastore.py:open_for_write():87] open: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\run-t0gbjn02.wandb
+2024-05-29 14:17:16,605 DEBUG   SenderThread:12772 [sender.py:send():379] send: header
+2024-05-29 14:17:16,656 DEBUG   SenderThread:12772 [sender.py:send():379] send: run
+2024-05-29 14:17:17,596 INFO    SenderThread:12772 [dir_watcher.py:__init__():211] watching files in: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files
+2024-05-29 14:17:17,596 INFO    SenderThread:12772 [sender.py:_start_run_threads():1124] run started: t0gbjn02 with start time 1716967036.605281
+2024-05-29 14:17:17,596 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: check_version
+2024-05-29 14:17:17,596 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: check_version
+2024-05-29 14:17:18,090 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: run_start
+2024-05-29 14:17:19,302 DEBUG   HandlerThread:12772 [system_info.py:__init__():26] System info init
+2024-05-29 14:17:19,302 DEBUG   HandlerThread:12772 [system_info.py:__init__():41] System info init done
+2024-05-29 14:17:19,302 INFO    HandlerThread:12772 [system_monitor.py:start():194] Starting system monitor
+2024-05-29 14:17:19,302 INFO    SystemMonitor:12772 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-29 14:17:19,302 INFO    HandlerThread:12772 [system_monitor.py:probe():214] Collecting system info
+2024-05-29 14:17:19,302 INFO    SystemMonitor:12772 [interfaces.py:start():190] Started cpu monitoring
+2024-05-29 14:17:19,302 INFO    SystemMonitor:12772 [interfaces.py:start():190] Started disk monitoring
+2024-05-29 14:17:19,302 INFO    SystemMonitor:12772 [interfaces.py:start():190] Started gpu monitoring
+2024-05-29 14:17:19,302 INFO    SystemMonitor:12772 [interfaces.py:start():190] Started memory monitoring
+2024-05-29 14:17:19,320 INFO    SystemMonitor:12772 [interfaces.py:start():190] Started network monitoring
+2024-05-29 14:17:19,325 DEBUG   HandlerThread:12772 [system_info.py:probe():150] Probing system
+2024-05-29 14:17:19,325 DEBUG   HandlerThread:12772 [system_info.py:_probe_git():135] Probing git
+2024-05-29 14:17:19,333 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-05-29 14:17:19,380 DEBUG   HandlerThread:12772 [system_info.py:_probe_git():143] Probing git done
+2024-05-29 14:17:19,380 DEBUG   HandlerThread:12772 [system_info.py:probe():198] Probing system done
+2024-05-29 14:17:19,380 DEBUG   HandlerThread:12772 [system_monitor.py:probe():223] {'os': 'Windows-11-10.0.22631-SP0', 'python': '3.12.2', 'heartbeatAt': '2024-05-29T07:17:19.325139', 'startedAt': '2024-05-29T07:17:16.605281', 'docker': None, 'cuda': None, 'args': ('--purpose', 'tumorMRI', '--device', 'cuda:2', '--global_seed', '0', '--use_wandb', 'True', '--yamlfile', './tumorMRI_PhuongModel.yaml', '--strategy', 'FedNH', '--num_clients', '100', '--participate_ratio', '0.1', '--partition', 'noniid-label-distribution', '--beta', '0.3', '--num_rounds', '200', '--client_lr', '0.01', '--client_lr_scheduler', 'diminishing', '--sgd_momentum', '0.9', '--sgd_weight_decay', '1e-05', '--num_epochs', '5'), 'state': 'running', 'program': 'D:\\Comvis 2024\\FedNH\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/phuongth1910/FL-NH.git', 'commit': '81983c2d6242926fd603088749639c9e27f6ef4d'}, 'email': 'tranhaphuong191002@gmail.com', 'root': 'D:/Comvis 2024/FedNH', 'host': 'PHUONG-TH', 'username': 'admin', 'executable': 'C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1500.0, 'min': 0.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 0.0, 'max': 3100.0}], 'disk': {'/': {'total': 447.11425399780273, 'used': 119.72590637207031}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.710990905761719}}
+2024-05-29 14:17:19,380 INFO    HandlerThread:12772 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-29 14:17:19,380 INFO    HandlerThread:12772 [system_monitor.py:probe():227] Publishing system info
+2024-05-29 14:17:19,380 INFO    HandlerThread:12772 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-29 14:17:19,396 DEBUG   SenderThread:12772 [sender.py:send():379] send: files
+2024-05-29 14:17:19,396 INFO    SenderThread:12772 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-29 14:17:19,484 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-29 14:17:19,484 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: python_packages
+2024-05-29 14:17:19,485 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 14:17:19,485 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 14:17:19,486 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 14:17:19,617 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\requirements.txt
+2024-05-29 14:17:19,617 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-metadata.json
+2024-05-29 14:17:20,115 DEBUG   SenderThread:12772 [sender.py:send():379] send: telemetry
+2024-05-29 14:17:20,625 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:20,641 INFO    wandb-upload_0:12772 [upload_job.py:push():131] Uploaded file C:\Users\admin\AppData\Local\Temp\tmp0fnrxxt2wandb\7ft07lcf-wandb-metadata.json
+2024-05-29 14:17:21,831 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:21,831 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:21,856 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:22,640 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:23,649 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:24,318 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:24,318 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:25,671 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:26,812 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:26,812 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:26,926 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:27,680 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:29,303 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:29,313 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:29,701 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:31,738 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:31,792 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:31,792 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:31,951 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:33,747 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:34,293 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:34,293 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:34,492 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 14:17:34,510 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 14:17:34,510 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 14:17:34,749 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:35,763 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:36,767 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:36,783 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:36,783 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:37,200 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:37,782 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:39,295 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:39,295 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:39,798 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:40,822 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:41,798 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:41,798 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:41,843 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:42,222 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:42,855 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:44,315 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:44,315 ERROR   gpu       :12772 [interfaces.py:monitor():144] Failed to sample metric: Unknown Error
+2024-05-29 14:17:44,860 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:45,578 DEBUG   SenderThread:12772 [sender.py:send():379] send: exit
+2024-05-29 14:17:45,578 INFO    SenderThread:12772 [sender.py:send_exit():586] handling exit code: 1
+2024-05-29 14:17:45,578 INFO    SenderThread:12772 [sender.py:send_exit():588] handling runtime: 27
+2024-05-29 14:17:45,580 INFO    SenderThread:12772 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 14:17:45,599 INFO    SenderThread:12772 [sender.py:send_exit():594] send defer
+2024-05-29 14:17:45,599 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:45,599 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-29 14:17:45,599 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:45,599 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-29 14:17:45,599 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 1
+2024-05-29 14:17:45,599 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:45,600 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-29 14:17:45,600 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:45,600 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-29 14:17:45,600 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 2
+2024-05-29 14:17:45,600 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:45,600 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-29 14:17:45,600 INFO    HandlerThread:12772 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-29 14:17:45,601 DEBUG   SystemMonitor:12772 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-29 14:17:45,601 DEBUG   SystemMonitor:12772 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-29 14:17:45,601 INFO    HandlerThread:12772 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-29 14:17:45,602 DEBUG   SystemMonitor:12772 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-29 14:17:45,602 INFO    HandlerThread:12772 [interfaces.py:finish():202] Joined disk monitor
+2024-05-29 14:17:45,868 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-summary.json
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [interfaces.py:finish():202] Joined memory monitor
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [interfaces.py:finish():202] Joined network monitor
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 3
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send():379] send: stats
+2024-05-29 14:17:46,120 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 4
+2024-05-29 14:17:46,120 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 5
+2024-05-29 14:17:46,120 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:46,120 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send():379] send: summary
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 14:17:46,120 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-29 14:17:46,120 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 6
+2024-05-29 14:17:46,120 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:46,125 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-29 14:17:46,125 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,125 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-29 14:17:46,125 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 14:17:46,519 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 7
+2024-05-29 14:17:46,519 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:46,519 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-29 14:17:46,519 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:46,519 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-29 14:17:46,582 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:46,868 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-summary.json
+2024-05-29 14:17:46,868 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:46,868 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\config.yaml
+2024-05-29 14:17:47,880 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:48,917 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 8
+2024-05-29 14:17:48,917 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:48,917 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:48,917 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-29 14:17:48,917 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:48,917 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-29 14:17:48,917 INFO    SenderThread:12772 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-29 14:17:48,917 INFO    SenderThread:12772 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-05-29 14:17:48,959 INFO    SenderThread:12772 [job_builder.py:build():431] adding wandb-job metadata file
+2024-05-29 14:17:48,959 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 9
+2024-05-29 14:17:48,959 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:48,959 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-29 14:17:48,959 DEBUG   SenderThread:12772 [sender.py:send():379] send: artifact
+2024-05-29 14:17:49,603 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:49,889 INFO    Thread-16 :12772 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:50,296 INFO    SenderThread:12772 [sender.py:send_artifact():1468] sent artifact job-https___github.com_phuongth1910_FL-NH.git_main.py - {'id': 'QXJ0aWZhY3Q6ODUyMTAzMzQz', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3OTc3MzE4OQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODUyNTc5MDEw', 'versionIndex': 1}}}
+2024-05-29 14:17:50,296 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:50,296 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-29 14:17:50,296 INFO    SenderThread:12772 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-29 14:17:50,894 INFO    SenderThread:12772 [dir_watcher.py:finish():388] scan: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files
+2024-05-29 14:17:50,894 INFO    SenderThread:12772 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\config.yaml config.yaml
+2024-05-29 14:17:50,894 INFO    SenderThread:12772 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log output.log
+2024-05-29 14:17:50,896 INFO    SenderThread:12772 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\requirements.txt requirements.txt
+2024-05-29 14:17:50,896 INFO    SenderThread:12772 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-metadata.json wandb-metadata.json
+2024-05-29 14:17:50,896 INFO    SenderThread:12772 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-summary.json wandb-summary.json
+2024-05-29 14:17:50,896 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 10
+2024-05-29 14:17:50,896 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:50,896 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:50,903 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-29 14:17:50,903 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:50,903 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-29 14:17:50,903 INFO    SenderThread:12772 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-29 14:17:51,536 INFO    wandb-upload_1:12772 [upload_job.py:push():131] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\output.log
+2024-05-29 14:17:51,630 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:51,630 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:51,829 INFO    wandb-upload_0:12772 [upload_job.py:push():131] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\config.yaml
+2024-05-29 14:17:52,303 INFO    wandb-upload_3:12772 [upload_job.py:push():131] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\wandb-summary.json
+2024-05-29 14:17:52,305 INFO    wandb-upload_2:12772 [upload_job.py:push():131] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\files\requirements.txt
+2024-05-29 14:17:52,525 INFO    Thread-15 (_thread_body):12772 [sender.py:transition_state():614] send defer: 11
+2024-05-29 14:17:52,526 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:52,526 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-29 14:17:52,526 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:52,526 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-29 14:17:52,526 INFO    SenderThread:12772 [file_pusher.py:join():178] waiting for file pusher
+2024-05-29 14:17:52,526 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 12
+2024-05-29 14:17:52,526 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:52,526 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-29 14:17:52,526 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:52,526 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-29 14:17:52,526 INFO    SenderThread:12772 [file_stream.py:finish():614] file stream finish called
+2024-05-29 14:17:52,645 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:52,792 INFO    SenderThread:12772 [file_stream.py:finish():618] file stream finish is done
+2024-05-29 14:17:52,792 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 13
+2024-05-29 14:17:52,792 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:52,792 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:52,792 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-29 14:17:52,792 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:52,792 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-29 14:17:52,792 INFO    SenderThread:12772 [sender.py:transition_state():614] send defer: 14
+2024-05-29 14:17:52,792 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: defer
+2024-05-29 14:17:52,792 INFO    HandlerThread:12772 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-29 14:17:52,792 DEBUG   SenderThread:12772 [sender.py:send():379] send: final
+2024-05-29 14:17:52,792 DEBUG   SenderThread:12772 [sender.py:send():379] send: footer
+2024-05-29 14:17:52,792 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: defer
+2024-05-29 14:17:52,792 INFO    SenderThread:12772 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:52,799 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: server_info
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-29 14:17:52,799 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 14:17:52,799 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: poll_exit
+2024-05-29 14:17:52,799 DEBUG   SenderThread:12772 [sender.py:send_request():406] send_request: server_info
+2024-05-29 14:17:53,028 INFO    MainThread:12772 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-05-29 14:17:53,028 INFO    MainThread:12772 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-05-29 14:17:53,028 INFO    MainThread:12772 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-05-29 14:17:53,028 DEBUG   HandlerThread:12772 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-29 14:17:53,028 INFO    HandlerThread:12772 [handler.py:finish():866] shutting down handler
+2024-05-29 14:17:53,811 INFO    WriterThread:12772 [datastore.py:close():296] close: D:\Comvis 2024\FedNH\wandb\run-20240529_141716-t0gbjn02\run-t0gbjn02.wandb
+2024-05-29 14:17:54,051 INFO    SenderThread:12772 [sender.py:finish():1546] shutting down sender
+2024-05-29 14:17:54,052 INFO    SenderThread:12772 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-29 14:17:54,052 INFO    SenderThread:12772 [file_pusher.py:join():178] waiting for file pusher

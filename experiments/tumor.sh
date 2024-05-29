@@ -1,0 +1,1 @@
+python main.py  --purpose tumorMRI --device cuda:2 --global_seed 0 --use_wandb True --yamlfile ./tumorMRI_PhuongModel.yaml --strategy FedNH --num_clients 40 --participate_ratio 0.1 --partition noniid-label-distribution --beta 0.3 --num_rounds 200 --client_lr 0.01 --client_lr_scheduler diminishing --sgd_momentum 0.9 --sgd_weight_decay 1e-05 --num_epochs 5

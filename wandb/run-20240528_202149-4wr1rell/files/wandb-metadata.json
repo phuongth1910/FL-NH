@@ -1,0 +1,86 @@
+{
+    "os": "Windows-11-10.0.22631-SP0",
+    "python": "3.12.2",
+    "heartbeatAt": "2024-05-28T13:21:52.422736",
+    "startedAt": "2024-05-28T13:21:49.672569",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--purpose",
+        "tumorMRI",
+        "--device",
+        "cuda:2",
+        "--global_seed",
+        "0",
+        "--use_wandb",
+        "True",
+        "--yamlfile",
+        "./tumorMRI_PhuongModel.yaml",
+        "--strategy",
+        "FedNH",
+        "--num_clients",
+        "100",
+        "--participate_ratio",
+        "0.1",
+        "--partition",
+        "noniid-label-distribution",
+        "--beta",
+        "0.3",
+        "--num_rounds",
+        "200",
+        "--client_lr",
+        "0.01",
+        "--client_lr_scheduler",
+        "diminishing",
+        "--sgd_momentum",
+        "0.9",
+        "--sgd_weight_decay",
+        "1e-05",
+        "--num_epochs",
+        "5"
+    ],
+    "state": "running",
+    "program": "D:\\Comvis 2024\\FedNH\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/phuongth1910/FL-NH.git",
+        "commit": "81983c2d6242926fd603088749639c9e27f6ef4d"
+    },
+    "email": "tranhaphuong191002@gmail.com",
+    "root": "D:/Comvis 2024/FedNH",
+    "host": "PHUONG-TH",
+    "username": "admin",
+    "executable": "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3100.0,
+        "min": 0.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3100.0,
+            "min": 0.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 447.11425399780273,
+            "used": 119.59895324707031
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.710990905761719
+    }
+}

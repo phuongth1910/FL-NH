@@ -1,0 +1,43 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz to C:\Users\admin/data\MNIST\raw\train-images-idx3-ubyte.gz
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:03<00:00, 2515540.65it/s]
+Extracting C:\Users\admin/data\MNIST\raw\train-images-idx3-ubyte.gz to C:\Users\admin/data\MNIST\raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz to C:\Users\admin/data\MNIST\raw\train-labels-idx1-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 119551.52it/s]
+Extracting C:\Users\admin/data\MNIST\raw\train-labels-idx1-ubyte.gz to C:\Users\admin/data\MNIST\raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-images-idx3-ubyte.gz to C:\Users\admin/data\MNIST\raw\t10k-images-idx3-ubyte.gz
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:01<00:00, 932935.81it/s]
+Extracting C:\Users\admin/data\MNIST\raw\t10k-images-idx3-ubyte.gz to C:\Users\admin/data\MNIST\raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Failed to download (trying next):
+HTTP Error 403: Forbidden
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz
+Downloading https://ossci-datasets.s3.amazonaws.com/mnist/t10k-labels-idx1-ubyte.gz to C:\Users\admin/data\MNIST\raw\t10k-labels-idx1-ubyte.gz
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 138, in run
+    clients_dict = setup_clients(ClientCstr, trainset, None, criterion,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\flbase\utils.py", line 64, in setup_clients
+    trainset_per_client_dict, stats_dict = sampler(trainset, num_clients, partition, ylabels=trainset.targets,
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\utils.py", line 258, in sampler
+    assert num_classes == num_unique_class, f"num_classes is set to {num_classes}, but number of unique class detected in ylables are {num_unique_class}."
+AssertionError: num_classes is set to 4, but number of unique class detected in ylables are 10.
+Extracting C:\Users\admin/data\MNIST\raw\t10k-labels-idx1-ubyte.gz to C:\Users\admin/data\MNIST\raw
