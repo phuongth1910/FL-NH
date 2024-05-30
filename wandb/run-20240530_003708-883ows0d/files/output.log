@@ -1,0 +1,37 @@
+Files already downloaded and verified
+Files already downloaded and verified
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ True
+ client side
+  FedNH_return_embedding _ True
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ True
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 246, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 176, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 254, in run
+    client.training(r, client.client_config['num_epochs'])
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedUH.py", line 101, in training
+    loss = self.criterion(yhat, y)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\loss.py", line 1174, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\functional.py", line 3026, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+TypeError: cross_entropy_loss(): argument 'input' (position 1) must be Tensor, not tuple

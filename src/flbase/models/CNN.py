@@ -125,191 +125,11 @@ class ResNetModNH(Model):
         else:
             return logits
 
-class s01_PhuongModelNH(Model):
+
+class tumorModelNH(Model):
     def __init__(self, config):
         super().__init__(config)
         self.return_embedding = config['FedNH_return_embedding']
-
-        self.conv1 = nn.Conv2d(3,32,kernel_size=4,stride=1,padding=0)
-        self.bn1 = nn.BatchNorm2d(32)
-        
-        self.conv2 = nn.Conv2d(32,64,kernel_size=4,stride=1,padding=0)
-        self.bn2 = nn.BatchNorm2d(64)
-        
-        self.conv3 = nn.Conv2d(64,128,kernel_size=4,stride=1,padding=0)
-        self.bn3 = nn.BatchNorm2d(128)
-        
-        self.conv4 = nn.Conv2d(128,128,kernel_size=4,stride=1,padding=0)
-        self.bn4 = nn.BatchNorm2d(128)
-        
-        self.pool = nn.MaxPool2d(kernel_size=3, stride=3)
-        self.pool2= nn.MaxPool2d(kernel_size=3, stride=2)
-        
-        self.fc1 = nn.Linear(6*6*128,512)
-        self.fc2 = nn.Linear(512,config['num_classes'])
-        
-        temp = nn.Linear(512, config['num_classes'], bias=False).state_dict()['weight']
-        self.prototype = nn.Parameter(temp)
-
-        self.flatten = nn.Flatten()
-        self.relu = nn.ReLU() 
-        self.dropout = nn.Dropout(0.5)
-
-        self.scaling = torch.nn.Parameter(torch.tensor([1.0]))
-        
-        
-        
-        
-    def forward(self,x):
-        x = self.relu(self.bn1(self.conv1(x)))
-        x = self.pool(x)
-        x = self.relu(self.bn2(self.conv2(x)))
-        x = self.pool(x)
-        x = self.relu(self.bn3(self.conv3(x)))
-        x = self.pool2(x)
-        x = self.relu(self.bn4(self.conv4(x)))
-        x = self.flatten(x)
-        x = self.relu(self.fc1(x))
-        x = self.dropout(x)
-        x = self.fc2(x)
-        feature_embedding = x
-        feature_embedding_norm = torch.norm(feature_embedding, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-        feature_embedding = torch.div(feature_embedding, feature_embedding_norm)
-
-        if not self.prototype.requires_grad:
-            normalized_prototype = self.prototype
-        else:
-            prototype_norm = torch.norm(self.prototype, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-            normalized_prototype = torch.div(self.prototype, prototype_norm)
-
-        logits = torch.matmul(feature_embedding, normalized_prototype.T)
-        logits = self.scaling * logits
-
-        if self.return_embedding:
-            return feature_embedding, logits
-        else:
-            return logits
-
-
-class s02_PhuongModelNH(Model):
-     def __init__(self, config):
-        super().__init__(config)
-        self.return_embedding = config['FedNH_return_embedding']
-
-        self.conv1 = nn.Conv2d(3, 32, kernel_size=4, stride=2, padding=1)
-        self.bn1 = nn.BatchNorm2d(32)
-        
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=4, stride=2, padding=1)
-        self.bn2 = nn.BatchNorm2d(64)
-        
-        self.conv3 = nn.Conv2d(64, 128, kernel_size=4, stride=2, padding=1)
-        self.bn3 = nn.BatchNorm2d(128)
-        
-        self.conv4 = nn.Conv2d(128, 128, kernel_size=4, stride=2, padding=1)
-        self.bn4 = nn.BatchNorm2d(128)
-        
-        self.fc1 = nn.Linear(128 * 4 * 4, 512)  # 128 channels, 4x4 feature map after conv4
-        self.fc2 = nn.Linear(512, config['num_classes'])
-        
-        temp = nn.Linear(512, config['num_classes'], bias=False).state_dict()['weight']
-        self.prototype = nn.Parameter(temp)
-
-        self.flatten = nn.Flatten()
-        self.relu = nn.ReLU() 
-        self.dropout = nn.Dropout(0.5)
-
-        self.scaling = torch.nn.Parameter(torch.tensor([1.0]))
-        
-     def forward(self, x):
-        x = self.relu(self.bn1(self.conv1(x)))
-        x = self.relu(self.bn2(self.conv2(x)))
-        x = self.relu(self.bn3(self.conv3(x)))
-        x = self.relu(self.bn4(self.conv4(x)))
-        x = self.flatten(x)
-        x = self.relu(self.fc1(x))
-        x = self.dropout(x)
-        x = self.fc2(x)
-        
-        feature_embedding = x
-        feature_embedding_norm = torch.norm(feature_embedding, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-        feature_embedding = torch.div(feature_embedding, feature_embedding_norm)
-
-        if not self.prototype.requires_grad:
-            normalized_prototype = self.prototype
-        else:
-            prototype_norm = torch.norm(self.prototype, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-            normalized_prototype = torch.div(self.prototype, prototype_norm)
-
-        logits = torch.matmul(feature_embedding, normalized_prototype.T)
-        logits = self.scaling * logits
-
-        if self.return_embedding:
-            return feature_embedding, logits
-        else:
-            return logits
-
-class s03_PhuongModelNH(Model):
-    def __init__(self, config):
-        super().__init__(config)
-        self.return_embedding = config['FedNH_return_embedding']
-
-        self.conv1 = nn.Conv2d(3, 32, kernel_size=4, stride=2, padding=1)
-        self.bn1 = nn.BatchNorm2d(32)
-        
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=4, stride=2, padding=1)
-        self.bn2 = nn.BatchNorm2d(64)
-        
-        self.conv3 = nn.Conv2d(64, 128, kernel_size=4, stride=2, padding=1)
-        self.bn3 = nn.BatchNorm2d(128)
-        
-        self.conv4 = nn.Conv2d(128, 128, kernel_size=4, stride=2, padding=1)
-        self.bn4 = nn.BatchNorm2d(128)
-        
-        # Update kích thước của lớp fully connected fc1
-        self.fc1 = nn.Linear(128 * 4 * 4, 512)  # 128 channels, 4x4 feature map after conv4
-        
-        self.fc2 = nn.Linear(512, config['num_classes'])
-        
-        temp = nn.Linear(512, config['num_classes'], bias=False).state_dict()['weight']
-        self.prototype = nn.Parameter(temp)
-
-        self.flatten = nn.Flatten()
-        self.relu = nn.ReLU() 
-        self.dropout = nn.Dropout(0.5)
-
-        self.scaling = torch.nn.Parameter(torch.tensor([1.0]))
-        
-    def forward(self, x):
-        x = self.relu(self.bn1(self.conv1(x)))
-        x = self.relu(self.bn2(self.conv2(x)))
-        x = self.relu(self.bn3(self.conv3(x)))
-        x = self.relu(self.bn4(self.conv4(x)))
-        x = self.flatten(x)
-        x = self.relu(self.fc1(x))
-        x = self.dropout(x)
-        x = self.fc2(x)
-        
-        feature_embedding = x
-        feature_embedding_norm = torch.norm(feature_embedding, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-        feature_embedding = torch.div(feature_embedding, feature_embedding_norm)
-
-        if not self.prototype.requires_grad:
-            normalized_prototype = self.prototype
-        else:
-            prototype_norm = torch.norm(self.prototype, p=2, dim=1, keepdim=True).clamp(min=1e-12)
-            normalized_prototype = torch.div(self.prototype, prototype_norm)
-
-        logits = torch.matmul(feature_embedding, normalized_prototype.T)
-        logits = self.scaling * logits
-
-        if self.return_embedding:
-            return feature_embedding, logits
-        else:
-            return logits
-
-class PhuongModelNH(nn.Module):
-    def __init__(self, num_classes):
-        super(MyModel, self).__init__()
         
         self.conv1 = nn.Conv2d(3, 32, kernel_size=4, stride=1, padding=0)
         self.bn1 = nn.BatchNorm2d(32)
@@ -326,13 +146,17 @@ class PhuongModelNH(nn.Module):
         self.pool = nn.MaxPool2d(kernel_size=3, stride=3)
         self.pool2 = nn.MaxPool2d(kernel_size=3, stride=2)
         
-        self.fc1 = nn.Linear(6 * 6 * 128, 512)
-        self.fc2 = nn.Linear(512, num_classes)
+        self.fc1 = nn.Linear(6*6*128, 512)
+        self.linear2 = nn.Linear(512, 192)
+        
+        temp = nn.Linear(192, config['num_classes'], bias=False).state_dict()['weight']
+        self.prototype = nn.Parameter(temp)
+        self.scaling = torch.nn.Parameter(torch.tensor([1.0]))
         
         self.flatten = nn.Flatten()
         self.relu = nn.ReLU() 
         self.dropout = nn.Dropout(0.5)
-
+        
     def forward(self, x):
         x = self.relu(self.bn1(self.conv1(x)))
         x = self.pool(x)
@@ -341,10 +165,27 @@ class PhuongModelNH(nn.Module):
         x = self.relu(self.bn3(self.conv3(x)))
         x = self.pool2(x)
         x = self.relu(self.bn4(self.conv4(x)))
-        feature_embedding = self.flatten(x)  # Feature embedding
-
-        x = self.relu(self.fc1(feature_embedding))
-        x = self.dropout(x)
-        logits = self.fc2(x)
+        x = self.flatten(x)
+        x = self.relu(self.fc1(x))
+        feature_embedding = self.dropout(x)
+        feature_embedding = F.relu(self.linear2(feature_embedding))
         
-        return feature_embedding, logits
+        # Normalize feature embedding
+        feature_embedding_norm = torch.norm(feature_embedding, p=2, dim=1, keepdim=True).clamp(min=1e-12)
+        feature_embedding = torch.div(feature_embedding, feature_embedding_norm)
+        
+        # Normalize prototype
+        if self.prototype.requires_grad == False:
+            normalized_prototype = self.prototype
+        else:
+            prototype_norm = torch.norm(self.prototype, p=2, dim=1, keepdim=True).clamp(min=1e-12)
+            normalized_prototype = torch.div(self.prototype, prototype_norm)
+        
+        # Calculate logits
+        logits = torch.matmul(feature_embedding, normalized_prototype.T)
+        logits = self.scaling * logits
+        
+        if self.return_embedding:
+            return feature_embedding, logits
+        else:
+            return logits

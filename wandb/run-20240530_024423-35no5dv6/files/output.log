@@ -1,0 +1,53 @@
+Files already downloaded and verified
+Files already downloaded and verified
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ True
+ client side
+  FedNH_return_embedding _ False
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ True
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:10.157 seconds
+ server global model correct 1042
+ Testing time:19.399 seconds
+ avg_test_acc: {'uniform': 0.10419999808073044, 'validclass': 0.10419999808073044, 'labeldist': 0.10419999808073044}
+ pfl_avg_test_acc: {'uniform': 0.11798000112175941, 'validclass': 0.1963519871234894, 'labeldist': 0.5538698911666871}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 246, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 176, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 257, in run
+    client_uploads.append(client.upload())
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedNH.py", line 98, in upload
+    return self.new_state_dict, self._estimate_prototype_adv()
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedNH.py", line 69, in _estimate_prototype_adv
+    for i, (x, y) in enumerate(self.trainloader):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "D:\Comvis 2024\FedNH\src\utils.py", line 154, in __getitem__
+    image, label = self.dataset[self.idxs[item]]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\datasets\cifar.py", line 115, in __getitem__
+    img = Image.fromarray(img)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 3072, in fromarray
+    def fromarray(obj, mode=None):
+KeyboardInterrupt

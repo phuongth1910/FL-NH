@@ -1,0 +1,55 @@
+Files already downloaded and verified
+Files already downloaded and verified
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing : 0.9
+  FedNH_server_adv_prototype_agg : False
+ client side
+  FedNH_return_embedding : False
+  FedNH_head_init : orthogonal
+  FedNH_client_adv_prototype_agg : False
+  FedNH_fix_scaling : False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 169, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 254, in run
+    client.training(r, client.client_config['num_epochs'])
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedUH.py", line 97, in training
+    for _, (x, y) in enumerate(self.trainloader):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\dataloader.py", line 671, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\data\_utils\fetch.py", line 58, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "D:\Comvis 2024\FedNH\src\utils.py", line 154, in __getitem__
+    image, label = self.dataset[self.idxs[item]]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\datasets\cifar.py", line 118, in __getitem__
+    img = self.transform(img)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+    img = t(img)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\transforms\transforms.py", line 673, in forward
+    i, j, h, w = self.get_params(img, self.size)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\transforms\transforms.py", line 628, in get_params
+    _, h, w = F.get_dimensions(img)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torchvision\transforms\functional.py", line 70, in get_dimensions
+    if not torch.jit.is_scripting() and not torch.jit.is_tracing():
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\jit\_trace.py", line 1024, in is_tracing
+    return torch._C._is_tracing()
+KeyboardInterrupt

@@ -1,0 +1,219 @@
+2024-05-30 00:33:05,134 INFO    StreamThr :9064 [internal.py:wandb_internal():85] W&B internal server running at pid: 9064, started at: 2024-05-30 00:33:05.133655
+2024-05-30 00:33:05,137 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status
+2024-05-30 00:33:05,138 INFO    WriterThread:9064 [datastore.py:open_for_write():87] open: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\run-yab4j073.wandb
+2024-05-30 00:33:05,139 DEBUG   SenderThread:9064 [sender.py:send():378] send: header
+2024-05-30 00:33:05,183 DEBUG   SenderThread:9064 [sender.py:send():378] send: run
+2024-05-30 00:33:05,865 INFO    SenderThread:9064 [dir_watcher.py:__init__():211] watching files in: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files
+2024-05-30 00:33:05,866 INFO    SenderThread:9064 [sender.py:_start_run_threads():1123] run started: yab4j073 with start time 1717003985.135653
+2024-05-30 00:33:05,868 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: check_version
+2024-05-30 00:33:05,868 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: check_version
+2024-05-30 00:33:06,215 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: run_start
+2024-05-30 00:33:07,422 DEBUG   HandlerThread:9064 [system_info.py:__init__():26] System info init
+2024-05-30 00:33:07,423 DEBUG   HandlerThread:9064 [system_info.py:__init__():41] System info init done
+2024-05-30 00:33:07,423 INFO    HandlerThread:9064 [system_monitor.py:start():194] Starting system monitor
+2024-05-30 00:33:07,423 INFO    SystemMonitor:9064 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-30 00:33:07,423 INFO    HandlerThread:9064 [system_monitor.py:probe():214] Collecting system info
+2024-05-30 00:33:07,427 INFO    SystemMonitor:9064 [interfaces.py:start():188] Started cpu monitoring
+2024-05-30 00:33:07,427 INFO    SystemMonitor:9064 [interfaces.py:start():188] Started disk monitoring
+2024-05-30 00:33:07,428 INFO    SystemMonitor:9064 [interfaces.py:start():188] Started gpu monitoring
+2024-05-30 00:33:07,434 INFO    SystemMonitor:9064 [interfaces.py:start():188] Started memory monitoring
+2024-05-30 00:33:07,443 INFO    SystemMonitor:9064 [interfaces.py:start():188] Started network monitoring
+2024-05-30 00:33:07,451 DEBUG   HandlerThread:9064 [system_info.py:probe():150] Probing system
+2024-05-30 00:33:07,452 DEBUG   HandlerThread:9064 [system_info.py:_probe_git():135] Probing git
+2024-05-30 00:33:07,460 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:07,517 DEBUG   HandlerThread:9064 [system_info.py:_probe_git():143] Probing git done
+2024-05-30 00:33:07,518 DEBUG   HandlerThread:9064 [system_info.py:probe():198] Probing system done
+2024-05-30 00:33:07,518 DEBUG   HandlerThread:9064 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.10.0', 'heartbeatAt': '2024-05-29T17:33:07.451422', 'startedAt': '2024-05-29T17:33:05.127653', 'docker': None, 'cuda': None, 'args': ('--purpose', 'Cifar', '--device', 'cuda:0', '--global_seed', '0', '--use_wandb', 'True', '--yamlfile', './Cifar10_Conv2Cifar.yaml', '--strategy', 'FedNH', '--num_clients', '100', '--participate_ratio', '0.1', '--partition', 'noniid-label-distribution', '--beta', '0.3', '--num_rounds', '200', '--client_lr', '0.01', '--client_lr_scheduler', 'diminishing', '--sgd_momentum', '0.9', '--sgd_weight_decay', '1e-05', '--num_epochs', '5'), 'state': 'running', 'program': 'D:\\Comvis 2024\\FedNH\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/phuongth1910/FL-NH.git', 'commit': '693af8a4c0913bc4257ae369e6880ae229f061c7'}, 'email': 'tranhaphuong191002@gmail.com', 'root': 'D:/Comvis 2024/FedNH', 'host': 'PHUONG-TH', 'username': 'admin', 'executable': 'C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3100.0, 'min': 0.0, 'max': 3100.0}, 'cpu_freq_per_core': [{'current': 3100.0, 'min': 0.0, 'max': 3100.0}], 'disk': {'/': {'total': 447.11425399780273, 'used': 119.74475479125977}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.710990905761719}}
+2024-05-30 00:33:07,518 INFO    HandlerThread:9064 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-30 00:33:07,518 INFO    HandlerThread:9064 [system_monitor.py:probe():227] Publishing system info
+2024-05-30 00:33:07,518 INFO    HandlerThread:9064 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-30 00:33:07,526 DEBUG   SenderThread:9064 [sender.py:send():378] send: files
+2024-05-30 00:33:07,526 INFO    SenderThread:9064 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-30 00:33:07,578 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-30 00:33:07,578 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: python_packages
+2024-05-30 00:33:07,578 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-30 00:33:07,579 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: stop_status
+2024-05-30 00:33:07,889 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\requirements.txt
+2024-05-30 00:33:07,890 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-metadata.json
+2024-05-30 00:33:07,966 DEBUG   SenderThread:9064 [sender.py:send():378] send: telemetry
+2024-05-30 00:33:08,458 INFO    wandb-upload_0:9064 [upload_job.py:push():130] Uploaded file C:\Users\admin\AppData\Local\Temp\tmp2_3fqj2kwandb\biyb6hqz-wandb-metadata.json
+2024-05-30 00:33:08,903 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:09,469 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:10,482 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:10,919 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:11,489 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:12,936 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:13,504 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:15,523 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:15,524 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:17,543 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:19,563 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:20,559 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:21,578 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:22,582 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-30 00:33:22,582 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: stop_status
+2024-05-30 00:33:23,027 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:23,599 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:25,030 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:25,617 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:25,950 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:27,635 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:29,644 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:30,998 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:31,662 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:33,683 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:35,706 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:36,031 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:37,135 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\config.yaml
+2024-05-30 00:33:37,575 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-30 00:33:37,576 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: stop_status
+2024-05-30 00:33:37,761 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:39,784 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:40,238 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-30 00:33:40,239 DEBUG   SenderThread:9064 [sender.py:send():378] send: history
+2024-05-30 00:33:40,239 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: summary_record
+2024-05-30 00:33:40,241 INFO    SenderThread:9064 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-30 00:33:41,166 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_created():271] file/dir created: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-summary.json
+2024-05-30 00:33:41,803 ERROR   gpu       :9064 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-05-30 00:33:42,169 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:42,261 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:42,562 DEBUG   SenderThread:9064 [sender.py:send():378] send: exit
+2024-05-30 00:33:42,562 INFO    SenderThread:9064 [sender.py:send_exit():585] handling exit code: 255
+2024-05-30 00:33:42,562 INFO    SenderThread:9064 [sender.py:send_exit():587] handling runtime: 36
+2024-05-30 00:33:42,563 INFO    SenderThread:9064 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-30 00:33:42,564 INFO    SenderThread:9064 [sender.py:send_exit():593] send defer
+2024-05-30 00:33:42,564 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,564 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-30 00:33:42,564 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,564 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-30 00:33:42,564 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 1
+2024-05-30 00:33:42,565 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,565 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-30 00:33:42,565 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,565 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-30 00:33:42,565 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 2
+2024-05-30 00:33:42,565 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,565 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-30 00:33:42,565 INFO    HandlerThread:9064 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-30 00:33:42,565 DEBUG   SystemMonitor:9064 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-30 00:33:42,565 DEBUG   SystemMonitor:9064 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-30 00:33:42,565 INFO    HandlerThread:9064 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-30 00:33:42,565 DEBUG   SystemMonitor:9064 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-30 00:33:42,566 INFO    HandlerThread:9064 [interfaces.py:finish():200] Joined disk monitor
+2024-05-30 00:33:42,607 INFO    HandlerThread:9064 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-30 00:33:42,607 INFO    HandlerThread:9064 [interfaces.py:finish():200] Joined memory monitor
+2024-05-30 00:33:42,607 INFO    HandlerThread:9064 [interfaces.py:finish():200] Joined network monitor
+2024-05-30 00:33:42,608 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,608 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-30 00:33:42,608 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 3
+2024-05-30 00:33:42,608 DEBUG   SenderThread:9064 [sender.py:send():378] send: stats
+2024-05-30 00:33:42,608 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,608 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-30 00:33:42,608 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,608 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-30 00:33:42,608 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 4
+2024-05-30 00:33:42,609 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,609 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-30 00:33:42,609 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,609 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-30 00:33:42,609 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 5
+2024-05-30 00:33:42,609 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,609 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-30 00:33:42,609 DEBUG   SenderThread:9064 [sender.py:send():378] send: summary
+2024-05-30 00:33:42,610 INFO    SenderThread:9064 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-30 00:33:42,610 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,610 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-30 00:33:42,610 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 6
+2024-05-30 00:33:42,610 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,610 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-30 00:33:42,610 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,610 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-30 00:33:42,610 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 7
+2024-05-30 00:33:42,610 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: status_report
+2024-05-30 00:33:42,610 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:42,611 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-30 00:33:42,611 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:42,611 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-30 00:33:43,182 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-summary.json
+2024-05-30 00:33:43,571 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-30 00:33:44,618 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 8
+2024-05-30 00:33:44,618 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: poll_exit
+2024-05-30 00:33:44,619 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:44,619 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-30 00:33:44,619 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:44,619 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-30 00:33:44,619 INFO    SenderThread:9064 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-30 00:33:44,620 INFO    SenderThread:9064 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-30 00:33:44,671 INFO    SenderThread:9064 [job_builder.py:build():541] adding wandb-job metadata file
+2024-05-30 00:33:44,687 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 9
+2024-05-30 00:33:44,688 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:44,688 DEBUG   SenderThread:9064 [sender.py:send():378] send: artifact
+2024-05-30 00:33:44,688 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-30 00:33:45,209 INFO    Thread-16 :9064 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:45,583 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-30 00:33:45,902 INFO    SenderThread:9064 [sender.py:send_artifact():1467] sent artifact job-https___github.com_phuongth1910_FL-NH.git_main.py - {'id': 'QXJ0aWZhY3Q6ODUzNTk1MjI2', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3OTc2NTkwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6ODUzNTk1MjI2', 'versionIndex': 2}}}
+2024-05-30 00:33:45,902 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:45,903 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-30 00:33:45,903 INFO    SenderThread:9064 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-30 00:33:46,220 INFO    SenderThread:9064 [dir_watcher.py:finish():388] scan: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files
+2024-05-30 00:33:46,220 INFO    SenderThread:9064 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\config.yaml config.yaml
+2024-05-30 00:33:46,220 INFO    SenderThread:9064 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log output.log
+2024-05-30 00:33:46,221 INFO    SenderThread:9064 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\requirements.txt requirements.txt
+2024-05-30 00:33:46,221 INFO    SenderThread:9064 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-metadata.json wandb-metadata.json
+2024-05-30 00:33:46,221 INFO    SenderThread:9064 [dir_watcher.py:finish():402] scan save: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-summary.json wandb-summary.json
+2024-05-30 00:33:46,226 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 10
+2024-05-30 00:33:46,228 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: poll_exit
+2024-05-30 00:33:46,229 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:46,229 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-30 00:33:46,229 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:46,231 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-30 00:33:46,231 INFO    SenderThread:9064 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-30 00:33:46,590 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-30 00:33:46,591 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: poll_exit
+2024-05-30 00:33:46,875 INFO    wandb-upload_1:9064 [upload_job.py:push():130] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\config.yaml
+2024-05-30 00:33:46,954 INFO    wandb-upload_0:9064 [upload_job.py:push():130] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\output.log
+2024-05-30 00:33:47,014 INFO    wandb-upload_3:9064 [upload_job.py:push():130] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\wandb-summary.json
+2024-05-30 00:33:47,041 INFO    wandb-upload_2:9064 [upload_job.py:push():130] Uploaded file D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\files\requirements.txt
+2024-05-30 00:33:47,255 INFO    Thread-15 (_thread_body):9064 [sender.py:transition_state():613] send defer: 11
+2024-05-30 00:33:47,255 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:47,256 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-30 00:33:47,256 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:47,256 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-30 00:33:47,256 INFO    SenderThread:9064 [file_pusher.py:join():175] waiting for file pusher
+2024-05-30 00:33:47,256 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 12
+2024-05-30 00:33:47,257 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:47,257 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-30 00:33:47,257 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:47,257 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-30 00:33:47,257 INFO    SenderThread:9064 [file_stream.py:finish():601] file stream finish called
+2024-05-30 00:33:47,498 INFO    SenderThread:9064 [file_stream.py:finish():605] file stream finish is done
+2024-05-30 00:33:47,498 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 13
+2024-05-30 00:33:47,498 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:47,498 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-30 00:33:47,498 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:47,498 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-30 00:33:47,498 INFO    SenderThread:9064 [sender.py:transition_state():613] send defer: 14
+2024-05-30 00:33:47,498 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: defer
+2024-05-30 00:33:47,499 INFO    HandlerThread:9064 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-30 00:33:47,499 DEBUG   SenderThread:9064 [sender.py:send():378] send: final
+2024-05-30 00:33:47,499 DEBUG   SenderThread:9064 [sender.py:send():378] send: footer
+2024-05-30 00:33:47,499 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: defer
+2024-05-30 00:33:47,499 INFO    SenderThread:9064 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-30 00:33:47,500 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-30 00:33:47,500 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-30 00:33:47,500 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: server_info
+2024-05-30 00:33:47,500 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: poll_exit
+2024-05-30 00:33:47,500 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-30 00:33:47,500 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: poll_exit
+2024-05-30 00:33:47,500 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-30 00:33:47,501 DEBUG   SenderThread:9064 [sender.py:send_request():405] send_request: server_info
+2024-05-30 00:33:47,501 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-30 00:33:47,746 INFO    MainThread:9064 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-30 00:33:47,746 INFO    MainThread:9064 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-30 00:33:47,748 INFO    MainThread:9064 [wandb_run.py:_footer_sync_info():3953] logging synced files
+2024-05-30 00:33:47,749 DEBUG   HandlerThread:9064 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-30 00:33:47,749 INFO    HandlerThread:9064 [handler.py:finish():882] shutting down handler
+2024-05-30 00:33:48,511 INFO    WriterThread:9064 [datastore.py:close():296] close: D:\Comvis 2024\FedNH\wandb\run-20240530_003305-yab4j073\run-yab4j073.wandb
+2024-05-30 00:33:48,746 INFO    SenderThread:9064 [sender.py:finish():1545] shutting down sender
+2024-05-30 00:33:48,746 INFO    SenderThread:9064 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-30 00:33:48,746 INFO    SenderThread:9064 [file_pusher.py:join():175] waiting for file pusher

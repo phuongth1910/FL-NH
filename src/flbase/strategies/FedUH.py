@@ -43,6 +43,7 @@ class FedUHClient(Client):
 
     def _initialize_model(self):
         # parse the model from config file
+        print(f"{self.client_config['model']}NH")
         self.model = eval(f"{self.client_config['model']}NH")(self.client_config).to(self.device)
         # this is needed if the criterion has stateful tensors.
         self.criterion = self.criterion.to(self.device)
@@ -99,7 +100,7 @@ class FedUHClient(Client):
                 x, y = x.to(self.device), y.to(self.device)
                 yhat = self.model.forward(x)
                 loss = self.criterion(yhat, y)
-
+  
                 # backward pass
                 # model.zero_grad safer and memory-efficient
                 self.model.zero_grad(set_to_none=True)

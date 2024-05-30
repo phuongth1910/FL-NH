@@ -34,7 +34,7 @@ server_config:
   #################################################
   # FedNH:
   FedNH_smoothing: 0.9
-  FedNH_server_adv_prototype_agg: False
+  FedNH_server_adv_prototype_agg: yes
 
   # CReFF
   CReFF_num_of_fl_feature: 100
@@ -79,7 +79,7 @@ client_config:
   # FedNH
   FedNH_return_embedding: False
   FedNH_head_init: orthogonal
-  FedNH_client_adv_prototype_agg: False
+  FedNH_client_adv_prototype_agg: yes
   FedNH_fix_scaling: False
 
   # FedProto

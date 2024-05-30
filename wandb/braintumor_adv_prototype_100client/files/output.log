@@ -1,0 +1,271 @@
+brain tumor dataset dang su dung
+Dataset ImageFolder
+    Number of datapoints: 5712
+    Root location: D:/Comvis 2024/FedNH/data/braintumor/Training
+    StandardTransform
+Transform: Compose(
+               RandomHorizontalFlip(p=0.5)
+               RandomVerticalFlip(p=0.5)
+               RandomRotation(degrees=[-10.0, 10.0], interpolation=nearest, expand=False, fill=0)
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+Dataset ImageFolder
+    Number of datapoints: 1311
+    Root location: D:/Comvis 2024/FedNH/data/braintumor/Testing
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 13 clients have less than 2 classes
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+tumorModelNH
+============================================================Run Summary============================================================
+Dataset:
+ dataset:braintumor | num_classes:4 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 20 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:tumorModel | num_epochs:5 | batch_size:32 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ tumorModel: size:11.553 MB | num params: 2.888 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ True
+ client side
+  FedNH_return_embedding _ False
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ True
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:18.342 seconds
+ server global model correct 300
+ Testing time:64.299 seconds
+ avg_test_acc: {'uniform': 0.22883294522762299, 'validclass': 0.22883294522762299, 'labeldist': 0.2097814381122589}
+ pfl_avg_test_acc: {'uniform': 0.2801678106188774, 'validclass': 0.531056709587574, 'labeldist': 0.7308485507965088}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+ Training time:15.618 seconds
+ server global model correct 301
+ Testing time:54.930 seconds
+ avg_test_acc: {'uniform': 0.22959573566913605, 'validclass': 0.22959573566913605, 'labeldist': 0.23222322762012482}
+ pfl_avg_test_acc: {'uniform': 0.26880243569612505, 'validclass': 0.4419614836573601, 'labeldist': 0.6255029201507568}
+ Best test accuracy:0.230. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:3 - Active clients:[93 67  6 64 96 83 98 42 25 15]:
+ Training time:24.601 seconds
+ server global model correct 658
+ Testing time:54.955 seconds
+ avg_test_acc: {'uniform': 0.5019069314002991, 'validclass': 0.5019069314002991, 'labeldist': 0.5037591457366943}
+ pfl_avg_test_acc: {'uniform': 0.35194507986307144, 'validclass': 0.47340628523379563, 'labeldist': 0.6852303298190237}
+ Best test accuracy:0.502. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:4 - Active clients:[20 10 96 16 63 24 53 97 41 47]:
+ Training time:13.499 seconds
+ server global model correct 676
+ Testing time:55.311 seconds
+ avg_test_acc: {'uniform': 0.5156369209289551, 'validclass': 0.5156369209289551, 'labeldist': 0.511002779006958}
+ pfl_avg_test_acc: {'uniform': 0.29603356271982195, 'validclass': 0.5367620259523391, 'labeldist': 0.7449099332094192}
+ Best test accuracy:0.516. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:5 - Active clients:[66 32 46 28 74 23 10 20 17 35]:
+ Training time:24.921 seconds
+ server global model correct 581
+ Testing time:54.883 seconds
+ avg_test_acc: {'uniform': 0.4431731402873993, 'validclass': 0.4431731402873993, 'labeldist': 0.46400338411331177}
+ pfl_avg_test_acc: {'uniform': 0.33943554759025574, 'validclass': 0.530931168794632, 'labeldist': 0.8133337080478669}
+Round:6 - Active clients:[17 34  0 45 60 86 20 47 44 81]:
+ Training time:12.363 seconds
+ server global model correct 589
+ Testing time:55.336 seconds
+ avg_test_acc: {'uniform': 0.4492753744125366, 'validclass': 0.4492753744125366, 'labeldist': 0.4500529170036316}
+ pfl_avg_test_acc: {'uniform': 0.35034324526786803, 'validclass': 0.5893887251615524, 'labeldist': 0.7925026714801788}
+Round:7 - Active clients:[37 26 78 91 49 15 93 71 86 22]:
+ Training time:29.354 seconds
+ server global model correct 671
+ Testing time:55.098 seconds
+ avg_test_acc: {'uniform': 0.5118230581283569, 'validclass': 0.5118230581283569, 'labeldist': 0.5362278819084167}
+ pfl_avg_test_acc: {'uniform': 0.3816933661699295, 'validclass': 0.6274168998003006, 'labeldist': 0.8967033863067627}
+Round:8 - Active clients:[17 23  1 44 55 99 86 29 62 33]:
+ Training time:10.372 seconds
+ server global model correct 683
+ Testing time:55.179 seconds
+ avg_test_acc: {'uniform': 0.5209763646125793, 'validclass': 0.5209763646125793, 'labeldist': 0.5342174768447876}
+ pfl_avg_test_acc: {'uniform': 0.412356972694397, 'validclass': 0.6687928318977356, 'labeldist': 0.7703122705221176}
+ Best test accuracy:0.521. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:9 - Active clients:[75 42 46 68  3 39 23 20 70 73]:
+ Training time:23.234 seconds
+ server global model correct 828
+ Testing time:55.271 seconds
+ avg_test_acc: {'uniform': 0.6315789222717285, 'validclass': 0.6315789222717285, 'labeldist': 0.6507099270820618}
+ pfl_avg_test_acc: {'uniform': 0.3804729223251343, 'validclass': 0.5334876358509064, 'labeldist': 0.8542209148406983}
+ Best test accuracy:0.632. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:10 - Active clients:[19 14 43 37 66  3 79 41 38 68]:
+ Training time:30.136 seconds
+ server global model correct 681
+ Testing time:55.503 seconds
+ avg_test_acc: {'uniform': 0.5194507837295532, 'validclass': 0.5194507837295532, 'labeldist': 0.5320947170257568}
+ pfl_avg_test_acc: {'uniform': 0.4209000736474991, 'validclass': 0.5578076660633087, 'labeldist': 0.8266902148723603}
+Round:11 - Active clients:[46 49 22 58 41 98 62 29 30 51]:
+ Training time:20.715 seconds
+ server global model correct 735
+ Testing time:58.859 seconds
+ avg_test_acc: {'uniform': 0.5606407523155212, 'validclass': 0.5606407523155212, 'labeldist': 0.5737746953964233}
+ pfl_avg_test_acc: {'uniform': 0.34225781410932543, 'validclass': 0.620044270157814, 'labeldist': 0.8982809603214263}
+Round:12 - Active clients:[17 41 92 14 68 31 89 15 21 60]:
+ Training time:20.278 seconds
+ server global model correct 758
+ Testing time:55.312 seconds
+ avg_test_acc: {'uniform': 0.5781846046447754, 'validclass': 0.5781846046447754, 'labeldist': 0.590305745601654}
+ pfl_avg_test_acc: {'uniform': 0.41533180624246596, 'validclass': 0.6656378209590912, 'labeldist': 0.865670245885849}
+Round:13 - Active clients:[37 62 83 14 43  9 44 31 69 57]:
+ Training time:19.386 seconds
+ server global model correct 553
+ Testing time:55.421 seconds
+ avg_test_acc: {'uniform': 0.4218153953552246, 'validclass': 0.4218153953552246, 'labeldist': 0.4350489675998688}
+ pfl_avg_test_acc: {'uniform': 0.4369946628808975, 'validclass': 0.6107368618249893, 'labeldist': 0.7985129237174988}
+Round:14 - Active clients:[24 39 35 44 55 70 82 40 91 65]:
+ Training time:16.547 seconds
+ server global model correct 591
+ Testing time:56.227 seconds
+ avg_test_acc: {'uniform': 0.45080092549324036, 'validclass': 0.45080092549324036, 'labeldist': 0.45321208238601685}
+ pfl_avg_test_acc: {'uniform': 0.377345535159111, 'validclass': 0.6504343777894974, 'labeldist': 0.8819530725479126}
+Round:15 - Active clients:[84 36 57 51 46 78 93 14 11 59]:
+ Training time:27.691 seconds
+ server global model correct 727
+ Testing time:55.568 seconds
+ avg_test_acc: {'uniform': 0.5545385479927063, 'validclass': 0.5545385479927063, 'labeldist': 0.5831294059753418}
+ pfl_avg_test_acc: {'uniform': 0.4241800159215927, 'validclass': 0.5507989943027496, 'labeldist': 0.8330795586109161}
+Round:16 - Active clients:[ 7 25 71 42 47 29 63 88 50  9]:
+ Training time:21.003 seconds
+ server global model correct 584
+ Testing time:55.180 seconds
+ avg_test_acc: {'uniform': 0.4454614818096161, 'validclass': 0.4454614818096161, 'labeldist': 0.45713508129119873}
+ pfl_avg_test_acc: {'uniform': 0.40839054733514785, 'validclass': 0.6087934911251068, 'labeldist': 0.7831026613712311}
+Round:17 - Active clients:[71 28  9  4 73 34 94 92 47 37]:
+ Training time:14.725 seconds
+ server global model correct 855
+ Testing time:55.672 seconds
+ avg_test_acc: {'uniform': 0.6521739363670349, 'validclass': 0.6521739363670349, 'labeldist': 0.6693361401557922}
+ pfl_avg_test_acc: {'uniform': 0.4050343260169029, 'validclass': 0.563127201795578, 'labeldist': 0.7508387967944146}
+ Best test accuracy:0.652. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_braintumor_tumorModel_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_FedNH_smoothing_0.9_FedNH_client_adv_prototype_agg_True_no_norm_False_best_global_model.pkl!
+Round:18 - Active clients:[53 47 43 54 33 48  0 12 44 91]:
+ Training time:15.637 seconds
+ server global model correct 627
+ Testing time:55.442 seconds
+ avg_test_acc: {'uniform': 0.47826087474823, 'validclass': 0.47826087474823, 'labeldist': 0.4971480667591095}
+ pfl_avg_test_acc: {'uniform': 0.47932876348495485, 'validclass': 0.6032427489757538, 'labeldist': 0.8095255672931672}
+Round:19 - Active clients:[85 72 16 18  2 38 90 30 83 61]:
+ Training time:21.967 seconds
+ server global model correct 842
+ Testing time:55.225 seconds
+ avg_test_acc: {'uniform': 0.642257809638977, 'validclass': 0.642257809638977, 'labeldist': 0.6545974612236023}
+ pfl_avg_test_acc: {'uniform': 0.4338672786951065, 'validclass': 0.5457812666893005, 'labeldist': 0.7929620265960693}
+Round:20 - Active clients:[70 74  2 44 56 48 12 36  0 49]:
+ Training time:20.778 seconds
+ server global model correct 848
+ Testing time:54.746 seconds
+ avg_test_acc: {'uniform': 0.6468344926834106, 'validclass': 0.6468344926834106, 'labeldist': 0.6538511514663696}
+ pfl_avg_test_acc: {'uniform': 0.4873379170894623, 'validclass': 0.6329208642244339, 'labeldist': 0.8290610074996948}
