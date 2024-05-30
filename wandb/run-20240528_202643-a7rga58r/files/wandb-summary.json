@@ -1,0 +1,1 @@
+{"avg_train_loss": 0.6880396243396669, "avg_train_acc": 0.7417061611374408, "gfl_test_acc_uniform": 0.22883294522762299, "pfl_test_acc_uniform": 0.2448512554168701, "pfl_test_acc_validclass": 0.43769704848527907, "pfl_test_acc_labeldist": 0.7135810405015945, "_timestamp": 1716912513.0842257, "_runtime": 9709.989964723587, "_step": 1, "_wandb": {"runtime": 15632}}

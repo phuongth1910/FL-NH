@@ -1,0 +1,47 @@
+Files already downloaded and verified
+Files already downloaded and verified
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing : 0.9
+  FedNH_server_adv_prototype_agg : False
+ client side
+  FedNH_return_embedding : False
+  FedNH_head_init : orthogonal
+  FedNH_client_adv_prototype_agg : False
+  FedNH_fix_scaling : False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:10.257 seconds
+ server global model correct 1033
+ Testing time:23.253 seconds
+ avg_test_acc: {'uniform': 0.10329999774694443, 'validclass': 0.10329999774694443, 'labeldist': 0.10329999774694443}
+ pfl_avg_test_acc: {'uniform': 0.11798000112175941, 'validclass': 0.1963519871234894, 'labeldist': 0.5538698911666871}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+ Training time:8.512 seconds
+ server global model correct 1176
+ Testing time:21.527 seconds
+ avg_test_acc: {'uniform': 0.11760000139474869, 'validclass': 0.11760000139474869, 'labeldist': 0.11760000884532928}
+ pfl_avg_test_acc: {'uniform': 0.1317100003361702, 'validclass': 0.20242154747247695, 'labeldist': 0.5418657213449478}
+ Best test accuracy:0.118. Best server model is updatded and saved at ./Cifar_FedNH/FedNH_Cifar10_Conv2Cifar_noniid-label-distribution_beta:0.3_num_clients:100_participate_ratio:0.1_global_seed:0_FedNH_smoothing:0.9_FedNH_client_adv_prototype_agg:False_no_norm:False_best_global_model.pkl!
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 169, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 283, in run
+    torch.save(self.server_model_state_dict_best_so_far, kwargs['filename'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 422, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 309, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 287, in __init__
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+RuntimeError: File ./Cifar_FedNH/FedNH_Cifar10_Conv2Cifar_noniid-label-distribution_beta:0.3_num_clients:100_participate_ratio:0.1_global_seed:0_FedNH_smoothing:0.9_FedNH_client_adv_prototype_agg:False_no_norm:False_best_global_model.pkl cannot be opened.

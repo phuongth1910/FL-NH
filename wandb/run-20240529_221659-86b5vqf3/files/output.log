@@ -1,0 +1,38 @@
+Files already downloaded and verified
+Files already downloaded and verified
+False
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing _ 0.9
+  FedNH_server_adv_prototype_agg _ False
+ client side
+  FedNH_return_embedding _ False
+  FedNH_head_init _ orthogonal
+  FedNH_client_adv_prototype_agg _ False
+  FedNH_fix_scaling _ False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:10.365 seconds
+ server global model correct 1033
+ Testing time:19.284 seconds
+ avg_test_acc: {'uniform': 0.10329999774694443, 'validclass': 0.10329999774694443, 'labeldist': 0.10329999774694443}
+ pfl_avg_test_acc: {'uniform': 0.11798000112175941, 'validclass': 0.1963519871234894, 'labeldist': 0.5538698911666871}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 247, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 177, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 254, in run
+    client.training(r, client.client_config['num_epochs'])
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedUH.py", line 111, in training
+    correct += predicted.eq(y.data).sum().item()
+KeyboardInterrupt

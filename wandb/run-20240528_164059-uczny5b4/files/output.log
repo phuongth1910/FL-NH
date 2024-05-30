@@ -1,0 +1,95 @@
+brain tumor dataset dang su dung
+Dataset ImageFolder
+    Number of datapoints: 61814
+    Root location: D:/Comvis 2024/FedNH/data/tumorMRI/Training
+    StandardTransform
+Transform: Compose(
+               RandomHorizontalFlip(p=0.5)
+               RandomVerticalFlip(p=0.5)
+               RandomRotation(degrees=[-10.0, 10.0], interpolation=nearest, expand=False, fill=0)
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+Dataset ImageFolder
+    Number of datapoints: 3933
+    Root location: D:/Comvis 2024/FedNH/data/tumorMRI/Testing
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=True)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+ Warning: 2 clients have less than 2 classes
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:braintumor | num_classes:4 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:40 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:PhuongModel | num_epochs:5 | batch_size:32 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 157, in run
+    server = ServerCstr(server_config, clients_dict, exclude=server_config['exclude'],
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedNH.py", line 104, in __init__
+    super().__init__(server_config, clients_dict, exclude, **kwargs)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedUH.py", line 166, in __init__
+    super().__init__(server_config, clients_dict, exclude, **kwargs)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 113, in __init__
+    self.summary_setup()
+  File "D:\Comvis 2024\FedNH\src\flbase\server.py", line 96, in summary_setup
+    mdict = self.server_side_client.get_params()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\flbase\client.py", line 60, in get_params
+    return self.model.get_params()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'PhuongModelNH' object has no attribute 'get_params'. Did you mean: 'get_parameter'?

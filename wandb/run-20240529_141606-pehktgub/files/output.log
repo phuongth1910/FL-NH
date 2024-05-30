@@ -1,0 +1,156 @@
+ [Info - Dirichlet Sampling]: At leaset one client only has one class label. Perform Resampling...
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+cuda is not available. use cpu instead.
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Mnist | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedNH | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:ResNetMod | num_epochs:5 | batch_size:32 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ ResNetMod: size:44.696 MB | num params: 11.174 M
+FedUHServer: the following layers will not be updated: ['prototype']
+Strategy Related Hyper-parameters:
+ server side
+  FedNH_smoothing : 0.9
+  FedNH_server_adv_prototype_agg : False
+ client side
+  FedNH_return_embedding : False
+  FedNH_head_init : orthogonal
+  FedNH_client_adv_prototype_agg : False
+  FedNH_fix_scaling : False
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+Traceback (most recent call last):
+  File "D:\Comvis 2024\FedNH\main.py", line 239, in <module>
+    run(args)
+  File "D:\Comvis 2024\FedNH\main.py", line 169, in run
+    server.run(filename=path + '_best_global_model.pkl', use_wandb=use_wandb, global_seed=args.global_seed)
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedAvg.py", line 254, in run
+    client.training(r, client.client_config['num_epochs'])
+  File "D:\Comvis 2024\FedNH\src\flbase\strategies\FedUH.py", line 100, in training
+    yhat = self.model.forward(x)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\flbase\models\CNN.py", line 112, in forward
+    feature_embedding = self.backbone(x)
+                        ^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Comvis 2024\FedNH\src\flbase\models\ResNet.py", line 95, in forward
+    out = F.relu(self.bn1(self.conv1(x)))
+                          ^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Given groups=1, weight of size [64, 3, 3, 3], expected input[32, 1, 28, 28] to have 3 channels, but got 1 channels instead

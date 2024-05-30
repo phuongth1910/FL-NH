@@ -25,6 +25,8 @@ class FedAvgClient(Client):
 
     def _initialize_model(self):
         # parse the model from config file
+        print("From FedAvg")
+        print(f"{self.client_config['model']}{self.client_config}")
         self.model = eval(self.client_config['model'])(self.client_config).to(self.device)
         # this is needed if the criterion has stateful tensors.
         self.criterion = self.criterion.to(self.device)

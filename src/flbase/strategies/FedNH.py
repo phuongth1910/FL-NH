@@ -58,6 +58,7 @@ class FedNHClient(FedUHClient):
         return to_share
 
     def _estimate_prototype_adv(self):
+        # print("_estimate_prototype_adv: True :)")
         self.model.eval()
         self.model.return_embedding = True
         embeddings = []
