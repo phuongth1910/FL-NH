@@ -18,7 +18,7 @@ import math
 import time
 import torch.nn.functional as F
 
-
+ 
 class FedNHClient(FedUHClient):
     def __init__(self, criterion, trainset, testset, client_config, cid, device, **kwargs):
         super().__init__(criterion, trainset, testset,
