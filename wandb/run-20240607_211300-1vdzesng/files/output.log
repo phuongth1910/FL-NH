@@ -1,0 +1,1447 @@
+Files already downloaded and verified
+Files already downloaded and verified
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+From FedAvg
+Conv2Cifar{'model': 'Conv2Cifar', 'input_size': (3, 32, 32), 'num_classes': 10, 'num_epochs': 5, 'batch_size': 64, 'optimizer': 'SGD', 'learning_rate': 0.1, 'lr_scheduler': 'stepwise', 'lr_decay_per_round': 0.99, 'num_rounds': 200, 'use_tqdm': False, 'FedROD_hyper_clf': True, 'FedROD_phead_separate': False, 'FedNH_return_embedding': False, 'FedNH_head_init': 'orthogonal', 'FedNH_client_adv_prototype_agg': True, 'FedNH_fix_scaling': False, 'FedProto_lambda': 0.1, 'FedRep_head_epochs': 10, 'FedBABU_finetune_epoch': 5, 'Ditto_lambda': 0.75, 'CReFF_batch_real': 64, 'global_seed': 0, 'client_lr': 0.01, 'client_lr_scheduler': 'diminishing', 'sgd_momentum': 0.9, 'sgd_weight_decay': 1e-05, 'use_sam': False, 'no_norm': False}
+============================================================Run Summary============================================================
+Dataset:
+ dataset:Cifar10 | num_classes:10 | partition:noniid-label-distribution | beta:0.3
+Server Info:
+ strategy:FedAvg | num_clients:100 | num_rounds: 200 | participate_ratio:0.1 | drop_ratio:0.0
+Clients Info:
+ model:Conv2Cifar | num_epochs:5 | batch_size:64 | optimizer:SGD | inint lr:0.01 | lr scheduler:diminishing | momentum: 0.9 | weight decay: 1e-05
+ Conv2Cifar: size:3.192 MB | num params: 0.798 M
+Strategy Related Hyper-parameters:
+ server side
+ client side
+Round:1 - Active clients:[80 84 33 81 93 17 36 82 69 65]:
+ Training time:11.725 seconds
+ server global model correct 1784
+ Testing time:22.038 seconds
+ avg_test_acc: {'uniform': 0.17839999496936798, 'validclass': 0.17839999496936798, 'labeldist': 0.17839999496936798}
+ pfl_avg_test_acc: {'uniform': 0.14411000162363052, 'validclass': 0.24585079848766328, 'labeldist': 0.5922338724136352}
+Round:2 - Active clients:[83 30 56 24 16 23  2 27 28 13]:
+ Training time:7.685 seconds
+ server global model correct 1630
+ Testing time:22.334 seconds
+ avg_test_acc: {'uniform': 0.16300000250339508, 'validclass': 0.16300000250339508, 'labeldist': 0.16300001740455627}
+ pfl_avg_test_acc: {'uniform': 0.141440000385046, 'validclass': 0.2101280964910984, 'labeldist': 0.5510312378406524}
+Round:3 - Active clients:[93 67  6 64 96 83 98 42 25 15]:
+ Training time:7.570 seconds
+ server global model correct 1486
+ Testing time:34.282 seconds
+ avg_test_acc: {'uniform': 0.1485999971628189, 'validclass': 0.1485999971628189, 'labeldist': 0.1486000120639801}
+ pfl_avg_test_acc: {'uniform': 0.1634399987757206, 'validclass': 0.3327252775430679, 'labeldist': 0.596981680393219}
+Round:4 - Active clients:[20 10 96 16 63 24 53 97 41 47]:
+ Training time:36.042 seconds
+ server global model correct 2306
+ Testing time:73.329 seconds
+ avg_test_acc: {'uniform': 0.2305999994277954, 'validclass': 0.2305999994277954, 'labeldist': 0.2306000143289566}
+ pfl_avg_test_acc: {'uniform': 0.1562200002372265, 'validclass': 0.24694444760680198, 'labeldist': 0.6244217365980148}
+ Best test accuracy:0.231. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:5 - Active clients:[66 32 46 28 74 23 10 20 17 35]:
+ Training time:22.531 seconds
+ server global model correct 2493
+ Testing time:61.880 seconds
+ avg_test_acc: {'uniform': 0.2493000030517578, 'validclass': 0.2493000030517578, 'labeldist': 0.24929998815059662}
+ pfl_avg_test_acc: {'uniform': 0.17575999945402146, 'validclass': 0.276639124751091, 'labeldist': 0.6123037487268448}
+ Best test accuracy:0.249. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:6 - Active clients:[17 34  0 45 60 86 20 47 44 81]:
+ Training time:24.586 seconds
+ server global model correct 2140
+ Testing time:62.199 seconds
+ avg_test_acc: {'uniform': 0.21400000154972076, 'validclass': 0.21400000154972076, 'labeldist': 0.21400000154972076}
+ pfl_avg_test_acc: {'uniform': 0.19887000024318696, 'validclass': 0.2834873035550117, 'labeldist': 0.6422000408172608}
+Round:7 - Active clients:[37 26 78 91 49 15 93 71 86 22]:
+ Training time:23.754 seconds
+ server global model correct 2373
+ Testing time:61.751 seconds
+ avg_test_acc: {'uniform': 0.23729999363422394, 'validclass': 0.23729999363422394, 'labeldist': 0.23730000853538513}
+ pfl_avg_test_acc: {'uniform': 0.23567000180482864, 'validclass': 0.3385838896036148, 'labeldist': 0.5965060889720917}
+Round:8 - Active clients:[17 23  1 44 55 99 86 29 62 33]:
+ Training time:21.881 seconds
+ server global model correct 2826
+ Testing time:62.420 seconds
+ avg_test_acc: {'uniform': 0.2825999855995178, 'validclass': 0.2825999855995178, 'labeldist': 0.2826000154018402}
+ pfl_avg_test_acc: {'uniform': 0.23971999883651735, 'validclass': 0.30186290144920347, 'labeldist': 0.6023331075906754}
+ Best test accuracy:0.283. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:9 - Active clients:[75 42 46 68  3 39 23 20 70 73]:
+ Training time:23.007 seconds
+ server global model correct 1828
+ Testing time:60.650 seconds
+ avg_test_acc: {'uniform': 0.18279999494552612, 'validclass': 0.18279999494552612, 'labeldist': 0.18280000984668732}
+ pfl_avg_test_acc: {'uniform': 0.19071999937295914, 'validclass': 0.2542936526238918, 'labeldist': 0.7131583094596863}
+Round:10 - Active clients:[19 14 43 37 66  3 79 41 38 68]:
+ Training time:22.601 seconds
+ server global model correct 2988
+ Testing time:62.131 seconds
+ avg_test_acc: {'uniform': 0.298799991607666, 'validclass': 0.298799991607666, 'labeldist': 0.2988000214099884}
+ pfl_avg_test_acc: {'uniform': 0.2124899998307228, 'validclass': 0.30421876907348633, 'labeldist': 0.663085886836052}
+ Best test accuracy:0.299. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:11 - Active clients:[46 49 22 58 41 98 62 29 30 51]:
+ Training time:20.749 seconds
+ server global model correct 3528
+ Testing time:62.461 seconds
+ avg_test_acc: {'uniform': 0.35280001163482666, 'validclass': 0.35280001163482666, 'labeldist': 0.35280001163482666}
+ pfl_avg_test_acc: {'uniform': 0.21265999972820282, 'validclass': 0.2842649981379509, 'labeldist': 0.6763721525669097}
+ Best test accuracy:0.353. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:12 - Active clients:[17 41 92 14 68 31 89 15 21 60]:
+ Training time:28.153 seconds
+ server global model correct 3376
+ Testing time:61.459 seconds
+ avg_test_acc: {'uniform': 0.3375999927520752, 'validclass': 0.3375999927520752, 'labeldist': 0.3375999927520752}
+ pfl_avg_test_acc: {'uniform': 0.22852999940514565, 'validclass': 0.33592975735664365, 'labeldist': 0.6882824242115021}
+Round:13 - Active clients:[37 62 83 14 43  9 44 31 69 57]:
+ Training time:23.001 seconds
+ server global model correct 3672
+ Testing time:63.766 seconds
+ avg_test_acc: {'uniform': 0.36719998717308044, 'validclass': 0.36719998717308044, 'labeldist': 0.36720001697540283}
+ pfl_avg_test_acc: {'uniform': 0.24906000047922133, 'validclass': 0.33531098663806913, 'labeldist': 0.6389483153820038}
+ Best test accuracy:0.367. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:14 - Active clients:[24 39 35 44 55 70 82 40 91 65]:
+ Training time:26.313 seconds
+ server global model correct 4095
+ Testing time:65.452 seconds
+ avg_test_acc: {'uniform': 0.40950000286102295, 'validclass': 0.40950000286102295, 'labeldist': 0.40950000286102295}
+ pfl_avg_test_acc: {'uniform': 0.2829400017857552, 'validclass': 0.3490875005722046, 'labeldist': 0.6597688764333725}
+ Best test accuracy:0.410. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:15 - Active clients:[84 36 57 51 46 78 93 14 11 59]:
+ Training time:27.375 seconds
+ server global model correct 3419
+ Testing time:63.528 seconds
+ avg_test_acc: {'uniform': 0.3418999910354614, 'validclass': 0.3418999910354614, 'labeldist': 0.3419000208377838}
+ pfl_avg_test_acc: {'uniform': 0.24415999799966812, 'validclass': 0.3779254719614983, 'labeldist': 0.7265052020549774}
+Round:16 - Active clients:[ 7 25 71 42 47 29 63 88 50  9]:
+ Training time:21.956 seconds
+ server global model correct 3905
+ Testing time:62.578 seconds
+ avg_test_acc: {'uniform': 0.390500009059906, 'validclass': 0.390500009059906, 'labeldist': 0.390500009059906}
+ pfl_avg_test_acc: {'uniform': 0.23450999855995178, 'validclass': 0.4072907894849777, 'labeldist': 0.6961959898471832}
+Round:17 - Active clients:[71 28  9  4 73 34 94 92 47 37]:
+ Training time:21.885 seconds
+ server global model correct 4281
+ Testing time:60.957 seconds
+ avg_test_acc: {'uniform': 0.42809998989105225, 'validclass': 0.42809998989105225, 'labeldist': 0.428100049495697}
+ pfl_avg_test_acc: {'uniform': 0.2397599995136261, 'validclass': 0.32788948267698287, 'labeldist': 0.6602014839649201}
+ Best test accuracy:0.428. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:18 - Active clients:[53 47 43 54 33 48  0 12 44 91]:
+ Training time:21.988 seconds
+ server global model correct 3864
+ Testing time:61.422 seconds
+ avg_test_acc: {'uniform': 0.3864000141620636, 'validclass': 0.3864000141620636, 'labeldist': 0.3863999843597412}
+ pfl_avg_test_acc: {'uniform': 0.2661499962210655, 'validclass': 0.43399167358875274, 'labeldist': 0.7008971929550171}
+Round:19 - Active clients:[85 72 16 18  2 38 90 30 83 61]:
+ Training time:21.541 seconds
+ server global model correct 4039
+ Testing time:60.411 seconds
+ avg_test_acc: {'uniform': 0.40389999747276306, 'validclass': 0.40389999747276306, 'labeldist': 0.40389999747276306}
+ pfl_avg_test_acc: {'uniform': 0.2597899973392487, 'validclass': 0.41139579117298125, 'labeldist': 0.7107879400253296}
+Round:20 - Active clients:[70 74  2 44 56 48 12 36  0 49]:
+ Training time:20.613 seconds
+ server global model correct 4173
+ Testing time:61.967 seconds
+ avg_test_acc: {'uniform': 0.4172999858856201, 'validclass': 0.4172999858856201, 'labeldist': 0.4173000156879425}
+ pfl_avg_test_acc: {'uniform': 0.2654800057411194, 'validclass': 0.45538080036640166, 'labeldist': 0.7445961713790894}
+Round:21 - Active clients:[23 81 85 34 62 46 42 31 93 11]:
+ Training time:27.696 seconds
+ server global model correct 4397
+ Testing time:62.282 seconds
+ avg_test_acc: {'uniform': 0.43970000743865967, 'validclass': 0.43970000743865967, 'labeldist': 0.43970000743865967}
+ pfl_avg_test_acc: {'uniform': 0.2783899962902069, 'validclass': 0.41723193824291227, 'labeldist': 0.725623619556427}
+ Best test accuracy:0.440. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:22 - Active clients:[ 2 49 82 31 37 12 87 42 99 85]:
+ Training time:24.639 seconds
+ server global model correct 3705
+ Testing time:62.814 seconds
+ avg_test_acc: {'uniform': 0.37049999833106995, 'validclass': 0.37049999833106995, 'labeldist': 0.37049999833106995}
+ pfl_avg_test_acc: {'uniform': 0.28570000231266024, 'validclass': 0.3992377370595932, 'labeldist': 0.6991272032260895}
+Round:23 - Active clients:[26 80 82 68 77 37  3 55 20 17]:
+ Training time:29.825 seconds
+ server global model correct 3483
+ Testing time:62.080 seconds
+ avg_test_acc: {'uniform': 0.3483000099658966, 'validclass': 0.3483000099658966, 'labeldist': 0.3483000099658966}
+ pfl_avg_test_acc: {'uniform': 0.25868000015616416, 'validclass': 0.43803749680519105, 'labeldist': 0.7656939506530762}
+Round:24 - Active clients:[26 31 37 86 76 14 88 48 71 67]:
+ Training time:32.845 seconds
+ server global model correct 3769
+ Testing time:66.245 seconds
+ avg_test_acc: {'uniform': 0.37689998745918274, 'validclass': 0.37689998745918274, 'labeldist': 0.37689998745918274}
+ pfl_avg_test_acc: {'uniform': 0.2558600023388863, 'validclass': 0.4966257154941559, 'labeldist': 0.7429008483886719}
+Round:25 - Active clients:[41 29 33 65 74  6 57 89 87 98]:
+ Training time:23.070 seconds
+ server global model correct 4072
+ Testing time:61.483 seconds
+ avg_test_acc: {'uniform': 0.40720000863075256, 'validclass': 0.40720000863075256, 'labeldist': 0.40720000863075256}
+ pfl_avg_test_acc: {'uniform': 0.3054099977016449, 'validclass': 0.39280099272727964, 'labeldist': 0.7143539428710938}
+Round:26 - Active clients:[ 8 69 84 41 25  5 63 95 33 70]:
+ Training time:20.649 seconds
+ server global model correct 3097
+ Testing time:62.254 seconds
+ avg_test_acc: {'uniform': 0.30970001220703125, 'validclass': 0.30970001220703125, 'labeldist': 0.30970001220703125}
+ pfl_avg_test_acc: {'uniform': 0.264240001142025, 'validclass': 0.46220225989818575, 'labeldist': 0.7078805029392242}
+Round:27 - Active clients:[89 68 43 50 40 95 27 85 22 44]:
+ Training time:25.166 seconds
+ server global model correct 4446
+ Testing time:62.557 seconds
+ avg_test_acc: {'uniform': 0.444599986076355, 'validclass': 0.444599986076355, 'labeldist': 0.444599986076355}
+ pfl_avg_test_acc: {'uniform': 0.2656300008296967, 'validclass': 0.3515591695904732, 'labeldist': 0.7033726274967194}
+ Best test accuracy:0.445. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:28 - Active clients:[67 14  0 86 13 18 30 36 52 95]:
+ Training time:26.068 seconds
+ server global model correct 4178
+ Testing time:66.188 seconds
+ avg_test_acc: {'uniform': 0.41780000925064087, 'validclass': 0.41780000925064087, 'labeldist': 0.4177999794483185}
+ pfl_avg_test_acc: {'uniform': 0.26760999858379364, 'validclass': 0.49446051716804507, 'labeldist': 0.7634715020656586}
+Round:29 - Active clients:[73  8 10  7 19 71 92 25 38 12]:
+ Training time:20.361 seconds
+ server global model correct 4508
+ Testing time:66.880 seconds
+ avg_test_acc: {'uniform': 0.45080000162124634, 'validclass': 0.45080000162124634, 'labeldist': 0.4508000314235687}
+ pfl_avg_test_acc: {'uniform': 0.26615999788045885, 'validclass': 0.42614289224147794, 'labeldist': 0.713394284248352}
+ Best test accuracy:0.451. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:30 - Active clients:[20 91 34 52  8 74 21 88 80 89]:
+ Training time:31.286 seconds
+ server global model correct 4338
+ Testing time:66.528 seconds
+ avg_test_acc: {'uniform': 0.43380001187324524, 'validclass': 0.43380001187324524, 'labeldist': 0.43379998207092285}
+ pfl_avg_test_acc: {'uniform': 0.29792000353336334, 'validclass': 0.4486984521150589, 'labeldist': 0.7141961693763733}
+Round:31 - Active clients:[17 33 76  3 56  0 37  8 60 67]:
+ Training time:23.322 seconds
+ server global model correct 3551
+ Testing time:61.798 seconds
+ avg_test_acc: {'uniform': 0.35510000586509705, 'validclass': 0.35510000586509705, 'labeldist': 0.35510003566741943}
+ pfl_avg_test_acc: {'uniform': 0.27695000022649763, 'validclass': 0.5200476169586181, 'labeldist': 0.7516525983810425}
+Round:32 - Active clients:[22 39 85 97 55 33 80 13 27 96]:
+ Training time:23.640 seconds
+ server global model correct 4708
+ Testing time:61.135 seconds
+ avg_test_acc: {'uniform': 0.4708000123500824, 'validclass': 0.4708000123500824, 'labeldist': 0.4708000123500824}
+ pfl_avg_test_acc: {'uniform': 0.2932500019669533, 'validclass': 0.42669583559036256, 'labeldist': 0.7167998373508453}
+ Best test accuracy:0.471. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:33 - Active clients:[56 90 95 82 60 71  6 81  2 70]:
+ Training time:23.609 seconds
+ server global model correct 4574
+ Testing time:62.074 seconds
+ avg_test_acc: {'uniform': 0.45739999413490295, 'validclass': 0.45739999413490295, 'labeldist': 0.45740002393722534}
+ pfl_avg_test_acc: {'uniform': 0.3184999987483025, 'validclass': 0.44912381172180177, 'labeldist': 0.7518353223800659}
+Round:34 - Active clients:[14 74 15  4 32 59 91 10 50 53]:
+ Training time:20.175 seconds
+ server global model correct 4887
+ Testing time:64.466 seconds
+ avg_test_acc: {'uniform': 0.4887000024318695, 'validclass': 0.4887000024318695, 'labeldist': 0.4887000024318695}
+ pfl_avg_test_acc: {'uniform': 0.3201600030064583, 'validclass': 0.4322593629360199, 'labeldist': 0.6931944966316224}
+ Best test accuracy:0.489. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:35 - Active clients:[40 71 98 27 70 31 10 24 51 35]:
+ Training time:25.912 seconds
+ server global model correct 4707
+ Testing time:61.351 seconds
+ avg_test_acc: {'uniform': 0.4706999957561493, 'validclass': 0.4706999957561493, 'labeldist': 0.4707000255584717}
+ pfl_avg_test_acc: {'uniform': 0.30796999782323836, 'validclass': 0.41125278174877167, 'labeldist': 0.6883643627166748}
+Round:36 - Active clients:[59 42  2 27 28 75 58 68 52 74]:
+ Training time:23.076 seconds
+ server global model correct 3988
+ Testing time:60.820 seconds
+ avg_test_acc: {'uniform': 0.39879998564720154, 'validclass': 0.39879998564720154, 'labeldist': 0.3988000154495239}
+ pfl_avg_test_acc: {'uniform': 0.28236000090837476, 'validclass': 0.3993848875164986, 'labeldist': 0.7792465388774872}
+Round:37 - Active clients:[61 49 86 78  5 91 81 82 89 18]:
+ Training time:22.372 seconds
+ server global model correct 4866
+ Testing time:61.708 seconds
+ avg_test_acc: {'uniform': 0.48660001158714294, 'validclass': 0.48660001158714294, 'labeldist': 0.48659998178482056}
+ pfl_avg_test_acc: {'uniform': 0.32431000024080275, 'validclass': 0.47795111536979673, 'labeldist': 0.7623330950737}
+Round:38 - Active clients:[40 73 49 45 64 16 69 17 72 66]:
+ Training time:15.733 seconds
+ server global model correct 4821
+ Testing time:61.524 seconds
+ avg_test_acc: {'uniform': 0.4821000099182129, 'validclass': 0.4821000099182129, 'labeldist': 0.4820999801158905}
+ pfl_avg_test_acc: {'uniform': 0.3047300010919571, 'validclass': 0.4109167456626892, 'labeldist': 0.7210788667201996}
+Round:39 - Active clients:[22 53 84 57 87 58 29 21 85 79]:
+ Training time:20.336 seconds
+ server global model correct 5282
+ Testing time:62.513 seconds
+ avg_test_acc: {'uniform': 0.5281999707221985, 'validclass': 0.5281999707221985, 'labeldist': 0.5282000303268433}
+ pfl_avg_test_acc: {'uniform': 0.31929999887943267, 'validclass': 0.4204660296440125, 'labeldist': 0.7129674136638642}
+ Best test accuracy:0.528. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:40 - Active clients:[79 75 63 15 38 11 40 45 39 62]:
+ Training time:22.773 seconds
+ server global model correct 4976
+ Testing time:62.544 seconds
+ avg_test_acc: {'uniform': 0.4975999891757965, 'validclass': 0.4975999891757965, 'labeldist': 0.4976000189781189}
+ pfl_avg_test_acc: {'uniform': 0.28761999905109403, 'validclass': 0.41144388616085054, 'labeldist': 0.7597484767436982}
+Round:41 - Active clients:[42 94 37  6 79 32 24  0 33 93]:
+ Training time:21.183 seconds
+ server global model correct 4585
+ Testing time:60.449 seconds
+ avg_test_acc: {'uniform': 0.4584999978542328, 'validclass': 0.4584999978542328, 'labeldist': 0.4584999680519104}
+ pfl_avg_test_acc: {'uniform': 0.32722999453544616, 'validclass': 0.47820491790771485, 'labeldist': 0.7083825469017029}
+Round:42 - Active clients:[83 53 70 45 44 39 22 80 10  0]:
+ Training time:18.419 seconds
+ server global model correct 4962
+ Testing time:61.229 seconds
+ avg_test_acc: {'uniform': 0.49619999527931213, 'validclass': 0.49619999527931213, 'labeldist': 0.4962000250816345}
+ pfl_avg_test_acc: {'uniform': 0.2984199970960617, 'validclass': 0.45230972468853, 'labeldist': 0.7400397837162018}
+Round:43 - Active clients:[20  2 15 22 57 91 69 55 11 79]:
+ Training time:26.358 seconds
+ server global model correct 4731
+ Testing time:62.597 seconds
+ avg_test_acc: {'uniform': 0.4731000065803528, 'validclass': 0.4731000065803528, 'labeldist': 0.47310003638267517}
+ pfl_avg_test_acc: {'uniform': 0.34155000001192093, 'validclass': 0.4610079348087311, 'labeldist': 0.7398010849952698}
+Round:44 - Active clients:[42 54 27 93 39 65  7 26 24 60]:
+ Training time:26.133 seconds
+ server global model correct 4126
+ Testing time:61.243 seconds
+ avg_test_acc: {'uniform': 0.41260001063346863, 'validclass': 0.41260001063346863, 'labeldist': 0.41260001063346863}
+ pfl_avg_test_acc: {'uniform': 0.3138400033116341, 'validclass': 0.5002011120319366, 'labeldist': 0.7362510323524475}
+Round:45 - Active clients:[ 0  1 62 76 37 99 78 38  2 84]:
+ Training time:22.673 seconds
+ server global model correct 5166
+ Testing time:61.916 seconds
+ avg_test_acc: {'uniform': 0.5166000127792358, 'validclass': 0.5166000127792358, 'labeldist': 0.5166000127792358}
+ pfl_avg_test_acc: {'uniform': 0.35076999962329863, 'validclass': 0.46601817905902865, 'labeldist': 0.7246214330196381}
+Round:46 - Active clients:[71 33 37 10 44 34 24 98 73 95]:
+ Training time:24.798 seconds
+ server global model correct 5255
+ Testing time:62.386 seconds
+ avg_test_acc: {'uniform': 0.5254999995231628, 'validclass': 0.5254999995231628, 'labeldist': 0.5254999995231628}
+ pfl_avg_test_acc: {'uniform': 0.34095999598503113, 'validclass': 0.45614146888256074, 'labeldist': 0.7108799338340759}
+Round:47 - Active clients:[17 90 94 86 63  5 38 14 40 47]:
+ Training time:23.633 seconds
+ server global model correct 4629
+ Testing time:60.600 seconds
+ avg_test_acc: {'uniform': 0.4629000127315521, 'validclass': 0.4629000127315521, 'labeldist': 0.46289998292922974}
+ pfl_avg_test_acc: {'uniform': 0.3353999972343445, 'validclass': 0.514149883389473, 'labeldist': 0.7725939273834228}
+Round:48 - Active clients:[93  5 71  9 11 79 69  8 59 63]:
+ Training time:22.601 seconds
+ server global model correct 4601
+ Testing time:61.713 seconds
+ avg_test_acc: {'uniform': 0.460099995136261, 'validclass': 0.460099995136261, 'labeldist': 0.4600999653339386}
+ pfl_avg_test_acc: {'uniform': 0.30731000006198883, 'validclass': 0.526742297410965, 'labeldist': 0.7574041724205017}
+Round:49 - Active clients:[76 25 28 75 81 47 41 22 29  1]:
+ Training time:21.397 seconds
+ server global model correct 5349
+ Testing time:65.730 seconds
+ avg_test_acc: {'uniform': 0.5349000096321106, 'validclass': 0.5349000096321106, 'labeldist': 0.5348999500274658}
+ pfl_avg_test_acc: {'uniform': 0.30737999826669693, 'validclass': 0.4574844390153885, 'labeldist': 0.7843828141689301}
+ Best test accuracy:0.535. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:50 - Active clients:[80 79 25 15 39 40 53 17 57 50]:
+ Training time:20.178 seconds
+ server global model correct 4544
+ Testing time:61.457 seconds
+ avg_test_acc: {'uniform': 0.4544000029563904, 'validclass': 0.4544000029563904, 'labeldist': 0.45440006256103516}
+ pfl_avg_test_acc: {'uniform': 0.3327399969100952, 'validclass': 0.5022591292858124, 'labeldist': 0.7558743178844451}
+Round:51 - Active clients:[71 43 11 83 78 19 80  4 79 75]:
+ Training time:22.695 seconds
+ server global model correct 5217
+ Testing time:62.108 seconds
+ avg_test_acc: {'uniform': 0.5217000246047974, 'validclass': 0.5217000246047974, 'labeldist': 0.5216999650001526}
+ pfl_avg_test_acc: {'uniform': 0.3263499990105629, 'validclass': 0.46687504053115847, 'labeldist': 0.7542055130004883}
+Round:52 - Active clients:[82  8 44 19  2 73 37 89 67 18]:
+ Training time:23.306 seconds
+ server global model correct 4474
+ Testing time:61.111 seconds
+ avg_test_acc: {'uniform': 0.4474000036716461, 'validclass': 0.4474000036716461, 'labeldist': 0.4474000334739685}
+ pfl_avg_test_acc: {'uniform': 0.331870000064373, 'validclass': 0.5579259902238846, 'labeldist': 0.7892187118530274}
+Round:53 - Active clients:[19 78 64  3 71 32 68 42 55 97]:
+ Training time:23.122 seconds
+ server global model correct 5313
+ Testing time:61.056 seconds
+ avg_test_acc: {'uniform': 0.5313000082969666, 'validclass': 0.5313000082969666, 'labeldist': 0.5313000082969666}
+ pfl_avg_test_acc: {'uniform': 0.3173400014638901, 'validclass': 0.4618379771709442, 'labeldist': 0.7502234220504761}
+Round:54 - Active clients:[36 70 48 94 81 46 38 29 34 22]:
+ Training time:20.348 seconds
+ server global model correct 5077
+ Testing time:62.318 seconds
+ avg_test_acc: {'uniform': 0.5077000260353088, 'validclass': 0.5077000260353088, 'labeldist': 0.5077000260353088}
+ pfl_avg_test_acc: {'uniform': 0.34603999704122546, 'validclass': 0.46476563811302185, 'labeldist': 0.7854124546051026}
+Round:55 - Active clients:[28 92 98 95 84 34 38 76 17 78]:
+ Training time:23.797 seconds
+ server global model correct 5728
+ Testing time:61.238 seconds
+ avg_test_acc: {'uniform': 0.5727999806404114, 'validclass': 0.5727999806404114, 'labeldist': 0.5727999806404114}
+ pfl_avg_test_acc: {'uniform': 0.3392699986696243, 'validclass': 0.475697273015976, 'labeldist': 0.7611408174037934}
+ Best test accuracy:0.573. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:56 - Active clients:[92 79 23 68 52 38 73  9 59 27]:
+ Training time:21.532 seconds
+ server global model correct 5661
+ Testing time:61.871 seconds
+ avg_test_acc: {'uniform': 0.566100001335144, 'validclass': 0.566100001335144, 'labeldist': 0.566100001335144}
+ pfl_avg_test_acc: {'uniform': 0.3669799953699112, 'validclass': 0.44236277639865873, 'labeldist': 0.7744292140007019}
+Round:57 - Active clients:[52 17 41  3  8 98 59 20 67  7]:
+ Training time:25.583 seconds
+ server global model correct 5008
+ Testing time:62.622 seconds
+ avg_test_acc: {'uniform': 0.5008000135421753, 'validclass': 0.5008000135421753, 'labeldist': 0.5008000135421753}
+ pfl_avg_test_acc: {'uniform': 0.3344400003552437, 'validclass': 0.48510095179080964, 'labeldist': 0.767357474565506}
+Round:58 - Active clients:[43 58  8 31 70 45 69 95 50  4]:
+ Training time:19.476 seconds
+ server global model correct 5551
+ Testing time:61.142 seconds
+ avg_test_acc: {'uniform': 0.5551000237464905, 'validclass': 0.5551000237464905, 'labeldist': 0.5551000237464905}
+ pfl_avg_test_acc: {'uniform': 0.35678000152111056, 'validclass': 0.45677333474159243, 'labeldist': 0.7516075134277344}
+Round:59 - Active clients:[38 46 24 87 30 85 16 96 18 99]:
+ Training time:19.072 seconds
+ server global model correct 5323
+ Testing time:62.011 seconds
+ avg_test_acc: {'uniform': 0.5322999954223633, 'validclass': 0.5322999954223633, 'labeldist': 0.5323000550270081}
+ pfl_avg_test_acc: {'uniform': 0.35821000039577483, 'validclass': 0.5212850004434586, 'labeldist': 0.7680793225765228}
+Round:60 - Active clients:[88  4 79 14 55  3 19 28 94 25]:
+ Training time:22.122 seconds
+ server global model correct 5642
+ Testing time:32.479 seconds
+ avg_test_acc: {'uniform': 0.5641999840736389, 'validclass': 0.5641999840736389, 'labeldist': 0.5642000436782837}
+ pfl_avg_test_acc: {'uniform': 0.35944999754428864, 'validclass': 0.49904551804065705, 'labeldist': 0.7557724297046662}
+Round:61 - Active clients:[83  1 55  9 31 28 96 29 86 63]:
+ Training time:7.720 seconds
+ server global model correct 5750
+ Testing time:20.799 seconds
+ avg_test_acc: {'uniform': 0.574999988079071, 'validclass': 0.574999988079071, 'labeldist': 0.574999988079071}
+ pfl_avg_test_acc: {'uniform': 0.36245999932289125, 'validclass': 0.504134327173233, 'labeldist': 0.7801255643367767}
+ Best test accuracy:0.575. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:62 - Active clients:[76 48 62 80 29 99 60 89 39 69]:
+ Training time:7.553 seconds
+ server global model correct 5484
+ Testing time:20.924 seconds
+ avg_test_acc: {'uniform': 0.5483999848365784, 'validclass': 0.5483999848365784, 'labeldist': 0.5483999848365784}
+ pfl_avg_test_acc: {'uniform': 0.3550899997353554, 'validclass': 0.5850754827260971, 'labeldist': 0.7844179153442383}
+Round:63 - Active clients:[64 59 63  2 80 20 18 48 72 51]:
+ Training time:9.751 seconds
+ server global model correct 4317
+ Testing time:20.959 seconds
+ avg_test_acc: {'uniform': 0.4316999912261963, 'validclass': 0.4316999912261963, 'labeldist': 0.4317000210285187}
+ pfl_avg_test_acc: {'uniform': 0.2883699968457222, 'validclass': 0.5941633343696594, 'labeldist': 0.8357427716255188}
+Round:64 - Active clients:[17 22 60 92 23 19 71 94 40 49]:
+ Training time:6.815 seconds
+ server global model correct 5460
+ Testing time:21.015 seconds
+ avg_test_acc: {'uniform': 0.5460000038146973, 'validclass': 0.5460000038146973, 'labeldist': 0.546000063419342}
+ pfl_avg_test_acc: {'uniform': 0.37195999920368195, 'validclass': 0.4710832893848419, 'labeldist': 0.736157876253128}
+Round:65 - Active clients:[37 81 39 61 76 90 27 86 28 69]:
+ Training time:7.862 seconds
+ server global model correct 5863
+ Testing time:20.833 seconds
+ avg_test_acc: {'uniform': 0.5863000154495239, 'validclass': 0.5863000154495239, 'labeldist': 0.5863000750541687}
+ pfl_avg_test_acc: {'uniform': 0.37599000334739685, 'validclass': 0.486688494682312, 'labeldist': 0.7866171479225159}
+ Best test accuracy:0.586. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:66 - Active clients:[ 8 93  4  5 52 41  0 73 88 68]:
+ Training time:8.075 seconds
+ server global model correct 5173
+ Testing time:21.449 seconds
+ avg_test_acc: {'uniform': 0.517300009727478, 'validclass': 0.517300009727478, 'labeldist': 0.517300009727478}
+ pfl_avg_test_acc: {'uniform': 0.32593999803066254, 'validclass': 0.5149526983499527, 'labeldist': 0.7904554426670074}
+Round:67 - Active clients:[17 24 64 93 97 29  3 70 82 11]:
+ Training time:7.815 seconds
+ server global model correct 5503
+ Testing time:21.206 seconds
+ avg_test_acc: {'uniform': 0.5503000020980835, 'validclass': 0.5503000020980835, 'labeldist': 0.5503000020980835}
+ pfl_avg_test_acc: {'uniform': 0.33798999786376954, 'validclass': 0.4715867042541504, 'labeldist': 0.763659679889679}
+Round:68 - Active clients:[29 30 16  5 38 71 76 94 99 95]:
+ Training time:7.239 seconds
+ server global model correct 5646
+ Testing time:21.219 seconds
+ avg_test_acc: {'uniform': 0.5645999908447266, 'validclass': 0.5645999908447266, 'labeldist': 0.5646000504493713}
+ pfl_avg_test_acc: {'uniform': 0.3804800003767014, 'validclass': 0.5231536954641343, 'labeldist': 0.7607699930667877}
+Round:69 - Active clients:[72 31 13 83 33  8 26 89 64 97]:
+ Training time:8.286 seconds
+ server global model correct 5652
+ Testing time:21.074 seconds
+ avg_test_acc: {'uniform': 0.5651999711990356, 'validclass': 0.5651999711990356, 'labeldist': 0.5652000308036804}
+ pfl_avg_test_acc: {'uniform': 0.3805200010538101, 'validclass': 0.4899692893028259, 'labeldist': 0.7356002271175385}
+Round:70 - Active clients:[81 43 88 32 50 71 73 55 42  2]:
+ Training time:8.233 seconds
+ server global model correct 5970
+ Testing time:21.162 seconds
+ avg_test_acc: {'uniform': 0.597000002861023, 'validclass': 0.597000002861023, 'labeldist': 0.597000002861023}
+ pfl_avg_test_acc: {'uniform': 0.35178000032901763, 'validclass': 0.5015780508518219, 'labeldist': 0.7710546433925629}
+ Best test accuracy:0.597. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:71 - Active clients:[41 84 98 42 75 25 60 19 52 29]:
+ Training time:7.386 seconds
+ server global model correct 4805
+ Testing time:21.073 seconds
+ avg_test_acc: {'uniform': 0.4805000126361847, 'validclass': 0.4805000126361847, 'labeldist': 0.4805000126361847}
+ pfl_avg_test_acc: {'uniform': 0.3544300004839897, 'validclass': 0.5124405920505524, 'labeldist': 0.7579110503196717}
+Round:72 - Active clients:[76 82 43 16 84 95 78 91 30 22]:
+ Training time:7.982 seconds
+ server global model correct 5545
+ Testing time:21.024 seconds
+ avg_test_acc: {'uniform': 0.5544999837875366, 'validclass': 0.5544999837875366, 'labeldist': 0.5544999837875366}
+ pfl_avg_test_acc: {'uniform': 0.3785699993371964, 'validclass': 0.4964436501264572, 'labeldist': 0.781578254699707}
+Round:73 - Active clients:[49 14 34 70 90 35 68 76 80  9]:
+ Training time:9.262 seconds
+ server global model correct 5772
+ Testing time:20.986 seconds
+ avg_test_acc: {'uniform': 0.5771999955177307, 'validclass': 0.5771999955177307, 'labeldist': 0.5771999955177307}
+ pfl_avg_test_acc: {'uniform': 0.3629200026392937, 'validclass': 0.5156287312507629, 'labeldist': 0.806926155090332}
+Round:74 - Active clients:[85 64 63 80  6 12 43 17  7  8]:
+ Training time:7.526 seconds
+ server global model correct 5022
+ Testing time:21.070 seconds
+ avg_test_acc: {'uniform': 0.5022000074386597, 'validclass': 0.5022000074386597, 'labeldist': 0.5022000670433044}
+ pfl_avg_test_acc: {'uniform': 0.34463999718427657, 'validclass': 0.5769827008247376, 'labeldist': 0.8073205053806305}
+Round:75 - Active clients:[36  7  6 45 56 54 22 37 53 68]:
+ Training time:7.950 seconds
+ server global model correct 5644
+ Testing time:21.258 seconds
+ avg_test_acc: {'uniform': 0.5644000172615051, 'validclass': 0.5644000172615051, 'labeldist': 0.5644000172615051}
+ pfl_avg_test_acc: {'uniform': 0.3365899994969368, 'validclass': 0.5248166680335998, 'labeldist': 0.8113292872905731}
+Round:76 - Active clients:[38 37 32 50 10 94 19 44 86 23]:
+ Training time:7.210 seconds
+ server global model correct 5749
+ Testing time:21.081 seconds
+ avg_test_acc: {'uniform': 0.5748999714851379, 'validclass': 0.5748999714851379, 'labeldist': 0.5748999714851379}
+ pfl_avg_test_acc: {'uniform': 0.40835000276565553, 'validclass': 0.5223209112882614, 'labeldist': 0.7587068796157836}
+Round:77 - Active clients:[ 5 93 41 96 16 42 81 91 50 58]:
+ Training time:7.410 seconds
+ server global model correct 4774
+ Testing time:20.998 seconds
+ avg_test_acc: {'uniform': 0.477400004863739, 'validclass': 0.477400004863739, 'labeldist': 0.4774000346660614}
+ pfl_avg_test_acc: {'uniform': 0.3842999964952469, 'validclass': 0.55338194668293, 'labeldist': 0.7935505330562591}
+Round:78 - Active clients:[ 9 46  7 63 15  2 74 31  5 36]:
+ Training time:8.921 seconds
+ server global model correct 5664
+ Testing time:20.988 seconds
+ avg_test_acc: {'uniform': 0.5663999915122986, 'validclass': 0.5663999915122986, 'labeldist': 0.5663999915122986}
+ pfl_avg_test_acc: {'uniform': 0.35056999921798704, 'validclass': 0.5423277795314789, 'labeldist': 0.8091832756996155}
+Round:79 - Active clients:[68 18 86 60 56 32 30 24 45 92]:
+ Training time:9.489 seconds
+ server global model correct 4824
+ Testing time:21.128 seconds
+ avg_test_acc: {'uniform': 0.48240000009536743, 'validclass': 0.48240000009536743, 'labeldist': 0.4824000597000122}
+ pfl_avg_test_acc: {'uniform': 0.3095600038766861, 'validclass': 0.5944275021553039, 'labeldist': 0.8338811457157135}
+Round:80 - Active clients:[37 65 95 53 66 30 73 85 45 36]:
+ Training time:8.317 seconds
+ server global model correct 5717
+ Testing time:21.231 seconds
+ avg_test_acc: {'uniform': 0.5716999769210815, 'validclass': 0.5716999769210815, 'labeldist': 0.5717000365257263}
+ pfl_avg_test_acc: {'uniform': 0.36034999787807465, 'validclass': 0.5098655521869659, 'labeldist': 0.804263311624527}
+Round:81 - Active clients:[73 89 41 78 51 21 30 69  8  5]:
+ Training time:6.848 seconds
+ server global model correct 5815
+ Testing time:21.133 seconds
+ avg_test_acc: {'uniform': 0.5814999938011169, 'validclass': 0.5814999938011169, 'labeldist': 0.5814999341964722}
+ pfl_avg_test_acc: {'uniform': 0.39154999554157255, 'validclass': 0.5572771847248077, 'labeldist': 0.7915138363838196}
+Round:82 - Active clients:[72 33 58  2 55 84 54 75 28 40]:
+ Training time:7.332 seconds
+ server global model correct 5816
+ Testing time:21.159 seconds
+ avg_test_acc: {'uniform': 0.58160001039505, 'validclass': 0.58160001039505, 'labeldist': 0.5815999507904053}
+ pfl_avg_test_acc: {'uniform': 0.3587199985980988, 'validclass': 0.5159079790115356, 'labeldist': 0.7748951017856598}
+Round:83 - Active clients:[ 6 65 95 84 61 12 30 69 35  1]:
+ Training time:7.899 seconds
+ server global model correct 6116
+ Testing time:21.237 seconds
+ avg_test_acc: {'uniform': 0.6115999817848206, 'validclass': 0.6115999817848206, 'labeldist': 0.6116000413894653}
+ pfl_avg_test_acc: {'uniform': 0.41696999669075013, 'validclass': 0.5093163460493088, 'labeldist': 0.7784711718559265}
+ Best test accuracy:0.612. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:84 - Active clients:[94 55 80  1 90 11 32  8  6 82]:
+ Training time:9.192 seconds
+ server global model correct 5324
+ Testing time:21.299 seconds
+ avg_test_acc: {'uniform': 0.5324000120162964, 'validclass': 0.5324000120162964, 'labeldist': 0.5324000120162964}
+ pfl_avg_test_acc: {'uniform': 0.37648999989032744, 'validclass': 0.5388763964176178, 'labeldist': 0.7997168958187103}
+Round:85 - Active clients:[81 25 40 87 41 23 10 89 50 54]:
+ Training time:6.977 seconds
+ server global model correct 5852
+ Testing time:21.314 seconds
+ avg_test_acc: {'uniform': 0.5852000117301941, 'validclass': 0.5852000117301941, 'labeldist': 0.5852000117301941}
+ pfl_avg_test_acc: {'uniform': 0.38410999774932864, 'validclass': 0.5616583287715912, 'labeldist': 0.771807998418808}
+Round:86 - Active clients:[69 74 34 68 42  0 32 88  8  3]:
+ Training time:8.379 seconds
+ server global model correct 5427
+ Testing time:20.957 seconds
+ avg_test_acc: {'uniform': 0.5426999926567078, 'validclass': 0.5426999926567078, 'labeldist': 0.5426999926567078}
+ pfl_avg_test_acc: {'uniform': 0.33986000120639803, 'validclass': 0.5216947257518768, 'labeldist': 0.8092282056808472}
+Round:87 - Active clients:[16 81 85 32 39 25 26 29 65  7]:
+ Training time:8.260 seconds
+ server global model correct 6180
+ Testing time:21.450 seconds
+ avg_test_acc: {'uniform': 0.6179999709129333, 'validclass': 0.6179999709129333, 'labeldist': 0.6179999709129333}
+ pfl_avg_test_acc: {'uniform': 0.35142000019550323, 'validclass': 0.5206346422433853, 'labeldist': 0.8015707552433013}
+ Best test accuracy:0.618. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:88 - Active clients:[95 53 43 84  2 74 55 31 54 97]:
+ Training time:8.693 seconds
+ server global model correct 5992
+ Testing time:21.133 seconds
+ avg_test_acc: {'uniform': 0.5992000102996826, 'validclass': 0.5992000102996826, 'labeldist': 0.5992000102996826}
+ pfl_avg_test_acc: {'uniform': 0.3988999992609024, 'validclass': 0.5556807547807694, 'labeldist': 0.781268709897995}
+Round:89 - Active clients:[65 21 87  6 46 74 44 60 72  5]:
+ Training time:8.354 seconds
+ server global model correct 6220
+ Testing time:21.118 seconds
+ avg_test_acc: {'uniform': 0.621999979019165, 'validclass': 0.621999979019165, 'labeldist': 0.621999979019165}
+ pfl_avg_test_acc: {'uniform': 0.40631000995635985, 'validclass': 0.5654944539070129, 'labeldist': 0.7987723231315613}
+ Best test accuracy:0.622. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:90 - Active clients:[25 85 96 89 65 94  5 35 36 92]:
+ Training time:9.322 seconds
+ server global model correct 6021
+ Testing time:21.365 seconds
+ avg_test_acc: {'uniform': 0.6021000146865845, 'validclass': 0.6021000146865845, 'labeldist': 0.6020999550819397}
+ pfl_avg_test_acc: {'uniform': 0.38618999868631365, 'validclass': 0.5857869416475296, 'labeldist': 0.8162392020225525}
+Round:91 - Active clients:[75 25  3 52 78 54 59 26 62 97]:
+ Training time:7.495 seconds
+ server global model correct 5692
+ Testing time:21.149 seconds
+ avg_test_acc: {'uniform': 0.5691999793052673, 'validclass': 0.5691999793052673, 'labeldist': 0.5692000389099121}
+ pfl_avg_test_acc: {'uniform': 0.37604000717401503, 'validclass': 0.5247663855552673, 'labeldist': 0.7715657949447632}
+Round:92 - Active clients:[25 99 73 61 66 36 23 83 77  6]:
+ Training time:5.330 seconds
+ server global model correct 5684
+ Testing time:21.112 seconds
+ avg_test_acc: {'uniform': 0.5684000253677368, 'validclass': 0.5684000253677368, 'labeldist': 0.5684000253677368}
+ pfl_avg_test_acc: {'uniform': 0.41532999873161314, 'validclass': 0.5457346051931381, 'labeldist': 0.7669165909290314}
+Round:93 - Active clients:[75 82 56 27 42 35  1 97 66 61]:
+ Training time:8.103 seconds
+ server global model correct 5681
+ Testing time:21.039 seconds
+ avg_test_acc: {'uniform': 0.5680999755859375, 'validclass': 0.5680999755859375, 'labeldist': 0.5680999755859375}
+ pfl_avg_test_acc: {'uniform': 0.399770000576973, 'validclass': 0.5345230609178543, 'labeldist': 0.8089206397533417}
+Round:94 - Active clients:[13 73  5 18 99 48 23  4 35 17]:
+ Training time:8.127 seconds
+ Testing time:20.710 seconds
+ avg_test_acc: {'uniform': 0.5939000248908997, 'validclass': 0.5939000248908997, 'labeldist': 0.5939000248908997}
+ pfl_avg_test_acc: {'uniform': 0.4004000023007393, 'validclass': 0.6110341191291809, 'labeldist': 0.8100388288497925}
+Round:95 - Active clients:[88  9  1 60 95 26 45 71 44 21]:
+ Training time:9.684 seconds
+ server global model correct 5887
+ Testing time:21.137 seconds
+ avg_test_acc: {'uniform': 0.588699996471405, 'validclass': 0.588699996471405, 'labeldist': 0.588699996471405}
+ pfl_avg_test_acc: {'uniform': 0.40076000094413755, 'validclass': 0.5405123114585877, 'labeldist': 0.7745931208133697}
+Round:96 - Active clients:[41 28 52 15 87 17 75 42 45 49]:
+ Training time:6.550 seconds
+ server global model correct 6246
+ Testing time:21.056 seconds
+ avg_test_acc: {'uniform': 0.6245999932289124, 'validclass': 0.6245999932289124, 'labeldist': 0.6246000528335571}
+ pfl_avg_test_acc: {'uniform': 0.4101200014352798, 'validclass': 0.5154068648815155, 'labeldist': 0.8096656978130341}
+ Best test accuracy:0.625. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:97 - Active clients:[31 43 64 56 85  2 70 21 34 50]:
+ Training time:9.463 seconds
+ server global model correct 5800
+ Testing time:21.142 seconds
+ avg_test_acc: {'uniform': 0.5799999833106995, 'validclass': 0.5799999833106995, 'labeldist': 0.5799999833106995}
+ pfl_avg_test_acc: {'uniform': 0.39070999920368193, 'validclass': 0.5533480942249298, 'labeldist': 0.7898984789848328}
+Round:98 - Active clients:[11 48 97 14 22 36 99 47 33 81]:
+ Training time:9.327 seconds
+ server global model correct 6171
+ Testing time:21.424 seconds
+ avg_test_acc: {'uniform': 0.6171000003814697, 'validclass': 0.6171000003814697, 'labeldist': 0.6171000003814697}
+ pfl_avg_test_acc: {'uniform': 0.38656000345945357, 'validclass': 0.5469348877668381, 'labeldist': 0.8071080327033997}
+Round:99 - Active clients:[14 34 30 78 16 15 91 38 10 85]:
+ Training time:7.849 seconds
+ server global model correct 6341
+ Testing time:21.170 seconds
+ avg_test_acc: {'uniform': 0.6341000199317932, 'validclass': 0.6341000199317932, 'labeldist': 0.6340999603271484}
+ pfl_avg_test_acc: {'uniform': 0.4260399997234344, 'validclass': 0.5796585708856583, 'labeldist': 0.7945253491401673}
+ Best test accuracy:0.634. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:100 - Active clients:[37 62 26 41 35 25 36 33 77 21]:
+ Training time:8.969 seconds
+ server global model correct 5768
+ Testing time:21.135 seconds
+ avg_test_acc: {'uniform': 0.5767999887466431, 'validclass': 0.5767999887466431, 'labeldist': 0.5768000483512878}
+ pfl_avg_test_acc: {'uniform': 0.400110000371933, 'validclass': 0.5772325873374939, 'labeldist': 0.7954486072063446}
+Round:101 - Active clients:[16  1 43 67 89 21 97 51  6 41]:
+ Training time:8.400 seconds
+ server global model correct 6102
+ Testing time:21.106 seconds
+ avg_test_acc: {'uniform': 0.6101999878883362, 'validclass': 0.6101999878883362, 'labeldist': 0.6101999878883362}
+ pfl_avg_test_acc: {'uniform': 0.4215599954128265, 'validclass': 0.5773668587207794, 'labeldist': 0.8154409945011138}
+Round:102 - Active clients:[98 46 97 21 44 33 75 65 83 15]:
+ Training time:8.090 seconds
+ server global model correct 6012
+ Testing time:20.479 seconds
+ avg_test_acc: {'uniform': 0.6011999845504761, 'validclass': 0.6011999845504761, 'labeldist': 0.6011999249458313}
+ pfl_avg_test_acc: {'uniform': 0.41825999319553375, 'validclass': 0.48417551517486573, 'labeldist': 0.7947610139846801}
+Round:103 - Active clients:[79 92 25 64 97 61 50 76 99 42]:
+ Training time:7.922 seconds
+ server global model correct 5487
+ Testing time:21.152 seconds
+ avg_test_acc: {'uniform': 0.5486999750137329, 'validclass': 0.5486999750137329, 'labeldist': 0.5487000346183777}
+ pfl_avg_test_acc: {'uniform': 0.4010099932551384, 'validclass': 0.5737168163061142, 'labeldist': 0.7735077738761902}
+Round:104 - Active clients:[23  2 22 27 53 84 56 98 72 57]:
+ Training time:7.730 seconds
+ server global model correct 6200
+ Testing time:20.997 seconds
+ avg_test_acc: {'uniform': 0.6200000047683716, 'validclass': 0.6200000047683716, 'labeldist': 0.6200000643730164}
+ pfl_avg_test_acc: {'uniform': 0.42265000343322756, 'validclass': 0.5620268225669861, 'labeldist': 0.7787456750869751}
+Round:105 - Active clients:[52 26 40 89 90 85  3 87 63 92]:
+ Training time:9.250 seconds
+ server global model correct 6099
+ Testing time:21.504 seconds
+ avg_test_acc: {'uniform': 0.6098999977111816, 'validclass': 0.6098999977111816, 'labeldist': 0.6099000573158264}
+ pfl_avg_test_acc: {'uniform': 0.4117299973964691, 'validclass': 0.5875355511903763, 'labeldist': 0.782803338766098}
+Round:106 - Active clients:[28  4 98 49  1 50 72 38 46 79]:
+ Training time:6.870 seconds
+ server global model correct 6431
+ Testing time:21.375 seconds
+ avg_test_acc: {'uniform': 0.6431000232696533, 'validclass': 0.6431000232696533, 'labeldist': 0.6431000232696533}
+ pfl_avg_test_acc: {'uniform': 0.4460999995470047, 'validclass': 0.5222344070672988, 'labeldist': 0.7972531676292419}
+ Best test accuracy:0.643. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:107 - Active clients:[35 46  1 32 90 77 10 87 69 84]:
+ Training time:7.926 seconds
+ server global model correct 6595
+ Testing time:20.930 seconds
+ avg_test_acc: {'uniform': 0.659500002861023, 'validclass': 0.659500002861023, 'labeldist': 0.6595000624656677}
+ pfl_avg_test_acc: {'uniform': 0.4314099997282028, 'validclass': 0.5677506625652313, 'labeldist': 0.7958282709121705}
+ Best test accuracy:0.660. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:108 - Active clients:[59 12 21 16 72 29 58 73 34 13]:
+ Training time:6.965 seconds
+ server global model correct 6435
+ Testing time:21.070 seconds
+ avg_test_acc: {'uniform': 0.6434999704360962, 'validclass': 0.6434999704360962, 'labeldist': 0.6434999704360962}
+ pfl_avg_test_acc: {'uniform': 0.4341400027275085, 'validclass': 0.5124423831701279, 'labeldist': 0.8062471151351929}
+Round:109 - Active clients:[70 61 90 68 91 87 86 20 49 67]:
+ Training time:8.821 seconds
+ server global model correct 6274
+ Testing time:21.186 seconds
+ avg_test_acc: {'uniform': 0.6273999810218811, 'validclass': 0.6273999810218811, 'labeldist': 0.6273999810218811}
+ pfl_avg_test_acc: {'uniform': 0.4151199996471405, 'validclass': 0.5477198421955108, 'labeldist': 0.8227689981460571}
+Round:110 - Active clients:[14 88 71 30 75 63 24 87 98 19]:
+ Training time:8.069 seconds
+ server global model correct 6322
+ Testing time:21.306 seconds
+ avg_test_acc: {'uniform': 0.6322000026702881, 'validclass': 0.6322000026702881, 'labeldist': 0.6322000026702881}
+ pfl_avg_test_acc: {'uniform': 0.4137799978256226, 'validclass': 0.5724592059850693, 'labeldist': 0.7945814788341522}
+Round:111 - Active clients:[15 53 44 16 90 20 89 91 92 36]:
+ Training time:9.403 seconds
+ server global model correct 6408
+ Testing time:21.259 seconds
+ avg_test_acc: {'uniform': 0.6407999992370605, 'validclass': 0.6407999992370605, 'labeldist': 0.6407999992370605}
+ pfl_avg_test_acc: {'uniform': 0.4480100035667419, 'validclass': 0.5554178208112717, 'labeldist': 0.8032926499843598}
+Round:112 - Active clients:[ 0 64 55 36 33 45 73 84 56 80]:
+ Training time:7.315 seconds
+ server global model correct 4591
+ Testing time:21.210 seconds
+ avg_test_acc: {'uniform': 0.45910000801086426, 'validclass': 0.45910000801086426, 'labeldist': 0.45910000801086426}
+ pfl_avg_test_acc: {'uniform': 0.3613300085067749, 'validclass': 0.6061539649963379, 'labeldist': 0.8079984903335571}
+Round:113 - Active clients:[76 53 98 13 52 38 94 43 20 48]:
+ Training time:9.240 seconds
+ server global model correct 5335
+ Testing time:21.039 seconds
+ avg_test_acc: {'uniform': 0.5335000157356262, 'validclass': 0.5335000157356262, 'labeldist': 0.533500075340271}
+ pfl_avg_test_acc: {'uniform': 0.4006099998950958, 'validclass': 0.5333992034196854, 'labeldist': 0.8061349868774415}
+Round:114 - Active clients:[83 65 93 90 24  8 36 16 85 25]:
+ Training time:8.468 seconds
+ server global model correct 5107
+ Testing time:21.249 seconds
+ avg_test_acc: {'uniform': 0.510699987411499, 'validclass': 0.510699987411499, 'labeldist': 0.5107000470161438}
+ pfl_avg_test_acc: {'uniform': 0.3935399934649467, 'validclass': 0.5922218233346939, 'labeldist': 0.8083430886268616}
+Round:115 - Active clients:[78 96 25 26 59 71 42 15 35 73]:
+ Training time:7.560 seconds
+ server global model correct 6459
+ Testing time:21.209 seconds
+ avg_test_acc: {'uniform': 0.6459000110626221, 'validclass': 0.6459000110626221, 'labeldist': 0.6459000110626221}
+ pfl_avg_test_acc: {'uniform': 0.4116200000047684, 'validclass': 0.5741403192281723, 'labeldist': 0.7950530171394348}
+Round:116 - Active clients:[38 69  7 33 15 78 20 34 56 32]:
+ Training time:8.084 seconds
+ server global model correct 5989
+ Testing time:21.271 seconds
+ avg_test_acc: {'uniform': 0.5989000201225281, 'validclass': 0.5989000201225281, 'labeldist': 0.5988999605178833}
+ pfl_avg_test_acc: {'uniform': 0.42578999400138856, 'validclass': 0.5671236127614975, 'labeldist': 0.8185937762260437}
+Round:117 - Active clients:[64 91 65 47 60  1  5 29 74 70]:
+ Training time:8.565 seconds
+ server global model correct 5913
+ Testing time:21.288 seconds
+ avg_test_acc: {'uniform': 0.5913000106811523, 'validclass': 0.5913000106811523, 'labeldist': 0.5913000106811523}
+ pfl_avg_test_acc: {'uniform': 0.4123299986124039, 'validclass': 0.5686813503503799, 'labeldist': 0.801058554649353}
+Round:118 - Active clients:[ 4 32 41 78 82 16 13 58 66 92]:
+ Training time:7.832 seconds
+ server global model correct 6328
+ Testing time:20.685 seconds
+ avg_test_acc: {'uniform': 0.6327999830245972, 'validclass': 0.6327999830245972, 'labeldist': 0.6327999830245972}
+ pfl_avg_test_acc: {'uniform': 0.4193700045347214, 'validclass': 0.5385530233383179, 'labeldist': 0.825178986787796}
+Round:119 - Active clients:[53 20  7 13 51 31  0 79 82 75]:
+ Training time:9.128 seconds
+ server global model correct 6152
+ Testing time:21.299 seconds
+ avg_test_acc: {'uniform': 0.6151999831199646, 'validclass': 0.6151999831199646, 'labeldist': 0.6151999831199646}
+ pfl_avg_test_acc: {'uniform': 0.4282100021839142, 'validclass': 0.5030919432640075, 'labeldist': 0.8292722642421723}
+Round:120 - Active clients:[80 38  5 61 93 66 41 65  3 72]:
+ Training time:10.193 seconds
+ server global model correct 5921
+ Testing time:61.697 seconds
+ avg_test_acc: {'uniform': 0.5921000242233276, 'validclass': 0.5921000242233276, 'labeldist': 0.5921000242233276}
+ pfl_avg_test_acc: {'uniform': 0.42390999794006345, 'validclass': 0.6436888933181762, 'labeldist': 0.8122694909572601}
+Round:121 - Active clients:[82 38 23 98 18 22 20 15 97 29]:
+ Training time:21.274 seconds
+ server global model correct 6524
+ Testing time:29.832 seconds
+ avg_test_acc: {'uniform': 0.652400016784668, 'validclass': 0.652400016784668, 'labeldist': 0.652400016784668}
+ pfl_avg_test_acc: {'uniform': 0.4360500007867813, 'validclass': 0.5558334916830063, 'labeldist': 0.8187661826610565}
+Round:122 - Active clients:[49 96  3 34 17 85 53 27 37 90]:
+ Training time:7.896 seconds
+ server global model correct 6454
+ Testing time:19.558 seconds
+ avg_test_acc: {'uniform': 0.6453999876976013, 'validclass': 0.6453999876976013, 'labeldist': 0.6453999876976013}
+ pfl_avg_test_acc: {'uniform': 0.47045000791549685, 'validclass': 0.5539615958929062, 'labeldist': 0.8189580976963043}
+Round:123 - Active clients:[ 8 70 82 28 63  0  5 50 81  4]:
+ Training time:5.621 seconds
+ server global model correct 6533
+ Testing time:19.360 seconds
+ avg_test_acc: {'uniform': 0.6532999873161316, 'validclass': 0.6532999873161316, 'labeldist': 0.6532999873161316}
+ pfl_avg_test_acc: {'uniform': 0.4005099982023239, 'validclass': 0.583119484782219, 'labeldist': 0.8226156651973724}
+Round:124 - Active clients:[35 34 27 23 61 77 13 88 10 56]:
+ Training time:8.439 seconds
+ server global model correct 6441
+ Testing time:19.754 seconds
+ avg_test_acc: {'uniform': 0.64410001039505, 'validclass': 0.64410001039505, 'labeldist': 0.6440999507904053}
+ pfl_avg_test_acc: {'uniform': 0.4429399996995926, 'validclass': 0.5873871386051178, 'labeldist': 0.8049955129623413}
+Round:125 - Active clients:[65  2 49  6 83 73 33  8 54 48]:
+ Training time:7.007 seconds
+ server global model correct 6051
+ Testing time:20.431 seconds
+ avg_test_acc: {'uniform': 0.6050999760627747, 'validclass': 0.6050999760627747, 'labeldist': 0.6050999760627747}
+ pfl_avg_test_acc: {'uniform': 0.41676999628543854, 'validclass': 0.5747900396585465, 'labeldist': 0.8228882849216461}
+Round:126 - Active clients:[13 18 88 63 37 43 20  0 47  5]:
+ Training time:10.167 seconds
+ server global model correct 5257
+ Testing time:20.579 seconds
+ avg_test_acc: {'uniform': 0.5256999731063843, 'validclass': 0.5256999731063843, 'labeldist': 0.525700032711029}
+ pfl_avg_test_acc: {'uniform': 0.35678999722003935, 'validclass': 0.6304614245891571, 'labeldist': 0.8439428269863128}
+Round:127 - Active clients:[17 10 86 24 75 48 40 41  6 85]:
+ Training time:8.003 seconds
+ server global model correct 6080
+ Testing time:20.499 seconds
+ avg_test_acc: {'uniform': 0.6079999804496765, 'validclass': 0.6079999804496765, 'labeldist': 0.6079999804496765}
+ pfl_avg_test_acc: {'uniform': 0.39352999329566957, 'validclass': 0.576013770699501, 'labeldist': 0.8221678793430328}
+Round:128 - Active clients:[65 67 33 18 13 31 24 38 32 41]:
+ Training time:9.534 seconds
+ server global model correct 5853
+ Testing time:20.433 seconds
+ avg_test_acc: {'uniform': 0.5853000283241272, 'validclass': 0.5853000283241272, 'labeldist': 0.5852999687194824}
+ pfl_avg_test_acc: {'uniform': 0.4081500038504601, 'validclass': 0.6189708352088928, 'labeldist': 0.8341100454330445}
+Round:129 - Active clients:[65 68 59  9 38 67 41 97 37 18]:
+ Training time:8.809 seconds
+ server global model correct 6066
+ Testing time:20.584 seconds
+ avg_test_acc: {'uniform': 0.6065999865531921, 'validclass': 0.6065999865531921, 'labeldist': 0.6066000461578369}
+ pfl_avg_test_acc: {'uniform': 0.3958000034093857, 'validclass': 0.607532975077629, 'labeldist': 0.8655990064144135}
+Round:130 - Active clients:[43 93 41  3 42  6 97 53 73 49]:
+ Training time:7.568 seconds
+ server global model correct 6471
+ Testing time:20.788 seconds
+ avg_test_acc: {'uniform': 0.6470999717712402, 'validclass': 0.6470999717712402, 'labeldist': 0.647100031375885}
+ pfl_avg_test_acc: {'uniform': 0.4494100004434586, 'validclass': 0.5727174907922745, 'labeldist': 0.8015765964984893}
+Round:131 - Active clients:[58 91 28 46 13  2 34 49 81 23]:
+ Training time:7.178 seconds
+ server global model correct 6606
+ Testing time:20.556 seconds
+ avg_test_acc: {'uniform': 0.6606000065803528, 'validclass': 0.6606000065803528, 'labeldist': 0.660599946975708}
+ pfl_avg_test_acc: {'uniform': 0.45354999899864196, 'validclass': 0.525303065776825, 'labeldist': 0.82633016705513}
+ Best test accuracy:0.661. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:132 - Active clients:[65  2 27 95  8 16 15 92 85 79]:
+ Training time:8.965 seconds
+ server global model correct 6285
+ Testing time:20.801 seconds
+ avg_test_acc: {'uniform': 0.6284999847412109, 'validclass': 0.6284999847412109, 'labeldist': 0.6284999847412109}
+ pfl_avg_test_acc: {'uniform': 0.4543199986219406, 'validclass': 0.5704299569129944, 'labeldist': 0.8185821056365967}
+Round:133 - Active clients:[96 46 15 71 80 11  0 37 67 27]:
+ Training time:8.952 seconds
+ server global model correct 5978
+ Testing time:22.280 seconds
+ avg_test_acc: {'uniform': 0.5978000164031982, 'validclass': 0.5978000164031982, 'labeldist': 0.597800076007843}
+ pfl_avg_test_acc: {'uniform': 0.39182999581098554, 'validclass': 0.616417133808136, 'labeldist': 0.8338748931884765}
+Round:134 - Active clients:[39 45 78 25 90 98 48 47 72 66]:
+ Training time:8.640 seconds
+ server global model correct 6769
+ Testing time:21.945 seconds
+ avg_test_acc: {'uniform': 0.6769000291824341, 'validclass': 0.6769000291824341, 'labeldist': 0.6769000291824341}
+ pfl_avg_test_acc: {'uniform': 0.39549999982118605, 'validclass': 0.6150663435459137, 'labeldist': 0.842635428905487}
+ Best test accuracy:0.677. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:135 - Active clients:[24 32 82 20 94 30 54 15 46 51]:
+ Training time:8.873 seconds
+ server global model correct 6577
+ Testing time:21.062 seconds
+ avg_test_acc: {'uniform': 0.6577000021934509, 'validclass': 0.6577000021934509, 'labeldist': 0.6577000021934509}
+ pfl_avg_test_acc: {'uniform': 0.42554000616073606, 'validclass': 0.5848755955696106, 'labeldist': 0.8374833226203918}
+Round:136 - Active clients:[16 55 28 84 49 99 86 67 87 53]:
+ Training time:6.524 seconds
+ server global model correct 6374
+ Testing time:19.760 seconds
+ avg_test_acc: {'uniform': 0.6373999714851379, 'validclass': 0.6373999714851379, 'labeldist': 0.6374000310897827}
+ pfl_avg_test_acc: {'uniform': 0.45400999784469603, 'validclass': 0.6050236463546753, 'labeldist': 0.7870224416255951}
+Round:137 - Active clients:[88 73 90 93 87 13  0 53 18 20]:
+ Training time:8.369 seconds
+ server global model correct 6248
+ Testing time:20.141 seconds
+ avg_test_acc: {'uniform': 0.6248000264167786, 'validclass': 0.6248000264167786, 'labeldist': 0.6248000264167786}
+ pfl_avg_test_acc: {'uniform': 0.4236700028181076, 'validclass': 0.5934744417667389, 'labeldist': 0.8317691862583161}
+Round:138 - Active clients:[74 23 41 55  8 44 12 97 88 45]:
+ Training time:7.196 seconds
+ server global model correct 5977
+ Testing time:19.610 seconds
+ avg_test_acc: {'uniform': 0.5976999998092651, 'validclass': 0.5976999998092651, 'labeldist': 0.5976999998092651}
+ pfl_avg_test_acc: {'uniform': 0.43905999660491946, 'validclass': 0.5650212794542313, 'labeldist': 0.8227921485900879}
+Round:139 - Active clients:[52 82 14  7 40 45 23 39 74 68]:
+ Training time:7.001 seconds
+ server global model correct 6366
+ Testing time:19.572 seconds
+ avg_test_acc: {'uniform': 0.6366000175476074, 'validclass': 0.6366000175476074, 'labeldist': 0.6365999579429626}
+ pfl_avg_test_acc: {'uniform': 0.43569999635219575, 'validclass': 0.5528462678194046, 'labeldist': 0.8375994980335235}
+Round:140 - Active clients:[64  9 98 29 60 39  1 43 90 42]:
+ Training time:8.022 seconds
+ server global model correct 6450
+ Testing time:19.826 seconds
+ avg_test_acc: {'uniform': 0.6449999809265137, 'validclass': 0.6449999809265137, 'labeldist': 0.6449999809265137}
+ pfl_avg_test_acc: {'uniform': 0.4461799949407578, 'validclass': 0.5777097582817078, 'labeldist': 0.8122429847717285}
+Round:141 - Active clients:[46  1 51 10 96 87 15 73 20 41]:
+ Training time:7.461 seconds
+ server global model correct 6717
+ Testing time:19.673 seconds
+ avg_test_acc: {'uniform': 0.6717000007629395, 'validclass': 0.6717000007629395, 'labeldist': 0.6717000007629395}
+ pfl_avg_test_acc: {'uniform': 0.4612900078296661, 'validclass': 0.5714287757873535, 'labeldist': 0.8266051471233368}
+Round:142 - Active clients:[25 61 42 33 81 68  6  7 54 94]:
+ Training time:6.701 seconds
+ server global model correct 6310
+ Testing time:20.389 seconds
+ avg_test_acc: {'uniform': 0.6309999823570251, 'validclass': 0.6309999823570251, 'labeldist': 0.6309999823570251}
+ pfl_avg_test_acc: {'uniform': 0.42417000234127045, 'validclass': 0.6169952720403671, 'labeldist': 0.8377452552318573}
+Round:143 - Active clients:[48  9 67 99 79  5 66 46 42 65]:
+ Training time:8.710 seconds
+ server global model correct 6293
+ Testing time:20.637 seconds
+ avg_test_acc: {'uniform': 0.6292999982833862, 'validclass': 0.6292999982833862, 'labeldist': 0.6292999982833862}
+ pfl_avg_test_acc: {'uniform': 0.403370001912117, 'validclass': 0.661323881149292, 'labeldist': 0.8451938986778259}
+Round:144 - Active clients:[79 90 28 32 18 35 17 59 99 64]:
+ Training time:8.101 seconds
+ server global model correct 6267
+ Testing time:20.765 seconds
+ avg_test_acc: {'uniform': 0.6266999840736389, 'validclass': 0.6266999840736389, 'labeldist': 0.6267000436782837}
+ pfl_avg_test_acc: {'uniform': 0.4495000034570694, 'validclass': 0.59314666390419, 'labeldist': 0.8303631484508515}
+Round:145 - Active clients:[39 24 70 43 88 74 45 54 63  0]:
+ Training time:7.990 seconds
+ server global model correct 6646
+ Testing time:20.185 seconds
+ avg_test_acc: {'uniform': 0.6646000146865845, 'validclass': 0.6646000146865845, 'labeldist': 0.6645999550819397}
+ pfl_avg_test_acc: {'uniform': 0.39182000160217284, 'validclass': 0.6066255629062652, 'labeldist': 0.8282499969005584}
+Round:146 - Active clients:[91 54 23 10 89 34 68 83 84 67]:
+ Training time:7.721 seconds
+ server global model correct 6601
+ Testing time:20.274 seconds
+ avg_test_acc: {'uniform': 0.660099983215332, 'validclass': 0.660099983215332, 'labeldist': 0.6601000428199768}
+ pfl_avg_test_acc: {'uniform': 0.41526000052690504, 'validclass': 0.6445869028568267, 'labeldist': 0.8240761578083038}
+Round:147 - Active clients:[ 9 28 51 49 13  6 26 61 15 37]:
+ Training time:6.502 seconds
+ server global model correct 6354
+ Testing time:20.596 seconds
+ avg_test_acc: {'uniform': 0.6353999972343445, 'validclass': 0.6353999972343445, 'labeldist': 0.6353999972343445}
+ pfl_avg_test_acc: {'uniform': 0.4659600019454956, 'validclass': 0.5660001993179321, 'labeldist': 0.795093297958374}
+Round:148 - Active clients:[77 90 30 39 54 62 59 37 76 10]:
+ Training time:8.438 seconds
+ server global model correct 6134
+ Testing time:20.388 seconds
+ avg_test_acc: {'uniform': 0.6133999824523926, 'validclass': 0.6133999824523926, 'labeldist': 0.6134000420570374}
+ pfl_avg_test_acc: {'uniform': 0.4157900005578995, 'validclass': 0.6056913942098617, 'labeldist': 0.8410466432571411}
+Round:149 - Active clients:[50 72 62 53 76 94 25 13 42 51]:
+ Training time:7.022 seconds
+ server global model correct 6561
+ Testing time:20.383 seconds
+ avg_test_acc: {'uniform': 0.6560999751091003, 'validclass': 0.6560999751091003, 'labeldist': 0.6561000347137451}
+ pfl_avg_test_acc: {'uniform': 0.4389199987053871, 'validclass': 0.6115382552146912, 'labeldist': 0.8243546187877655}
+Round:150 - Active clients:[85 57 52 32 35 20 39 72  8 89]:
+ Training time:9.312 seconds
+ server global model correct 6269
+ Testing time:20.368 seconds
+ avg_test_acc: {'uniform': 0.6269000172615051, 'validclass': 0.6269000172615051, 'labeldist': 0.6268999576568604}
+ pfl_avg_test_acc: {'uniform': 0.4564100056886673, 'validclass': 0.6015233755111694, 'labeldist': 0.8329660594463348}
+Round:151 - Active clients:[18 12 88 60 84 40 53 15 49  1]:
+ Training time:7.892 seconds
+ server global model correct 6469
+ Testing time:20.208 seconds
+ avg_test_acc: {'uniform': 0.6468999981880188, 'validclass': 0.6468999981880188, 'labeldist': 0.646899938583374}
+ pfl_avg_test_acc: {'uniform': 0.44719999730587007, 'validclass': 0.6075104057788849, 'labeldist': 0.813386219739914}
+Round:152 - Active clients:[61 37 89 76 10 46 84 32 75 38]:
+ Training time:7.274 seconds
+ server global model correct 6554
+ Testing time:20.314 seconds
+ avg_test_acc: {'uniform': 0.6553999781608582, 'validclass': 0.6553999781608582, 'labeldist': 0.6553999781608582}
+ pfl_avg_test_acc: {'uniform': 0.43337000012397764, 'validclass': 0.5821733325719833, 'labeldist': 0.8150098741054534}
+Round:153 - Active clients:[32 27 80 15 25 13 91 83 51 56]:
+ Training time:7.680 seconds
+ server global model correct 4938
+ Testing time:20.358 seconds
+ avg_test_acc: {'uniform': 0.49380001425743103, 'validclass': 0.49380001425743103, 'labeldist': 0.4938000440597534}
+ pfl_avg_test_acc: {'uniform': 0.41121000349521636, 'validclass': 0.654295003414154, 'labeldist': 0.8401967287063599}
+Round:154 - Active clients:[93 62 98 13  5 77  2 65 96 53]:
+ Training time:7.997 seconds
+ server global model correct 6372
+ Testing time:20.270 seconds
+ avg_test_acc: {'uniform': 0.6371999979019165, 'validclass': 0.6371999979019165, 'labeldist': 0.6371999382972717}
+ pfl_avg_test_acc: {'uniform': 0.4568399965763092, 'validclass': 0.6068388879299164, 'labeldist': 0.822123908996582}
+Round:155 - Active clients:[78 45 76 63 38 30  1 20 80 13]:
+ Training time:9.510 seconds
+ server global model correct 5932
+ Testing time:19.943 seconds
+ avg_test_acc: {'uniform': 0.5932000279426575, 'validclass': 0.5932000279426575, 'labeldist': 0.5932000279426575}
+ pfl_avg_test_acc: {'uniform': 0.39826000332832334, 'validclass': 0.6294261872768402, 'labeldist': 0.8668248116970062}
+Round:156 - Active clients:[ 0 79 98 90 80 50 82 29 93 68]:
+ Training time:7.549 seconds
+ server global model correct 6741
+ Testing time:20.069 seconds
+ avg_test_acc: {'uniform': 0.6740999817848206, 'validclass': 0.6740999817848206, 'labeldist': 0.6740999817848206}
+ pfl_avg_test_acc: {'uniform': 0.41157999634742737, 'validclass': 0.6051706343889236, 'labeldist': 0.8469143390655518}
+Round:157 - Active clients:[93 73 99 29 37 92 90 12  7 96]:
+ Training time:6.968 seconds
+ server global model correct 6723
+ Testing time:20.280 seconds
+ avg_test_acc: {'uniform': 0.6722999811172485, 'validclass': 0.6722999811172485, 'labeldist': 0.6722999811172485}
+ pfl_avg_test_acc: {'uniform': 0.48155000507831575, 'validclass': 0.610128253698349, 'labeldist': 0.8162421226501465}
+Round:158 - Active clients:[27 15 55 77 19  0 75 87 65 57]:
+ Training time:7.326 seconds
+ server global model correct 6491
+ Testing time:20.222 seconds
+ avg_test_acc: {'uniform': 0.6491000056266785, 'validclass': 0.6491000056266785, 'labeldist': 0.6490999460220337}
+ pfl_avg_test_acc: {'uniform': 0.48081000745296476, 'validclass': 0.580246752500534, 'labeldist': 0.8255802094936371}
+Round:159 - Active clients:[50 75 45 33 21  8 52 62 82 59]:
+ Training time:6.540 seconds
+ server global model correct 6429
+ Testing time:20.567 seconds
+ avg_test_acc: {'uniform': 0.6428999900817871, 'validclass': 0.6428999900817871, 'labeldist': 0.6428999900817871}
+ pfl_avg_test_acc: {'uniform': 0.47070000469684603, 'validclass': 0.5389648497104644, 'labeldist': 0.8232019662857055}
+Round:160 - Active clients:[ 9 57 22 41 28 46 83 73 85 71]:
+ Training time:7.012 seconds
+ server global model correct 6851
+ Testing time:20.270 seconds
+ avg_test_acc: {'uniform': 0.6851000189781189, 'validclass': 0.6851000189781189, 'labeldist': 0.6851000189781189}
+ pfl_avg_test_acc: {'uniform': 0.4564700037240982, 'validclass': 0.5667112737894058, 'labeldist': 0.8339805245399475}
+ Best test accuracy:0.685. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:161 - Active clients:[91  7 93 55 62  9 25 20 98 30]:
+ Training time:8.373 seconds
+ server global model correct 6412
+ Testing time:20.797 seconds
+ avg_test_acc: {'uniform': 0.6412000060081482, 'validclass': 0.6412000060081482, 'labeldist': 0.641200065612793}
+ pfl_avg_test_acc: {'uniform': 0.44386000037193296, 'validclass': 0.6183073133230209, 'labeldist': 0.8210795938968658}
+Round:162 - Active clients:[31 40 67 21  0 88 90 93 41 20]:
+ Training time:10.607 seconds
+ server global model correct 6316
+ Testing time:20.443 seconds
+ avg_test_acc: {'uniform': 0.631600022315979, 'validclass': 0.631600022315979, 'labeldist': 0.6315999627113342}
+ pfl_avg_test_acc: {'uniform': 0.42429999858140943, 'validclass': 0.6210184514522552, 'labeldist': 0.8363879024982452}
+Round:163 - Active clients:[54 92 21 58 49 95 24 61 52  4]:
+ Training time:7.276 seconds
+ server global model correct 6735
+ Testing time:20.468 seconds
+ avg_test_acc: {'uniform': 0.6735000014305115, 'validclass': 0.6735000014305115, 'labeldist': 0.6734999418258667}
+ pfl_avg_test_acc: {'uniform': 0.47760999500751494, 'validclass': 0.5941409111022949, 'labeldist': 0.8038674890995026}
+Round:164 - Active clients:[32 92 71  3 65 60 25 30 39 19]:
+ Training time:9.008 seconds
+ server global model correct 6636
+ Testing time:20.584 seconds
+ avg_test_acc: {'uniform': 0.6636000275611877, 'validclass': 0.6636000275611877, 'labeldist': 0.663599967956543}
+ pfl_avg_test_acc: {'uniform': 0.43635999858379365, 'validclass': 0.6395718991756439, 'labeldist': 0.8351173639297486}
+Round:165 - Active clients:[62 14 59 39 40 26 54 82  6 95]:
+ Training time:7.244 seconds
+ server global model correct 6672
+ Testing time:20.251 seconds
+ avg_test_acc: {'uniform': 0.6672000288963318, 'validclass': 0.6672000288963318, 'labeldist': 0.6672000288963318}
+ pfl_avg_test_acc: {'uniform': 0.4649799972772598, 'validclass': 0.5875589698553085, 'labeldist': 0.816354238986969}
+Round:166 - Active clients:[53 75 92 67 43  7 46 98 77 64]:
+ Training time:7.749 seconds
+ server global model correct 6841
+ Testing time:20.593 seconds
+ avg_test_acc: {'uniform': 0.6840999722480774, 'validclass': 0.6840999722480774, 'labeldist': 0.6841000318527222}
+ pfl_avg_test_acc: {'uniform': 0.4414400041103363, 'validclass': 0.6045938491821289, 'labeldist': 0.8403772175312042}
+Round:167 - Active clients:[61 35 96 93  2 95 40  5 26 11]:
+ Training time:8.395 seconds
+ server global model correct 5955
+ Testing time:20.385 seconds
+ avg_test_acc: {'uniform': 0.5954999923706055, 'validclass': 0.5954999923706055, 'labeldist': 0.5955000519752502}
+ pfl_avg_test_acc: {'uniform': 0.44378999173641204, 'validclass': 0.6128988862037659, 'labeldist': 0.8046853244304657}
+Round:168 - Active clients:[33 60 31 76 79 86 16 19 47 68]:
+ Training time:8.833 seconds
+ server global model correct 6739
+ Testing time:20.506 seconds
+ avg_test_acc: {'uniform': 0.6739000082015991, 'validclass': 0.6739000082015991, 'labeldist': 0.6739000082015991}
+ pfl_avg_test_acc: {'uniform': 0.45010999143123626, 'validclass': 0.6021427780389785, 'labeldist': 0.8494172990322113}
+Round:169 - Active clients:[13 31 85 69 87 59  2 46 67 40]:
+ Training time:7.911 seconds
+ server global model correct 6712
+ Testing time:20.521 seconds
+ avg_test_acc: {'uniform': 0.6711999773979187, 'validclass': 0.6711999773979187, 'labeldist': 0.6712000966072083}
+ pfl_avg_test_acc: {'uniform': 0.4689300015568733, 'validclass': 0.6290233612060547, 'labeldist': 0.8397754192352295}
+Round:170 - Active clients:[83 75 84 21  0 68 30 91 96 56]:
+ Training time:6.408 seconds
+ server global model correct 6497
+ Testing time:20.117 seconds
+ avg_test_acc: {'uniform': 0.6496999859809875, 'validclass': 0.6496999859809875, 'labeldist': 0.6497000455856323}
+ pfl_avg_test_acc: {'uniform': 0.4225199967622757, 'validclass': 0.5885223805904388, 'labeldist': 0.834084439277649}
+Round:171 - Active clients:[72 76 52 63  4 33 59 47  2 49]:
+ Training time:7.505 seconds
+ server global model correct 6484
+ Testing time:19.914 seconds
+ avg_test_acc: {'uniform': 0.6484000086784363, 'validclass': 0.6484000086784363, 'labeldist': 0.6484000086784363}
+ pfl_avg_test_acc: {'uniform': 0.4348600059747696, 'validclass': 0.590246906876564, 'labeldist': 0.8462613046169281}
+Round:172 - Active clients:[17 56 35 15 96 30 24 75 39  0]:
+ Training time:6.577 seconds
+ server global model correct 6167
+ Testing time:20.127 seconds
+ avg_test_acc: {'uniform': 0.6166999936103821, 'validclass': 0.6166999936103821, 'labeldist': 0.6167000532150269}
+ pfl_avg_test_acc: {'uniform': 0.4551500052213669, 'validclass': 0.6022057503461837, 'labeldist': 0.8339136064052581}
+Round:173 - Active clients:[70  1 20 90 94 82 80 73 27  8]:
+ Training time:8.840 seconds
+ server global model correct 6571
+ Testing time:20.267 seconds
+ avg_test_acc: {'uniform': 0.6571000218391418, 'validclass': 0.6571000218391418, 'labeldist': 0.6571000218391418}
+ pfl_avg_test_acc: {'uniform': 0.4673799961805344, 'validclass': 0.5779704689979553, 'labeldist': 0.8399061262607574}
+Round:174 - Active clients:[13 96 94 55  6 21 51 10 34 50]:
+ Training time:6.868 seconds
+ server global model correct 6625
+ Testing time:20.639 seconds
+ avg_test_acc: {'uniform': 0.6625000238418579, 'validclass': 0.6625000238418579, 'labeldist': 0.6625000834465027}
+ pfl_avg_test_acc: {'uniform': 0.48648999631404877, 'validclass': 0.5961276650428772, 'labeldist': 0.818418699502945}
+Round:175 - Active clients:[17 80 47 42 99 76 48 94 25 24]:
+ Training time:8.077 seconds
+ server global model correct 5934
+ Testing time:20.555 seconds
+ avg_test_acc: {'uniform': 0.5934000015258789, 'validclass': 0.5934000015258789, 'labeldist': 0.5934000015258789}
+ pfl_avg_test_acc: {'uniform': 0.4082599997520447, 'validclass': 0.6890279889106751, 'labeldist': 0.843840229511261}
+Round:176 - Active clients:[ 7 49 74 23 33 39 28 35  2 93]:
+ Training time:7.051 seconds
+ server global model correct 6786
+ Testing time:20.345 seconds
+ avg_test_acc: {'uniform': 0.678600013256073, 'validclass': 0.678600013256073, 'labeldist': 0.6785999536514282}
+ pfl_avg_test_acc: {'uniform': 0.46347999572753906, 'validclass': 0.5800892829895019, 'labeldist': 0.8398451209068298}
+Round:177 - Active clients:[89 97 65  1 80 27 25 93 37 54]:
+ Training time:9.652 seconds
+ server global model correct 5737
+ Testing time:20.575 seconds
+ avg_test_acc: {'uniform': 0.5737000107765198, 'validclass': 0.5737000107765198, 'labeldist': 0.5737000107765198}
+ pfl_avg_test_acc: {'uniform': 0.43419999778270724, 'validclass': 0.6888305187225342, 'labeldist': 0.8553690135478973}
+Round:178 - Active clients:[ 1 32 94 87 33 50 91 52 77 59]:
+ Training time:6.790 seconds
+ server global model correct 6835
+ Testing time:20.525 seconds
+ avg_test_acc: {'uniform': 0.6834999918937683, 'validclass': 0.6834999918937683, 'labeldist': 0.6834999918937683}
+ pfl_avg_test_acc: {'uniform': 0.5180400013923645, 'validclass': 0.5822159171104431, 'labeldist': 0.8195356011390686}
+Round:179 - Active clients:[93 94 18 27 50 29 80 40 20 56]:
+ Training time:8.269 seconds
+ server global model correct 6094
+ Testing time:20.402 seconds
+ avg_test_acc: {'uniform': 0.6093999743461609, 'validclass': 0.6093999743461609, 'labeldist': 0.6093999743461609}
+ pfl_avg_test_acc: {'uniform': 0.43109999895095824, 'validclass': 0.6800062358379364, 'labeldist': 0.8453786671161652}
+Round:180 - Active clients:[67 71 64 63 96 16 30  6  9 61]:
+ Training time:6.821 seconds
+ server global model correct 6706
+ Testing time:20.438 seconds
+ avg_test_acc: {'uniform': 0.6705999970436096, 'validclass': 0.6705999970436096, 'labeldist': 0.6705999970436096}
+ pfl_avg_test_acc: {'uniform': 0.4629000023007393, 'validclass': 0.659834486246109, 'labeldist': 0.8355728030204773}
+Round:181 - Active clients:[67 37 22 13 40 45 60 15 29 59]:
+ Training time:7.363 seconds
+ server global model correct 6670
+ Testing time:20.440 seconds
+ avg_test_acc: {'uniform': 0.6669999957084656, 'validclass': 0.6669999957084656, 'labeldist': 0.6669999957084656}
+ pfl_avg_test_acc: {'uniform': 0.453280009329319, 'validclass': 0.6218265771865845, 'labeldist': 0.8281138598918915}
+Round:182 - Active clients:[76 81 58 20 97 47 59 40 93 56]:
+ Training time:8.618 seconds
+ server global model correct 6201
+ Testing time:20.022 seconds
+ avg_test_acc: {'uniform': 0.6201000213623047, 'validclass': 0.6201000213623047, 'labeldist': 0.6200999617576599}
+ pfl_avg_test_acc: {'uniform': 0.4256600022315979, 'validclass': 0.6151136934757233, 'labeldist': 0.8591129422187805}
+Round:183 - Active clients:[58 34 18 69 26 86 72 45 29  9]:
+ Training time:6.883 seconds
+ server global model correct 6874
+ Testing time:20.282 seconds
+ avg_test_acc: {'uniform': 0.6873999834060669, 'validclass': 0.6873999834060669, 'labeldist': 0.6874000430107117}
+ pfl_avg_test_acc: {'uniform': 0.4475900024175644, 'validclass': 0.6242984861135483, 'labeldist': 0.8423563539981842}
+ Best test accuracy:0.687. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:184 - Active clients:[87 50 18 81 51 70 34 42 15 77]:
+ Training time:6.652 seconds
+ server global model correct 6950
+ Testing time:20.293 seconds
+ avg_test_acc: {'uniform': 0.6949999928474426, 'validclass': 0.6949999928474426, 'labeldist': 0.6950000524520874}
+ pfl_avg_test_acc: {'uniform': 0.47145999372005465, 'validclass': 0.6270684123039245, 'labeldist': 0.8479663372039795}
+ Best test accuracy:0.695. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:185 - Active clients:[ 6  9 42 60 43 50 12 26 61 77]:
+ Training time:6.440 seconds
+ server global model correct 6862
+ Testing time:20.616 seconds
+ avg_test_acc: {'uniform': 0.6862000226974487, 'validclass': 0.6862000226974487, 'labeldist': 0.686199963092804}
+ pfl_avg_test_acc: {'uniform': 0.503400006890297, 'validclass': 0.6368788957595826, 'labeldist': 0.8148776710033416}
+Round:186 - Active clients:[42 79 89 72 49  6 16 64 96 87]:
+ Training time:6.160 seconds
+ server global model correct 6918
+ Testing time:20.429 seconds
+ avg_test_acc: {'uniform': 0.6917999982833862, 'validclass': 0.6917999982833862, 'labeldist': 0.691800057888031}
+ pfl_avg_test_acc: {'uniform': 0.5280700087547302, 'validclass': 0.6102971851825714, 'labeldist': 0.8216583609580994}
+Round:187 - Active clients:[92 29 94 81 27  4 65 32 41 12]:
+ Training time:7.819 seconds
+ server global model correct 7091
+ Testing time:20.289 seconds
+ avg_test_acc: {'uniform': 0.7091000080108643, 'validclass': 0.7091000080108643, 'labeldist': 0.7091000080108643}
+ pfl_avg_test_acc: {'uniform': 0.5078099966049194, 'validclass': 0.595474761724472, 'labeldist': 0.8505722343921661}
+ Best test accuracy:0.709. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:188 - Active clients:[96 12 73 81  4 66 87 79 32 93]:
+ Training time:5.120 seconds
+ server global model correct 7015
+ Testing time:20.660 seconds
+ avg_test_acc: {'uniform': 0.7014999985694885, 'validclass': 0.7014999985694885, 'labeldist': 0.7014999389648438}
+ pfl_avg_test_acc: {'uniform': 0.5154499977827072, 'validclass': 0.6284958362579346, 'labeldist': 0.8471811771392822}
+Round:189 - Active clients:[27 49 43  4 14 89 52 98 41 22]:
+ Training time:8.093 seconds
+ server global model correct 6907
+ Testing time:20.764 seconds
+ avg_test_acc: {'uniform': 0.6906999945640564, 'validclass': 0.6906999945640564, 'labeldist': 0.6906999945640564}
+ pfl_avg_test_acc: {'uniform': 0.5450800001621247, 'validclass': 0.6010765790939331, 'labeldist': 0.8210877597332}
+Round:190 - Active clients:[62 72 26 47 41 60 28 45 91 79]:
+ Training time:7.309 seconds
+ server global model correct 6912
+ Testing time:20.660 seconds
+ avg_test_acc: {'uniform': 0.6912000179290771, 'validclass': 0.6912000179290771, 'labeldist': 0.6912000775337219}
+ pfl_avg_test_acc: {'uniform': 0.4774699956178665, 'validclass': 0.6142211437225342, 'labeldist': 0.8239060580730438}
+Round:191 - Active clients:[46 33  7 54 12 87 67 25  4 73]:
+ Training time:6.392 seconds
+ server global model correct 6815
+ Testing time:20.417 seconds
+ avg_test_acc: {'uniform': 0.6815000176429749, 'validclass': 0.6815000176429749, 'labeldist': 0.6814999580383301}
+ pfl_avg_test_acc: {'uniform': 0.45406999439001083, 'validclass': 0.6718597114086151, 'labeldist': 0.8621941685676575}
+Round:192 - Active clients:[70 11 84 47 76 15  5  4  6 65]:
+ Training time:8.537 seconds
+ server global model correct 6551
+ Testing time:20.407 seconds
+ avg_test_acc: {'uniform': 0.6550999879837036, 'validclass': 0.6550999879837036, 'labeldist': 0.6551000475883484}
+ pfl_avg_test_acc: {'uniform': 0.46134999990463255, 'validclass': 0.6114818274974823, 'labeldist': 0.8200277805328369}
+Round:193 - Active clients:[45 79 29 86 90 85  4 51 33 80]:
+ Training time:7.689 seconds
+ server global model correct 6039
+ Testing time:20.349 seconds
+ avg_test_acc: {'uniform': 0.6039000153541565, 'validclass': 0.6039000153541565, 'labeldist': 0.6039000153541565}
+ pfl_avg_test_acc: {'uniform': 0.45087999999523165, 'validclass': 0.6267778158187867, 'labeldist': 0.8729427456855774}
+Round:194 - Active clients:[10 62 25 13 35 90 83  6 46 75]:
+ Training time:8.255 seconds
+ server global model correct 6815
+ Testing time:20.830 seconds
+ avg_test_acc: {'uniform': 0.6815000176429749, 'validclass': 0.6815000176429749, 'labeldist': 0.6815000772476196}
+ pfl_avg_test_acc: {'uniform': 0.45557000041007994, 'validclass': 0.5832594454288482, 'labeldist': 0.8399424910545349}
+Round:195 - Active clients:[50 90 24 77 39 32 76 60  2 51]:
+ Training time:7.785 seconds
+ server global model correct 6559
+ Testing time:20.475 seconds
+ avg_test_acc: {'uniform': 0.6559000015258789, 'validclass': 0.6559000015258789, 'labeldist': 0.6559000015258789}
+ pfl_avg_test_acc: {'uniform': 0.4640900015830994, 'validclass': 0.6168048441410064, 'labeldist': 0.85099858045578}
+Round:196 - Active clients:[80 87 37 77  4 97 82 73 61 29]:
+ Training time:5.869 seconds
+ server global model correct 6704
+ Testing time:20.349 seconds
+ avg_test_acc: {'uniform': 0.6704000234603882, 'validclass': 0.6704000234603882, 'labeldist': 0.6704000234603882}
+ pfl_avg_test_acc: {'uniform': 0.49964000582695006, 'validclass': 0.6156909108161926, 'labeldist': 0.8409937500953675}
+Round:197 - Active clients:[82 16 28  0  8 70  4 13 32 11]:
+ Training time:7.149 seconds
+ server global model correct 7092
+ Testing time:20.564 seconds
+ avg_test_acc: {'uniform': 0.7092000246047974, 'validclass': 0.7092000246047974, 'labeldist': 0.7091999650001526}
+ pfl_avg_test_acc: {'uniform': 0.47219000160694125, 'validclass': 0.5690150022506714, 'labeldist': 0.8302019715309144}
+ Best test accuracy:0.709. Best server model is updatded and saved at ./Cifar_FedAvg_FedAvg/FedAvg_Cifar10_Conv2Cifar_noniid-label-distribution_beta_0.3_num_clients_100_participate_ratio_0.1_global_seed_0_no_norm_False_best_global_model.pkl!
+Round:198 - Active clients:[11 38 53 19 87 42 40 78 60 35]:
+ Training time:7.737 seconds
+ server global model correct 6860
+ Testing time:21.011 seconds
+ avg_test_acc: {'uniform': 0.6859999895095825, 'validclass': 0.6859999895095825, 'labeldist': 0.6859999895095825}
+ pfl_avg_test_acc: {'uniform': 0.5041800022125245, 'validclass': 0.617716109752655, 'labeldist': 0.8157089054584503}
+Round:199 - Active clients:[51 87 30 25 49 57 37 52 56 29]:
+ Training time:6.602 seconds
+ server global model correct 6188
+ Testing time:20.840 seconds
+ avg_test_acc: {'uniform': 0.6187999844551086, 'validclass': 0.6187999844551086, 'labeldist': 0.6188000440597534}
+ pfl_avg_test_acc: {'uniform': 0.4498699963092804, 'validclass': 0.653105503320694, 'labeldist': 0.855527538061142}
+Round:200 - Active clients:[34  2 72 37 86 64 80 63  9 19]:
+ Training time:8.551 seconds
+ server global model correct 6785
+ Testing time:20.366 seconds
+ avg_test_acc: {'uniform': 0.6784999966621399, 'validclass': 0.6784999966621399, 'labeldist': 0.6784999966621399}
+ pfl_avg_test_acc: {'uniform': 0.4438000023365021, 'validclass': 0.6431132912635803, 'labeldist': 0.8458556234836578}

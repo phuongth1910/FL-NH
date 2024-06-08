@@ -158,32 +158,46 @@ class tumorModelNH(Model):
         self.dropout = nn.Dropout(0.5)
         
     def forward(self, x):
+        print(f"Input size: {x.size()}")
         x = self.relu(self.bn1(self.conv1(x)))
+        print(f"After Conv1 and BN1: {x.size()}")
         x = self.pool(x)
+        print(f"After Pool1: {x.size()}")
         x = self.relu(self.bn2(self.conv2(x)))
+        print(f"After Conv2 and BN2: {x.size()}")
         x = self.pool(x)
+        print(f"After Pool2: {x.size()}")
         x = self.relu(self.bn3(self.conv3(x)))
+        print(f"After Conv3 and BN3: {x.size()}")
         x = self.pool2(x)
+        print(f"After Pool2_2: {x.size()}")
         x = self.relu(self.bn4(self.conv4(x)))
+        print(f"After Conv4 and BN4: {x.size()}")
         x = self.flatten(x)
+        print(f"After Flatten: {x.size()}")
         x = self.relu(self.fc1(x))
+        print(f"After FC1: {x.size()}")
         feature_embedding = self.dropout(x)
         feature_embedding = F.relu(self.linear2(feature_embedding))
+        print(f"After Linear2: {feature_embedding.size()}")
         
         # Normalize feature embedding
         feature_embedding_norm = torch.norm(feature_embedding, p=2, dim=1, keepdim=True).clamp(min=1e-12)
         feature_embedding = torch.div(feature_embedding, feature_embedding_norm)
-        
+        print(f"After Normalizing feature embedding: {feature_embedding.size()}")
+
         # Normalize prototype
         if self.prototype.requires_grad == False:
             normalized_prototype = self.prototype
         else:
             prototype_norm = torch.norm(self.prototype, p=2, dim=1, keepdim=True).clamp(min=1e-12)
             normalized_prototype = torch.div(self.prototype, prototype_norm)
-        
+        print(f"Normalized Prototype size: {normalized_prototype.size()}")
+
         # Calculate logits
         logits = torch.matmul(feature_embedding, normalized_prototype.T)
         logits = self.scaling * logits
+        print(f"Logits size: {logits.size()}")
         
         if self.return_embedding:
             return feature_embedding, logits
